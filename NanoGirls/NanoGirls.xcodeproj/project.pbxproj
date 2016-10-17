@@ -1,0 +1,540 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CE2E15891DB5726600C3AA8F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2E15881DB5726600C3AA8F /* AppDelegate.swift */; };
+		CE2E158B1DB5726600C3AA8F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2E158A1DB5726600C3AA8F /* ViewController.swift */; };
+		CE2E158E1DB5726600C3AA8F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE2E158C1DB5726600C3AA8F /* Main.storyboard */; };
+		CE2E15911DB5726700C3AA8F /* NanoGirls.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CE2E158F1DB5726700C3AA8F /* NanoGirls.xcdatamodeld */; };
+		CE2E15931DB5726700C3AA8F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE2E15921DB5726700C3AA8F /* Assets.xcassets */; };
+		CE2E15961DB5726700C3AA8F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE2E15941DB5726700C3AA8F /* LaunchScreen.storyboard */; };
+		CE2E15A11DB5726700C3AA8F /* NanoGirlsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2E15A01DB5726700C3AA8F /* NanoGirlsTests.swift */; };
+		CE2E15AC1DB5726700C3AA8F /* NanoGirlsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2E15AB1DB5726700C3AA8F /* NanoGirlsUITests.swift */; };
+		CE2E15BB1DB5734700C3AA8F /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2E15BA1DB5734700C3AA8F /* HomePageViewController.swift */; };
+		CE2E15BD1DB5776C00C3AA8F /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2E15BC1DB5776C00C3AA8F /* Colors.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CE2E159D1DB5726700C3AA8F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE2E157D1DB5726600C3AA8F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE2E15841DB5726600C3AA8F;
+			remoteInfo = NanoGirls;
+		};
+		CE2E15A81DB5726700C3AA8F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE2E157D1DB5726600C3AA8F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE2E15841DB5726600C3AA8F;
+			remoteInfo = NanoGirls;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CE2E15851DB5726600C3AA8F /* NanoGirls.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NanoGirls.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE2E15881DB5726600C3AA8F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CE2E158A1DB5726600C3AA8F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CE2E158D1DB5726600C3AA8F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CE2E15901DB5726700C3AA8F /* NanoGirls.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NanoGirls.xcdatamodel; sourceTree = "<group>"; };
+		CE2E15921DB5726700C3AA8F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CE2E15951DB5726700C3AA8F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CE2E15971DB5726700C3AA8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE2E159C1DB5726700C3AA8F /* NanoGirlsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NanoGirlsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE2E15A01DB5726700C3AA8F /* NanoGirlsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NanoGirlsTests.swift; sourceTree = "<group>"; };
+		CE2E15A21DB5726700C3AA8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE2E15A71DB5726700C3AA8F /* NanoGirlsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NanoGirlsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE2E15AB1DB5726700C3AA8F /* NanoGirlsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NanoGirlsUITests.swift; sourceTree = "<group>"; };
+		CE2E15AD1DB5726700C3AA8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE2E15BA1DB5734700C3AA8F /* HomePageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
+		CE2E15BC1DB5776C00C3AA8F /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CE2E15821DB5726600C3AA8F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE2E15991DB5726700C3AA8F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE2E15A41DB5726700C3AA8F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CE2E157C1DB5726600C3AA8F = {
+			isa = PBXGroup;
+			children = (
+				CE2E15871DB5726600C3AA8F /* NanoGirls */,
+				CE2E159F1DB5726700C3AA8F /* NanoGirlsTests */,
+				CE2E15AA1DB5726700C3AA8F /* NanoGirlsUITests */,
+				CE2E15861DB5726600C3AA8F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CE2E15861DB5726600C3AA8F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CE2E15851DB5726600C3AA8F /* NanoGirls.app */,
+				CE2E159C1DB5726700C3AA8F /* NanoGirlsTests.xctest */,
+				CE2E15A71DB5726700C3AA8F /* NanoGirlsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CE2E15871DB5726600C3AA8F /* NanoGirls */ = {
+			isa = PBXGroup;
+			children = (
+				CE2E15881DB5726600C3AA8F /* AppDelegate.swift */,
+				CE2E158A1DB5726600C3AA8F /* ViewController.swift */,
+				CE2E158C1DB5726600C3AA8F /* Main.storyboard */,
+				CE2E15BC1DB5776C00C3AA8F /* Colors.swift */,
+				CE2E15B91DB5730F00C3AA8F /* ViewControllers */,
+				CE2E15921DB5726700C3AA8F /* Assets.xcassets */,
+				CE2E15941DB5726700C3AA8F /* LaunchScreen.storyboard */,
+				CE2E15971DB5726700C3AA8F /* Info.plist */,
+				CE2E158F1DB5726700C3AA8F /* NanoGirls.xcdatamodeld */,
+			);
+			path = NanoGirls;
+			sourceTree = "<group>";
+		};
+		CE2E159F1DB5726700C3AA8F /* NanoGirlsTests */ = {
+			isa = PBXGroup;
+			children = (
+				CE2E15A01DB5726700C3AA8F /* NanoGirlsTests.swift */,
+				CE2E15A21DB5726700C3AA8F /* Info.plist */,
+			);
+			path = NanoGirlsTests;
+			sourceTree = "<group>";
+		};
+		CE2E15AA1DB5726700C3AA8F /* NanoGirlsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CE2E15AB1DB5726700C3AA8F /* NanoGirlsUITests.swift */,
+				CE2E15AD1DB5726700C3AA8F /* Info.plist */,
+			);
+			path = NanoGirlsUITests;
+			sourceTree = "<group>";
+		};
+		CE2E15B91DB5730F00C3AA8F /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				CE2E15BA1DB5734700C3AA8F /* HomePageViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CE2E15841DB5726600C3AA8F /* NanoGirls */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE2E15B01DB5726700C3AA8F /* Build configuration list for PBXNativeTarget "NanoGirls" */;
+			buildPhases = (
+				CE2E15811DB5726600C3AA8F /* Sources */,
+				CE2E15821DB5726600C3AA8F /* Frameworks */,
+				CE2E15831DB5726600C3AA8F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NanoGirls;
+			productName = NanoGirls;
+			productReference = CE2E15851DB5726600C3AA8F /* NanoGirls.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CE2E159B1DB5726700C3AA8F /* NanoGirlsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE2E15B31DB5726700C3AA8F /* Build configuration list for PBXNativeTarget "NanoGirlsTests" */;
+			buildPhases = (
+				CE2E15981DB5726700C3AA8F /* Sources */,
+				CE2E15991DB5726700C3AA8F /* Frameworks */,
+				CE2E159A1DB5726700C3AA8F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE2E159E1DB5726700C3AA8F /* PBXTargetDependency */,
+			);
+			name = NanoGirlsTests;
+			productName = NanoGirlsTests;
+			productReference = CE2E159C1DB5726700C3AA8F /* NanoGirlsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CE2E15A61DB5726700C3AA8F /* NanoGirlsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE2E15B61DB5726700C3AA8F /* Build configuration list for PBXNativeTarget "NanoGirlsUITests" */;
+			buildPhases = (
+				CE2E15A31DB5726700C3AA8F /* Sources */,
+				CE2E15A41DB5726700C3AA8F /* Frameworks */,
+				CE2E15A51DB5726700C3AA8F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE2E15A91DB5726700C3AA8F /* PBXTargetDependency */,
+			);
+			name = NanoGirlsUITests;
+			productName = NanoGirlsUITests;
+			productReference = CE2E15A71DB5726700C3AA8F /* NanoGirlsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CE2E157D1DB5726600C3AA8F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = NanoBadgers;
+				TargetAttributes = {
+					CE2E15841DB5726600C3AA8F = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					CE2E159B1DB5726700C3AA8F = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = CE2E15841DB5726600C3AA8F;
+					};
+					CE2E15A61DB5726700C3AA8F = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = CE2E15841DB5726600C3AA8F;
+					};
+				};
+			};
+			buildConfigurationList = CE2E15801DB5726600C3AA8F /* Build configuration list for PBXProject "NanoGirls" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CE2E157C1DB5726600C3AA8F;
+			productRefGroup = CE2E15861DB5726600C3AA8F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CE2E15841DB5726600C3AA8F /* NanoGirls */,
+				CE2E159B1DB5726700C3AA8F /* NanoGirlsTests */,
+				CE2E15A61DB5726700C3AA8F /* NanoGirlsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CE2E15831DB5726600C3AA8F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE2E15961DB5726700C3AA8F /* LaunchScreen.storyboard in Resources */,
+				CE2E15931DB5726700C3AA8F /* Assets.xcassets in Resources */,
+				CE2E158E1DB5726600C3AA8F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE2E159A1DB5726700C3AA8F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE2E15A51DB5726700C3AA8F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CE2E15811DB5726600C3AA8F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE2E15BB1DB5734700C3AA8F /* HomePageViewController.swift in Sources */,
+				CE2E15BD1DB5776C00C3AA8F /* Colors.swift in Sources */,
+				CE2E158B1DB5726600C3AA8F /* ViewController.swift in Sources */,
+				CE2E15891DB5726600C3AA8F /* AppDelegate.swift in Sources */,
+				CE2E15911DB5726700C3AA8F /* NanoGirls.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE2E15981DB5726700C3AA8F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE2E15A11DB5726700C3AA8F /* NanoGirlsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE2E15A31DB5726700C3AA8F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE2E15AC1DB5726700C3AA8F /* NanoGirlsUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CE2E159E1DB5726700C3AA8F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE2E15841DB5726600C3AA8F /* NanoGirls */;
+			targetProxy = CE2E159D1DB5726700C3AA8F /* PBXContainerItemProxy */;
+		};
+		CE2E15A91DB5726700C3AA8F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE2E15841DB5726600C3AA8F /* NanoGirls */;
+			targetProxy = CE2E15A81DB5726700C3AA8F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CE2E158C1DB5726600C3AA8F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE2E158D1DB5726600C3AA8F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CE2E15941DB5726700C3AA8F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE2E15951DB5726700C3AA8F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CE2E15AE1DB5726700C3AA8F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CE2E15AF1DB5726700C3AA8F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CE2E15B11DB5726700C3AA8F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = NanoGirls/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = USC.NanoGirls;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CE2E15B21DB5726700C3AA8F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = NanoGirls/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = USC.NanoGirls;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		CE2E15B41DB5726700C3AA8F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = NanoGirlsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = USC.NanoGirlsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NanoGirls.app/NanoGirls";
+			};
+			name = Debug;
+		};
+		CE2E15B51DB5726700C3AA8F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = NanoGirlsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = USC.NanoGirlsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NanoGirls.app/NanoGirls";
+			};
+			name = Release;
+		};
+		CE2E15B71DB5726700C3AA8F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = NanoGirlsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = USC.NanoGirlsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = NanoGirls;
+			};
+			name = Debug;
+		};
+		CE2E15B81DB5726700C3AA8F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = NanoGirlsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = USC.NanoGirlsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = NanoGirls;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CE2E15801DB5726600C3AA8F /* Build configuration list for PBXProject "NanoGirls" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE2E15AE1DB5726700C3AA8F /* Debug */,
+				CE2E15AF1DB5726700C3AA8F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE2E15B01DB5726700C3AA8F /* Build configuration list for PBXNativeTarget "NanoGirls" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE2E15B11DB5726700C3AA8F /* Debug */,
+				CE2E15B21DB5726700C3AA8F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CE2E15B31DB5726700C3AA8F /* Build configuration list for PBXNativeTarget "NanoGirlsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE2E15B41DB5726700C3AA8F /* Debug */,
+				CE2E15B51DB5726700C3AA8F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CE2E15B61DB5726700C3AA8F /* Build configuration list for PBXNativeTarget "NanoGirlsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE2E15B71DB5726700C3AA8F /* Debug */,
+				CE2E15B81DB5726700C3AA8F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		CE2E158F1DB5726700C3AA8F /* NanoGirls.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CE2E15901DB5726700C3AA8F /* NanoGirls.xcdatamodel */,
+			);
+			currentVersion = CE2E15901DB5726700C3AA8F /* NanoGirls.xcdatamodel */;
+			path = NanoGirls.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = CE2E157D1DB5726600C3AA8F /* Project object */;
+}

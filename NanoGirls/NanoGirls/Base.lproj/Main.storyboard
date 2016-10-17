@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="gfQ-GH-3h8">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="NanoGirls" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <!--Home Page View Controller-->
+        <scene sceneID="WOB-LT-zYD">
+            <objects>
+                <viewController id="gfQ-GH-3h8" customClass="HomePageViewController" customModule="NanoGirls" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dDi-4v-OZW"/>
+                        <viewControllerLayoutGuide type="bottom" id="JzI-qj-1sh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ScQ-Ys-IHP">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cbJ-O0-6dv">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QtT-Gc-U57">
+                                        <rect key="frame" x="55" y="41" width="490" height="243"/>
+                                        <color key="backgroundColor" red="0.83936779326180611" green="0.59203088024951533" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N12-WP-wIn">
+                                        <rect key="frame" x="277" y="292" width="46" height="30"/>
+                                        <state key="normal" title="Login"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wst-6E-3uI">
+                                        <rect key="frame" x="277" y="330" width="46" height="30"/>
+                                        <state key="normal" title="Help"/>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="QtT-Gc-U57" firstAttribute="top" secondItem="cbJ-O0-6dv" secondAttribute="top" constant="41" id="Ixu-gb-0AI"/>
+                                    <constraint firstAttribute="bottom" secondItem="Wst-6E-3uI" secondAttribute="bottom" constant="240" id="Ld4-Dd-tHw"/>
+                                    <constraint firstItem="Wst-6E-3uI" firstAttribute="centerX" secondItem="cbJ-O0-6dv" secondAttribute="centerX" id="NfQ-7c-eYT"/>
+                                    <constraint firstItem="N12-WP-wIn" firstAttribute="centerX" secondItem="cbJ-O0-6dv" secondAttribute="centerX" id="O1V-q1-QYp"/>
+                                    <constraint firstItem="QtT-Gc-U57" firstAttribute="leading" secondItem="cbJ-O0-6dv" secondAttribute="leading" constant="55" id="QAy-xd-z0H"/>
+                                    <constraint firstItem="QtT-Gc-U57" firstAttribute="centerX" secondItem="cbJ-O0-6dv" secondAttribute="centerX" id="lqf-HX-ARi"/>
+                                    <constraint firstAttribute="trailing" secondItem="QtT-Gc-U57" secondAttribute="trailing" constant="55" id="nQY-Xf-U7o"/>
+                                    <constraint firstItem="N12-WP-wIn" firstAttribute="top" secondItem="QtT-Gc-U57" secondAttribute="bottom" constant="8" id="sof-TF-D3G"/>
+                                    <constraint firstItem="Wst-6E-3uI" firstAttribute="top" secondItem="N12-WP-wIn" secondAttribute="bottom" constant="8" id="yoY-nd-2gh"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="cbJ-O0-6dv" firstAttribute="bottom" secondItem="JzI-qj-1sh" secondAttribute="top" id="Fe9-fx-VJ5"/>
+                            <constraint firstItem="cbJ-O0-6dv" firstAttribute="top" secondItem="ScQ-Ys-IHP" secondAttribute="top" id="e8Q-5a-RGm"/>
+                            <constraint firstAttribute="trailing" secondItem="cbJ-O0-6dv" secondAttribute="trailing" id="hch-WB-N2L"/>
+                            <constraint firstItem="cbJ-O0-6dv" firstAttribute="leading" secondItem="ScQ-Ys-IHP" secondAttribute="leading" id="uzc-jB-l6y"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="F2f-1m-vr9"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xDU-a6-vry" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1856" y="339"/>
+        </scene>
+    </scenes>
+</document>
