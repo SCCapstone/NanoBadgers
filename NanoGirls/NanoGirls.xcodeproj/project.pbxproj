@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C38ADC0A1DB6FD5B005661E2 /* HelpPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38ADC091DB6FD5B005661E2 /* HelpPageViewController.swift */; };
+		C38ADC0C1DB71963005661E2 /* LoginPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38ADC0B1DB71963005661E2 /* LoginPageViewController.swift */; };
 		CE2E15891DB5726600C3AA8F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2E15881DB5726600C3AA8F /* AppDelegate.swift */; };
 		CE2E158B1DB5726600C3AA8F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2E158A1DB5726600C3AA8F /* ViewController.swift */; };
 		CE2E158E1DB5726600C3AA8F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE2E158C1DB5726600C3AA8F /* Main.storyboard */; };
@@ -39,6 +40,7 @@
 
 /* Begin PBXFileReference section */
 		C38ADC091DB6FD5B005661E2 /* HelpPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = HelpPageViewController.swift; sourceTree = "<group>"; usesTabs = 0; };
+		C38ADC0B1DB71963005661E2 /* LoginPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginPageViewController.swift; sourceTree = "<group>"; };
 		CE2E15851DB5726600C3AA8F /* NanoGirls.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NanoGirls.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE2E15881DB5726600C3AA8F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE2E158A1DB5726600C3AA8F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -140,6 +142,7 @@
 			isa = PBXGroup;
 			children = (
 				CE2E15BA1DB5734700C3AA8F /* HomePageViewController.swift */,
+				C38ADC0B1DB71963005661E2 /* LoginPageViewController.swift */,
 				C38ADC091DB6FD5B005661E2 /* HelpPageViewController.swift */,
 			);
 			name = ViewControllers;
@@ -284,6 +287,7 @@
 				CE2E15BD1DB5776C00C3AA8F /* Colors.swift in Sources */,
 				CE2E158B1DB5726600C3AA8F /* ViewController.swift in Sources */,
 				CE2E15891DB5726600C3AA8F /* AppDelegate.swift in Sources */,
+				C38ADC0C1DB71963005661E2 /* LoginPageViewController.swift in Sources */,
 				CE2E15911DB5726700C3AA8F /* NanoGirls.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
