@@ -33,10 +33,10 @@ class HomePageViewController: UIViewController
     func refresh()
     {
         //sets the background gradient
-        view.backgroundColor = UIColor.clearColor()
-        var backgroundLayer = colors.gl
+        view.backgroundColor = UIColor.clear
+        let backgroundLayer = colors.gl
         backgroundLayer.frame = view.frame
-        view.layer.insertSublayer(backgroundLayer, atIndex: 0)
+        view.layer.insertSublayer(backgroundLayer, at: 0)
     }
 }
 

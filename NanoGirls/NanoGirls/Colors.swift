@@ -13,8 +13,8 @@ class Colors {
     
     
     //Creates the blue - purple gradient from the design. 
-    let colorTop = UIColor(red: 6.0/255.0, green: 49.0/255.0, blue: 250.0/255.0, alpha: 1.0).CGColor
-    let colorBottom = UIColor(red: 67.0/255.0, green: 33.0/255.0, blue: 179.0/255.0, alpha: 1.0).CGColor
+    let colorTop = UIColor(red: 6.0/255.0, green: 49.0/255.0, blue: 250.0/255.0, alpha: 1.0).cgColor
+    let colorBottom = UIColor(red: 67.0/255.0, green: 33.0/255.0, blue: 179.0/255.0, alpha: 1.0).cgColor
     
     let gl: CAGradientLayer
     

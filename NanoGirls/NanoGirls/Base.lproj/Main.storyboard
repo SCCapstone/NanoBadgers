@@ -1,8 +1,9 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="gfQ-GH-3h8">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="eFf-DV-hjx">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -14,9 +15,9 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -25,29 +26,32 @@
         <!--Home Page View Controller-->
         <scene sceneID="WOB-LT-zYD">
             <objects>
-                <viewController id="gfQ-GH-3h8" customClass="HomePageViewController" customModule="NanoGirls" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="gfQ-GH-3h8" customClass="HomePageViewController" customModule="NanoGirls" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="dDi-4v-OZW"/>
                         <viewControllerLayoutGuide type="bottom" id="JzI-qj-1sh"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="ScQ-Ys-IHP">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cbJ-O0-6dv">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cbJ-O0-6dv">
+                                <frame key="frameInset" width="600" height="600"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QtT-Gc-U57">
-                                        <rect key="frame" x="55" y="41" width="490" height="243"/>
-                                        <color key="backgroundColor" red="0.83936779326180611" green="0.59203088024951533" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QtT-Gc-U57">
+                                        <frame key="frameInset" minX="55" minY="41" width="490" height="243"/>
+                                        <color key="backgroundColor" red="0.83936779326180611" green="0.59203088024951533" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N12-WP-wIn">
-                                        <rect key="frame" x="277" y="292" width="46" height="30"/>
+                                        <frame key="frameInset" minX="277" minY="292" width="46" height="30"/>
                                         <state key="normal" title="Login"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wst-6E-3uI">
-                                        <rect key="frame" x="277" y="330" width="46" height="30"/>
+                                        <frame key="frameInset" minX="277" minY="330" width="46" height="30"/>
                                         <state key="normal" title="Help"/>
+                                        <connections>
+                                            <segue destination="1e1-7K-gLK" kind="push" id="zIy-ZE-AGY"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -63,7 +67,7 @@
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="cbJ-O0-6dv" firstAttribute="bottom" secondItem="JzI-qj-1sh" secondAttribute="top" id="Fe9-fx-VJ5"/>
                             <constraint firstItem="cbJ-O0-6dv" firstAttribute="top" secondItem="ScQ-Ys-IHP" secondAttribute="top" id="e8Q-5a-RGm"/>
@@ -75,7 +79,53 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xDU-a6-vry" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1856" y="339"/>
+            <point key="canvasLocation" x="2794.4000000000001" y="338.68065967016497"/>
+        </scene>
+        <!--Help Page View Controller-->
+        <scene sceneID="j4u-9P-HLP">
+            <objects>
+                <viewController id="1e1-7K-gLK" customClass="HelpPageViewController" customModule="NanoGirls" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="rcT-m1-tfq"/>
+                        <viewControllerLayoutGuide type="bottom" id="Lxh-8f-9KH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="m7y-Ey-LTg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Mfk-8m-oYN">
+                                <frame key="frameInset" minY="64" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Help Screen" id="Dfu-co-Cnn"/>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="JjR-KE-GPA"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xT5-FQ-lHr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3766" y="339"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="KxF-pT-fWh">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="eFf-DV-hjx" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="zF3-Se-08z">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="gfQ-GH-3h8" kind="relationship" relationship="rootViewController" id="Z84-K6-wO9"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TZI-1T-4eY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1855.2" y="338.68065967016497"/>
         </scene>
     </scenes>
 </document>
