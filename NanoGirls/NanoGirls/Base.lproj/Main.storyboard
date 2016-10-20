@@ -97,40 +97,43 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="password" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4sB-Qu-xFT">
-                                <frame key="frameInset" minX="83" minY="281" width="209" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4sB-Qu-xFT">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Jdd-PZ-drG"/>
+                                </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yl0-xl-WiU">
-                                <frame key="frameInset" minX="152" minY="356" width="71" height="43"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yl0-xl-WiU">
                                 <color key="backgroundColor" red="0.0" green="0.72654204840000003" blue="0.7047945363" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="71" id="Cdg-te-Pi0"/>
+                                </constraints>
                                 <state key="normal" title="Login">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="username" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fh4-cy-ep3">
-                                <frame key="frameInset" minX="83" minY="211" width="209" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fh4-cy-ep3">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="RZ5-bX-9pR"/>
+                                </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="next"/>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Yl0-xl-WiU" firstAttribute="top" secondItem="4sB-Qu-xFT" secondAttribute="bottom" constant="45" id="9UF-cj-scq"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="fh4-cy-ep3" secondAttribute="trailing" constant="67" id="BuC-x8-GK4"/>
-                            <constraint firstItem="ZNb-qA-TdJ" firstAttribute="top" secondItem="Yl0-xl-WiU" secondAttribute="bottom" constant="268" id="Ewj-vI-aFk"/>
-                            <constraint firstItem="4sB-Qu-xFT" firstAttribute="leading" secondItem="Kao-Y5-KpI" secondAttribute="leadingMargin" constant="67" id="Hlu-bP-TwR"/>
-                            <constraint firstItem="Yl0-xl-WiU" firstAttribute="top" secondItem="4sB-Qu-xFT" secondAttribute="bottom" constant="45" id="LfM-vh-Dvs"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="4sB-Qu-xFT" secondAttribute="trailing" constant="67" id="Nur-iY-kcC"/>
-                            <constraint firstItem="fh4-cy-ep3" firstAttribute="top" secondItem="uzb-rq-Aoh" secondAttribute="bottom" constant="147" id="Vz4-Jk-eC8"/>
-                            <constraint firstItem="4sB-Qu-xFT" firstAttribute="top" secondItem="fh4-cy-ep3" secondAttribute="bottom" constant="40" id="qn3-qD-Jus"/>
-                            <constraint firstItem="4sB-Qu-xFT" firstAttribute="top" secondItem="fh4-cy-ep3" secondAttribute="bottom" constant="40" id="quN-RU-X1N"/>
-                            <constraint firstItem="fh4-cy-ep3" firstAttribute="leading" secondItem="Kao-Y5-KpI" secondAttribute="leadingMargin" constant="67" id="rg8-RT-8tc"/>
-                            <constraint firstItem="Yl0-xl-WiU" firstAttribute="leading" secondItem="Kao-Y5-KpI" secondAttribute="leadingMargin" constant="136" id="siZ-ST-IF7"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="Yl0-xl-WiU" secondAttribute="trailing" constant="136" id="suM-yo-bC1"/>
+                            <constraint firstItem="4sB-Qu-xFT" firstAttribute="centerX" secondItem="Yl0-xl-WiU" secondAttribute="centerX" id="0kc-fh-Wig"/>
+                            <constraint firstItem="4sB-Qu-xFT" firstAttribute="top" secondItem="fh4-cy-ep3" secondAttribute="bottom" constant="40" id="1Ap-Z6-3JW"/>
+                            <constraint firstItem="Yl0-xl-WiU" firstAttribute="top" secondItem="4sB-Qu-xFT" secondAttribute="bottom" constant="45" id="3xu-Q5-GYx"/>
+                            <constraint firstItem="fh4-cy-ep3" firstAttribute="centerX" secondItem="Kao-Y5-KpI" secondAttribute="centerX" id="7bl-ry-TaQ"/>
+                            <constraint firstItem="ZNb-qA-TdJ" firstAttribute="top" secondItem="Yl0-xl-WiU" secondAttribute="bottom" constant="268" id="Dq0-bt-rhL"/>
+                            <constraint firstItem="fh4-cy-ep3" firstAttribute="top" secondItem="uzb-rq-Aoh" secondAttribute="bottom" constant="147" id="ZFm-oQ-B7b"/>
+                            <constraint firstItem="fh4-cy-ep3" firstAttribute="leading" secondItem="4sB-Qu-xFT" secondAttribute="leading" id="aLz-0F-GQn"/>
+                            <constraint firstItem="fh4-cy-ep3" firstAttribute="leading" secondItem="Kao-Y5-KpI" secondAttribute="leadingMargin" constant="67" id="ejk-a8-Qon"/>
+                            <constraint firstItem="fh4-cy-ep3" firstAttribute="trailing" secondItem="4sB-Qu-xFT" secondAttribute="trailing" id="fOy-M9-0vd"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Login" id="ecB-fT-uaX"/>
