@@ -19,6 +19,7 @@
 		CE2E15AC1DB5726700C3AA8F /* NanoGirlsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2E15AB1DB5726700C3AA8F /* NanoGirlsUITests.swift */; };
 		CE2E15BB1DB5734700C3AA8F /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2E15BA1DB5734700C3AA8F /* HomePageViewController.swift */; };
 		CE2E15BD1DB5776C00C3AA8F /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2E15BC1DB5776C00C3AA8F /* Colors.swift */; };
+		CE3D50231DBE8C1400E3AB40 /* QuestionPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3D50221DBE8C1400E3AB40 /* QuestionPageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		CE2E15AD1DB5726700C3AA8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE2E15BA1DB5734700C3AA8F /* HomePageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
 		CE2E15BC1DB5776C00C3AA8F /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		CE3D50221DBE8C1400E3AB40 /* QuestionPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionPageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +143,7 @@
 		CE2E15B91DB5730F00C3AA8F /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				CE3D50221DBE8C1400E3AB40 /* QuestionPageViewController.swift */,
 				CE2E15BA1DB5734700C3AA8F /* HomePageViewController.swift */,
 				C38ADC0B1DB71963005661E2 /* LoginPageViewController.swift */,
 				C38ADC091DB6FD5B005661E2 /* HelpPageViewController.swift */,
@@ -288,6 +291,7 @@
 				CE2E158B1DB5726600C3AA8F /* ViewController.swift in Sources */,
 				CE2E15891DB5726600C3AA8F /* AppDelegate.swift in Sources */,
 				C38ADC0C1DB71963005661E2 /* LoginPageViewController.swift in Sources */,
+				CE3D50231DBE8C1400E3AB40 /* QuestionPageViewController.swift in Sources */,
 				CE2E15911DB5726700C3AA8F /* NanoGirls.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
