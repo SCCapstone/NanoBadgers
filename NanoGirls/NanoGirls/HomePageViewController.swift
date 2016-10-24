@@ -13,6 +13,10 @@ import UIKit
 
 class HomePageViewController: UIViewController
 {
+    @IBOutlet weak var LoginButton: UIButton!
+    @IBOutlet weak var HelpButton: UIButton!
+    
+    
     //creates instance of Colors class
     let colors = Colors()
     
