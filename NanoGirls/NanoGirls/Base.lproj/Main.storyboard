@@ -91,7 +91,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xDU-a6-vry" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2713" y="339"/>
+            <point key="canvasLocation" x="2712.890625" y="338.65300146412881"/>
         </scene>
         <!--MiniGame1ViewController-->
         <scene sceneID="kw1-ah-9tv">
@@ -193,7 +193,15 @@
                             <constraint firstItem="4sB-Qu-xFT" firstAttribute="trailing" secondItem="fh4-cy-ep3" secondAttribute="trailing" id="uLh-Zh-NKe"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Login" id="ecB-fT-uaX"/>
+                    <navigationItem key="navigationItem" title="Login" id="ecB-fT-uaX">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="wOt-Gh-KKe"/>
+                        <barButtonItem key="leftBarButtonItem" title="Back" id="UNc-b3-f9C">
+                            <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <segue destination="gfQ-GH-3h8" kind="show" id="Duf-La-ww0"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nto-yc-McI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -339,4 +347,7 @@
     <resources>
         <image name="thecat.jpg" width="1080" height="1080"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="Duf-La-ww0"/>
+    </inferredMetricsTieBreakers>
 </document>
