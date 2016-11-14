@@ -120,22 +120,29 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pz1-wM-IKe">
-                                <rect key="frame" x="7" y="120" width="38" height="56"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZI3-69-zS5">
                                 <rect key="frame" x="241" y="72" width="118" height="118"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="TempBackButton"/>
+                                <connections>
+                                    <segue destination="yxc-nZ-b0O" kind="push" id="gWg-Y4-tMw"/>
+                                </connections>
                             </button>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="url.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="7lK-jp-AfO">
                                 <rect key="frame" x="157" y="189" width="60" height="60"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="paddle.png" translatesAutoresizingMaskIntoConstraints="NO" id="HRd-hM-erN">
+                                <rect key="frame" x="137" y="562" width="100" height="30"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pz1-wM-IKe">
+                                <rect key="frame" x="7" y="82" width="38" height="56"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -303,6 +310,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="tuB-wQ-GMm"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QD5-NL-TsJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -346,6 +354,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="paddle.png" width="100" height="30"/>
         <image name="url.jpg" width="60" height="60"/>
     </resources>
 </document>

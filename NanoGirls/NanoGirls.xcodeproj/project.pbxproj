@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		6235366C1DD9691000CC3797 /* url.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6235366B1DD9691000CC3797 /* url.jpg */; };
+		6235366E1DD9717F00CC3797 /* paddle.png in Resources */ = {isa = PBXBuildFile; fileRef = 6235366D1DD9717F00CC3797 /* paddle.png */; };
 		6282FC301DC114E000CC018D /* MiniGame1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6282FC2F1DC114E000CC018D /* MiniGame1ViewController.swift */; };
 		C38ADC0A1DB6FD5B005661E2 /* HelpPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38ADC091DB6FD5B005661E2 /* HelpPageViewController.swift */; };
 		C38ADC0C1DB71963005661E2 /* LoginPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38ADC0B1DB71963005661E2 /* LoginPageViewController.swift */; };
@@ -44,6 +45,7 @@
 
 /* Begin PBXFileReference section */
 		6235366B1DD9691000CC3797 /* url.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = url.jpg; sourceTree = "<group>"; };
+		6235366D1DD9717F00CC3797 /* paddle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = paddle.png; sourceTree = "<group>"; };
 		6282FC2F1DC114E000CC018D /* MiniGame1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MiniGame1ViewController.swift; sourceTree = "<group>"; };
 		C38ADC091DB6FD5B005661E2 /* HelpPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = HelpPageViewController.swift; sourceTree = "<group>"; usesTabs = 0; };
 		C38ADC0B1DB71963005661E2 /* LoginPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginPageViewController.swift; sourceTree = "<group>"; };
@@ -163,6 +165,7 @@
 			isa = PBXGroup;
 			children = (
 				CE967D261DC245C200E00D4C /* thecat.jpg */,
+				6235366D1DD9717F00CC3797 /* paddle.png */,
 				6235366B1DD9691000CC3797 /* url.jpg */,
 			);
 			name = Images;
@@ -276,6 +279,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE2E15961DB5726700C3AA8F /* LaunchScreen.storyboard in Resources */,
+				6235366E1DD9717F00CC3797 /* paddle.png in Resources */,
 				CE2E15931DB5726700C3AA8F /* Assets.xcassets in Resources */,
 				6235366C1DD9691000CC3797 /* url.jpg in Resources */,
 				CE967D271DC245C200E00D4C /* thecat.jpg in Resources */,
