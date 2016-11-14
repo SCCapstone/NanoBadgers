@@ -133,7 +133,7 @@
                                 <state key="normal" title="TempBackButton"/>
                             </button>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="url.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="7lK-jp-AfO">
-                                <rect key="frame" x="157" y="303" width="60" height="60"/>
+                                <rect key="frame" x="157" y="189" width="60" height="60"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
                         </subviews>

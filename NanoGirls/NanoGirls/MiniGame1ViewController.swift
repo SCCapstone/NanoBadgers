@@ -22,11 +22,11 @@ class MiniGame1ViewController: UIViewController {
     
     func CPU(){
         ball.center = CGPoint(x:ball.center.x+xSpeed, y:ball.center.y + ySpeed)
-        if(ball.center.x < 0)
+        if(ball.center.x < 15)
         {
             xSpeed = -xSpeed
         }
-        if(ball.center.x < 2048)
+        if(ball.center.x > 300)
         {
             xSpeed = -xSpeed
         }
@@ -34,7 +34,7 @@ class MiniGame1ViewController: UIViewController {
         {
             ySpeed = -ySpeed
         }
-        if(ball.center.y < 15)
+        if(ball.center.y > 600)
         {
             ySpeed = -ySpeed
         }
