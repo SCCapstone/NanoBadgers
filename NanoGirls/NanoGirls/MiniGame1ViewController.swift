@@ -4,7 +4,7 @@
 //
 //  Created by Spencer Nelson on 10//16.
 //  Copyright © 2016 NanoBadgers. All rights reserved.
-//
+//  random note to test commits
 
 import UIKit
 
