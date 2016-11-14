@@ -7,9 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6282FC261DC1104E00CC018D /* virus.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6282FC251DC1104E00CC018D /* virus.jpg */; };
-		6282FC281DC110AC00CC018D /* url.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6282FC271DC110AC00CC018D /* url.jpg */; };
-		6282FC2E1DC1117400CC018D /* paddle.png in Resources */ = {isa = PBXBuildFile; fileRef = 6282FC2D1DC1117400CC018D /* paddle.png */; };
 		6282FC301DC114E000CC018D /* MiniGame1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6282FC2F1DC114E000CC018D /* MiniGame1ViewController.swift */; };
 		C38ADC0A1DB6FD5B005661E2 /* HelpPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38ADC091DB6FD5B005661E2 /* HelpPageViewController.swift */; };
 		C38ADC0C1DB71963005661E2 /* LoginPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38ADC0B1DB71963005661E2 /* LoginPageViewController.swift */; };
@@ -24,6 +21,7 @@
 		CE2E15BB1DB5734700C3AA8F /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2E15BA1DB5734700C3AA8F /* HomePageViewController.swift */; };
 		CE2E15BD1DB5776C00C3AA8F /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2E15BC1DB5776C00C3AA8F /* Colors.swift */; };
 		CE3D50231DBE8C1400E3AB40 /* QuestionPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3D50221DBE8C1400E3AB40 /* QuestionPageViewController.swift */; };
+		CE967D271DC245C200E00D4C /* thecat.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CE967D261DC245C200E00D4C /* thecat.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,9 +42,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		6282FC251DC1104E00CC018D /* virus.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = virus.jpg; path = ../../virus.jpg; sourceTree = "<group>"; };
-		6282FC271DC110AC00CC018D /* url.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = url.jpg; path = ../../url.jpg; sourceTree = "<group>"; };
-		6282FC2D1DC1117400CC018D /* paddle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = paddle.png; path = ../../paddle.png; sourceTree = "<group>"; };
 		6282FC2F1DC114E000CC018D /* MiniGame1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MiniGame1ViewController.swift; sourceTree = "<group>"; };
 		C38ADC091DB6FD5B005661E2 /* HelpPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = HelpPageViewController.swift; sourceTree = "<group>"; usesTabs = 0; };
 		C38ADC0B1DB71963005661E2 /* LoginPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginPageViewController.swift; sourceTree = "<group>"; };
@@ -67,6 +62,7 @@
 		CE2E15BA1DB5734700C3AA8F /* HomePageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
 		CE2E15BC1DB5776C00C3AA8F /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		CE3D50221DBE8C1400E3AB40 /* QuestionPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionPageViewController.swift; sourceTree = "<group>"; };
+		CE967D261DC245C200E00D4C /* thecat.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = thecat.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,9 +97,6 @@
 				CE2E159F1DB5726700C3AA8F /* NanoGirlsTests */,
 				CE2E15AA1DB5726700C3AA8F /* NanoGirlsUITests */,
 				CE2E15861DB5726600C3AA8F /* Products */,
-				6282FC251DC1104E00CC018D /* virus.jpg */,
-				6282FC271DC110AC00CC018D /* url.jpg */,
-				6282FC2D1DC1117400CC018D /* paddle.png */,
 			);
 			sourceTree = "<group>";
 		};
@@ -120,6 +113,7 @@
 		CE2E15871DB5726600C3AA8F /* NanoGirls */ = {
 			isa = PBXGroup;
 			children = (
+				CE967D251DC245AF00E00D4C /* Images */,
 				CE2E15881DB5726600C3AA8F /* AppDelegate.swift */,
 				CE2E158A1DB5726600C3AA8F /* ViewController.swift */,
 				CE2E158C1DB5726600C3AA8F /* Main.storyboard */,
@@ -161,6 +155,14 @@
 				6282FC2F1DC114E000CC018D /* MiniGame1ViewController.swift */,
 			);
 			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		CE967D251DC245AF00E00D4C /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				CE967D261DC245C200E00D4C /* thecat.jpg */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,10 +273,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE2E15961DB5726700C3AA8F /* LaunchScreen.storyboard in Resources */,
-				6282FC2E1DC1117400CC018D /* paddle.png in Resources */,
-				6282FC261DC1104E00CC018D /* virus.jpg in Resources */,
-				6282FC281DC110AC00CC018D /* url.jpg in Resources */,
 				CE2E15931DB5726700C3AA8F /* Assets.xcassets in Resources */,
+				CE967D271DC245C200E00D4C /* thecat.jpg in Resources */,
 				CE2E158E1DB5726600C3AA8F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
