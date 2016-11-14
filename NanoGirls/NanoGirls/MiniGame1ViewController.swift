@@ -18,14 +18,15 @@ class MiniGame1ViewController: UIViewController {
     var xSpeed : CGFloat!
     var ySpeed : CGFloat!
     
-    var timer  : CGFloat!
+    var clock  : Timer!
+    
     func CPU(){
         ball.center = CGPoint(x:ball.center.x+xSpeed, y:ball.center.y + ySpeed)
-        if(ball.center.x < 15)
+        if(ball.center.x < 0)
         {
             xSpeed = -xSpeed
         }
-        if(ball.center.x < 360)
+        if(ball.center.x < 2048)
         {
             xSpeed = -xSpeed
         }
@@ -44,6 +45,7 @@ class MiniGame1ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        clock = Timer.scheduledTimer(timeInterval: 0.05, target: self, selector: #selector(self.CPU), userInfo: nil, repeats: true)
         xSpeed = 10
         ySpeed = 10
         // Do any additional setup after loading the view, typically from a nib.
