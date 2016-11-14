@@ -7,7 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		401DC5EEE9E052F3CB8497B8 /* Pods_NanoGirlsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44775B99097C735DD5D89768 /* Pods_NanoGirlsTests.framework */; };
 		6282FC301DC114E000CC018D /* MiniGame1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6282FC2F1DC114E000CC018D /* MiniGame1ViewController.swift */; };
+		8343B464B6A50883EB71829C /* Pods_NanoGirls.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3FA55CE2451CA7E7AF5BD98 /* Pods_NanoGirls.framework */; };
+		B6C3722B001A9067241AAC9A /* Pods_NanoGirlsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2EE4EE76E2F84DA32E5B991 /* Pods_NanoGirlsUITests.framework */; };
+		C3183E1E1DD2B0B3003B0644 /* Unknown in Resources */ = {isa = PBXBuildFile; fileRef = C3183E1D1DD2B0B3003B0644 /* Unknown */; };
 		C38ADC0A1DB6FD5B005661E2 /* HelpPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38ADC091DB6FD5B005661E2 /* HelpPageViewController.swift */; };
 		C38ADC0C1DB71963005661E2 /* LoginPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38ADC0B1DB71963005661E2 /* LoginPageViewController.swift */; };
 		CE2E15891DB5726600C3AA8F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2E15881DB5726600C3AA8F /* AppDelegate.swift */; };
@@ -42,7 +46,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		10ED48EC7D1B147DF17C3F42 /* Pods-NanoGirlsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NanoGirlsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NanoGirlsTests/Pods-NanoGirlsTests.release.xcconfig"; sourceTree = "<group>"; };
+		44775B99097C735DD5D89768 /* Pods_NanoGirlsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NanoGirlsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F75C7E6B4FCCB386F607957 /* Pods-NanoGirlsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NanoGirlsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NanoGirlsTests/Pods-NanoGirlsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5FA3351D94E4BE04E7E4987A /* Pods-NanoGirlsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NanoGirlsUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NanoGirlsUITests/Pods-NanoGirlsUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		6282FC2F1DC114E000CC018D /* MiniGame1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MiniGame1ViewController.swift; sourceTree = "<group>"; };
+		A3FA55CE2451CA7E7AF5BD98 /* Pods_NanoGirls.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NanoGirls.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B88E43DAA43710B7FD0CD618 /* Pods-NanoGirlsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NanoGirlsUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NanoGirlsUITests/Pods-NanoGirlsUITests.release.xcconfig"; sourceTree = "<group>"; };
+		C03543DCD4C4BF6E5AD361B0 /* Pods-NanoGirls.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NanoGirls.release.xcconfig"; path = "Pods/Target Support Files/Pods-NanoGirls/Pods-NanoGirls.release.xcconfig"; sourceTree = "<group>"; };
+		C3183E1D1DD2B0B3003B0644 /* Unknown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Unknown; sourceTree = "<group>"; };
 		C38ADC091DB6FD5B005661E2 /* HelpPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = HelpPageViewController.swift; sourceTree = "<group>"; usesTabs = 0; };
 		C38ADC0B1DB71963005661E2 /* LoginPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginPageViewController.swift; sourceTree = "<group>"; };
 		CE2E15851DB5726600C3AA8F /* NanoGirls.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NanoGirls.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -63,6 +75,8 @@
 		CE2E15BC1DB5776C00C3AA8F /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		CE3D50221DBE8C1400E3AB40 /* QuestionPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionPageViewController.swift; sourceTree = "<group>"; };
 		CE967D261DC245C200E00D4C /* thecat.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = thecat.jpg; sourceTree = "<group>"; };
+		F2EE4EE76E2F84DA32E5B991 /* Pods_NanoGirlsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NanoGirlsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB9E9FA4E3A931FDF4D84313 /* Pods-NanoGirls.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NanoGirls.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NanoGirls/Pods-NanoGirls.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8343B464B6A50883EB71829C /* Pods_NanoGirls.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				401DC5EEE9E052F3CB8497B8 /* Pods_NanoGirlsTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,12 +100,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6C3722B001A9067241AAC9A /* Pods_NanoGirlsUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		90231863CC8D5E544B454AFF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FB9E9FA4E3A931FDF4D84313 /* Pods-NanoGirls.debug.xcconfig */,
+				C03543DCD4C4BF6E5AD361B0 /* Pods-NanoGirls.release.xcconfig */,
+				4F75C7E6B4FCCB386F607957 /* Pods-NanoGirlsTests.debug.xcconfig */,
+				10ED48EC7D1B147DF17C3F42 /* Pods-NanoGirlsTests.release.xcconfig */,
+				5FA3351D94E4BE04E7E4987A /* Pods-NanoGirlsUITests.debug.xcconfig */,
+				B88E43DAA43710B7FD0CD618 /* Pods-NanoGirlsUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		CE2E157C1DB5726600C3AA8F = {
 			isa = PBXGroup;
 			children = (
@@ -97,6 +127,8 @@
 				CE2E159F1DB5726700C3AA8F /* NanoGirlsTests */,
 				CE2E15AA1DB5726700C3AA8F /* NanoGirlsUITests */,
 				CE2E15861DB5726600C3AA8F /* Products */,
+				90231863CC8D5E544B454AFF /* Pods */,
+				E9109E9ABE1B4968347A82AA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -121,6 +153,7 @@
 				CE2E15B91DB5730F00C3AA8F /* ViewControllers */,
 				CE2E15921DB5726700C3AA8F /* Assets.xcassets */,
 				CE2E15941DB5726700C3AA8F /* LaunchScreen.storyboard */,
+				C3183E1D1DD2B0B3003B0644 /* Unknown */,
 				CE2E15971DB5726700C3AA8F /* Info.plist */,
 				CE2E158F1DB5726700C3AA8F /* NanoGirls.xcdatamodeld */,
 			);
@@ -165,6 +198,16 @@
 			name = Images;
 			sourceTree = "<group>";
 		};
+		E9109E9ABE1B4968347A82AA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A3FA55CE2451CA7E7AF5BD98 /* Pods_NanoGirls.framework */,
+				44775B99097C735DD5D89768 /* Pods_NanoGirlsTests.framework */,
+				F2EE4EE76E2F84DA32E5B991 /* Pods_NanoGirlsUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -172,9 +215,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CE2E15B01DB5726700C3AA8F /* Build configuration list for PBXNativeTarget "NanoGirls" */;
 			buildPhases = (
+				A853F01E1D71213F141E98E3 /* [CP] Check Pods Manifest.lock */,
 				CE2E15811DB5726600C3AA8F /* Sources */,
 				CE2E15821DB5726600C3AA8F /* Frameworks */,
 				CE2E15831DB5726600C3AA8F /* Resources */,
+				603B518CE50EF997D574BCF3 /* [CP] Embed Pods Frameworks */,
+				F96BAFAEBAF66F130E13D6A9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -189,9 +235,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CE2E15B31DB5726700C3AA8F /* Build configuration list for PBXNativeTarget "NanoGirlsTests" */;
 			buildPhases = (
+				D7FDAA18E3FD5DF86F2A9AD5 /* [CP] Check Pods Manifest.lock */,
 				CE2E15981DB5726700C3AA8F /* Sources */,
 				CE2E15991DB5726700C3AA8F /* Frameworks */,
 				CE2E159A1DB5726700C3AA8F /* Resources */,
+				A77BF4E2338893C0AD7FB442 /* [CP] Embed Pods Frameworks */,
+				35D0A0343FFC2FF93F59D9D1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -207,9 +256,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CE2E15B61DB5726700C3AA8F /* Build configuration list for PBXNativeTarget "NanoGirlsUITests" */;
 			buildPhases = (
+				E56FA2530893343A48F7C37D /* [CP] Check Pods Manifest.lock */,
 				CE2E15A31DB5726700C3AA8F /* Sources */,
 				CE2E15A41DB5726700C3AA8F /* Frameworks */,
 				CE2E15A51DB5726700C3AA8F /* Resources */,
+				717F3B6D28FB4BF13A9D90EC /* [CP] Embed Pods Frameworks */,
+				9B4881F4B3C5F60952AF8CAB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -273,6 +325,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE2E15961DB5726700C3AA8F /* LaunchScreen.storyboard in Resources */,
+				C3183E1E1DD2B0B3003B0644 /* Unknown in Resources */,
 				CE2E15931DB5726700C3AA8F /* Assets.xcassets in Resources */,
 				CE967D271DC245C200E00D4C /* thecat.jpg in Resources */,
 				CE2E158E1DB5726600C3AA8F /* Main.storyboard in Resources */,
@@ -294,6 +347,144 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		35D0A0343FFC2FF93F59D9D1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NanoGirlsTests/Pods-NanoGirlsTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		603B518CE50EF997D574BCF3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NanoGirls/Pods-NanoGirls-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		717F3B6D28FB4BF13A9D90EC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NanoGirlsUITests/Pods-NanoGirlsUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9B4881F4B3C5F60952AF8CAB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NanoGirlsUITests/Pods-NanoGirlsUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A77BF4E2338893C0AD7FB442 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NanoGirlsTests/Pods-NanoGirlsTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A853F01E1D71213F141E98E3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D7FDAA18E3FD5DF86F2A9AD5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E56FA2530893343A48F7C37D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F96BAFAEBAF66F130E13D6A9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NanoGirls/Pods-NanoGirls-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CE2E15811DB5726600C3AA8F /* Sources */ = {
@@ -455,6 +646,7 @@
 		};
 		CE2E15B11DB5726700C3AA8F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FB9E9FA4E3A931FDF4D84313 /* Pods-NanoGirls.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = NanoGirls/Info.plist;
@@ -467,6 +659,7 @@
 		};
 		CE2E15B21DB5726700C3AA8F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C03543DCD4C4BF6E5AD361B0 /* Pods-NanoGirls.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = NanoGirls/Info.plist;
@@ -479,6 +672,7 @@
 		};
 		CE2E15B41DB5726700C3AA8F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F75C7E6B4FCCB386F607957 /* Pods-NanoGirlsTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = NanoGirlsTests/Info.plist;
@@ -492,6 +686,7 @@
 		};
 		CE2E15B51DB5726700C3AA8F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 10ED48EC7D1B147DF17C3F42 /* Pods-NanoGirlsTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = NanoGirlsTests/Info.plist;
@@ -505,6 +700,7 @@
 		};
 		CE2E15B71DB5726700C3AA8F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5FA3351D94E4BE04E7E4987A /* Pods-NanoGirlsUITests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = NanoGirlsUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -517,6 +713,7 @@
 		};
 		CE2E15B81DB5726700C3AA8F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B88E43DAA43710B7FD0CD618 /* Pods-NanoGirlsUITests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = NanoGirlsUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
