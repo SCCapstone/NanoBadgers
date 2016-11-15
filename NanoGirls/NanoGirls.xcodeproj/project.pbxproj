@@ -14,6 +14,7 @@
 		C3183E1E1DD2B0B3003B0644 /* Unknown in Resources */ = {isa = PBXBuildFile; fileRef = C3183E1D1DD2B0B3003B0644 /* Unknown */; };
 		C38ADC0A1DB6FD5B005661E2 /* HelpPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38ADC091DB6FD5B005661E2 /* HelpPageViewController.swift */; };
 		C38ADC0C1DB71963005661E2 /* LoginPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38ADC0B1DB71963005661E2 /* LoginPageViewController.swift */; };
+		C3CF0DC41DDB718300F8D4DA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C3CF0DC31DDB718300F8D4DA /* GoogleService-Info.plist */; };
 		CE2E15891DB5726600C3AA8F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2E15881DB5726600C3AA8F /* AppDelegate.swift */; };
 		CE2E158B1DB5726600C3AA8F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2E158A1DB5726600C3AA8F /* ViewController.swift */; };
 		CE2E158E1DB5726600C3AA8F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE2E158C1DB5726600C3AA8F /* Main.storyboard */; };
@@ -57,6 +58,7 @@
 		C3183E1D1DD2B0B3003B0644 /* Unknown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Unknown; sourceTree = "<group>"; };
 		C38ADC091DB6FD5B005661E2 /* HelpPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = HelpPageViewController.swift; sourceTree = "<group>"; usesTabs = 0; };
 		C38ADC0B1DB71963005661E2 /* LoginPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginPageViewController.swift; sourceTree = "<group>"; };
+		C3CF0DC31DDB718300F8D4DA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		CE2E15851DB5726600C3AA8F /* NanoGirls.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NanoGirls.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE2E15881DB5726600C3AA8F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE2E158A1DB5726600C3AA8F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -155,6 +157,7 @@
 				CE2E15941DB5726700C3AA8F /* LaunchScreen.storyboard */,
 				C3183E1D1DD2B0B3003B0644 /* Unknown */,
 				CE2E15971DB5726700C3AA8F /* Info.plist */,
+				C3CF0DC31DDB718300F8D4DA /* GoogleService-Info.plist */,
 				CE2E158F1DB5726700C3AA8F /* NanoGirls.xcdatamodeld */,
 			);
 			path = NanoGirls;
@@ -329,6 +332,7 @@
 				CE2E15931DB5726700C3AA8F /* Assets.xcassets in Resources */,
 				CE967D271DC245C200E00D4C /* thecat.jpg in Resources */,
 				CE2E158E1DB5726600C3AA8F /* Main.storyboard in Resources */,
+				C3CF0DC41DDB718300F8D4DA /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
