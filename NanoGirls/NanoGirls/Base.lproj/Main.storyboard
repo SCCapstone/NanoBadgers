@@ -224,7 +224,7 @@
             </objects>
             <point key="canvasLocation" x="4899.21875" y="338.0859375"/>
         </scene>
-        <!--Help Page View Controller-->
+        <!--Help Page-->
         <scene sceneID="j4u-9P-HLP">
             <objects>
                 <viewController id="1e1-7K-gLK" customClass="HelpPageViewController" customModule="NanoGirls" sceneMemberID="viewController">
@@ -232,25 +232,50 @@
                         <viewControllerLayoutGuide type="top" id="rcT-m1-tfq"/>
                         <viewControllerLayoutGuide type="bottom" id="Lxh-8f-9KH"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="m7y-Ey-LTg">
+                    <view key="view" contentMode="center" id="m7y-Ey-LTg">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="h0N-jy-WEt">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A6m-PV-1hr">
+                                <rect key="frame" x="48" y="65" width="671" height="914"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <mutableString key="text">The purpose The Nano-Adventures of Silver &amp; Gold is to teach students between ages 7 and 12 about nanoscience. This app is fun and allows children to learn about nanoscience while engaging in a game which allows them to become involved in real world environmental problems such as oil spills, earthquakes, bacterial and viral infections.
+
+The games starts off with a background story of Nano-Gold and Nano-Silver. After the origin story the student will move on to the first level. In each level there is a short lesson at the beginning taught by either Nano-Gold or Nano-Silver. In the lesson the student will learn about a problem that one of the superheroes is having. After the lesson the student will play a mini game to collect or gain enough nanoparticles to help out the superheroes. Once the student has earned enough nanoparticles they will move on to the review question. If the student answers the review question correctly they will move on to the next level. If they answer incorrectly they will go back to the beginning of that level and restart. 
+
+Each teacher will have a login account. Under the teachers login account there will be student accounts with usernames. The student will use the teachers login account information to gain access to their account. Each students account will save their place in the game for next time. The teacher will be able to see how much of the game the student has completed. 
+
+How to create a new login account.
+
+How to create a new student ID.
+
+How to start a new game.</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Zvc-Pv-4uR">
                                 <rect key="frame" x="0.0" y="0.0" width="768" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
-                                    <navigationItem title="Help Page" id="lBu-Ow-q0C"/>
+                                    <navigationItem title="Help Page" id="aWg-sD-toy">
+                                        <barButtonItem key="leftBarButtonItem" title="Back" id="Joz-9m-yN7"/>
+                                        <connections>
+                                            <outlet property="backBarButtonItem" destination="Joz-9m-yN7" id="3j1-gB-cCq"/>
+                                        </connections>
+                                    </navigationItem>
                                 </items>
                             </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="JjR-KE-GPA"/>
+                    <navigationItem key="navigationItem" title="Help Page" id="JjR-KE-GPA">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="Pcp-WL-ElZ"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xT5-FQ-lHr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4900" y="1116"/>
+            <point key="canvasLocation" x="4900" y="1115.625"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="KxF-pT-fWh">
