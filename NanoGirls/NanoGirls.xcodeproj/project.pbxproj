@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		401DC5EEE9E052F3CB8497B8 /* Pods_NanoGirlsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44775B99097C735DD5D89768 /* Pods_NanoGirlsTests.framework */; };
 		6282FC301DC114E000CC018D /* MiniGame1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6282FC2F1DC114E000CC018D /* MiniGame1ViewController.swift */; };
+		62C6514E1DDC208800B63E8C /* paddle.png in Resources */ = {isa = PBXBuildFile; fileRef = 62C6514D1DDC208800B63E8C /* paddle.png */; };
+		62C651501DDC208C00B63E8C /* url.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 62C6514F1DDC208C00B63E8C /* url.jpg */; };
 		8343B464B6A50883EB71829C /* Pods_NanoGirls.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3FA55CE2451CA7E7AF5BD98 /* Pods_NanoGirls.framework */; };
 		B6C3722B001A9067241AAC9A /* Pods_NanoGirlsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2EE4EE76E2F84DA32E5B991 /* Pods_NanoGirlsUITests.framework */; };
 		C3183E1E1DD2B0B3003B0644 /* Unknown in Resources */ = {isa = PBXBuildFile; fileRef = C3183E1D1DD2B0B3003B0644 /* Unknown */; };
@@ -52,6 +54,8 @@
 		4F75C7E6B4FCCB386F607957 /* Pods-NanoGirlsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NanoGirlsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NanoGirlsTests/Pods-NanoGirlsTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5FA3351D94E4BE04E7E4987A /* Pods-NanoGirlsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NanoGirlsUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NanoGirlsUITests/Pods-NanoGirlsUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		6282FC2F1DC114E000CC018D /* MiniGame1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MiniGame1ViewController.swift; sourceTree = "<group>"; };
+		62C6514D1DDC208800B63E8C /* paddle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = paddle.png; sourceTree = "<group>"; };
+		62C6514F1DDC208C00B63E8C /* url.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = url.jpg; sourceTree = "<group>"; };
 		A3FA55CE2451CA7E7AF5BD98 /* Pods_NanoGirls.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NanoGirls.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B88E43DAA43710B7FD0CD618 /* Pods-NanoGirlsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NanoGirlsUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NanoGirlsUITests/Pods-NanoGirlsUITests.release.xcconfig"; sourceTree = "<group>"; };
 		C03543DCD4C4BF6E5AD361B0 /* Pods-NanoGirls.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NanoGirls.release.xcconfig"; path = "Pods/Target Support Files/Pods-NanoGirls/Pods-NanoGirls.release.xcconfig"; sourceTree = "<group>"; };
@@ -196,6 +200,8 @@
 		CE967D251DC245AF00E00D4C /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				62C6514D1DDC208800B63E8C /* paddle.png */,
+				62C6514F1DDC208C00B63E8C /* url.jpg */,
 				CE967D261DC245C200E00D4C /* thecat.jpg */,
 			);
 			name = Images;
@@ -328,10 +334,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE2E15961DB5726700C3AA8F /* LaunchScreen.storyboard in Resources */,
+				62C651501DDC208C00B63E8C /* url.jpg in Resources */,
 				C3183E1E1DD2B0B3003B0644 /* Unknown in Resources */,
 				CE2E15931DB5726700C3AA8F /* Assets.xcassets in Resources */,
 				CE967D271DC245C200E00D4C /* thecat.jpg in Resources */,
 				CE2E158E1DB5726600C3AA8F /* Main.storyboard in Resources */,
+				62C6514E1DDC208800B63E8C /* paddle.png in Resources */,
 				C3CF0DC41DDB718300F8D4DA /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
