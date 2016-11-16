@@ -20,12 +20,33 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VFY-OI-BYo">
+                                <rect key="frame" x="0.0" y="-9" width="768" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="The Adventure of the Nano Girls" id="eqZ-FZ-HLQ"/>
+                                </items>
+                            </navigationBar>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="STy-zt-gyf">
+                                <rect key="frame" x="91" y="149" width="287" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <state key="normal" title="Origin Story"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gcb-3T-i1N">
+                                <rect key="frame" x="118" y="266" width="287" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <state key="normal" title="Level 1: Oil Spill"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1654" y="1185"/>
+            <point key="canvasLocation" x="6247.65625" y="372.65625"/>
         </scene>
         <!--Home Page View Controller-->
         <scene sceneID="WOB-LT-zYD">
@@ -160,47 +181,34 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4sB-Qu-xFT">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4sB-Qu-xFT">
                                 <rect key="frame" x="103" y="452" width="562" height="60"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="efw-ls-5d9"/>
-                                </constraints>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yl0-xl-WiU">
-                                <rect key="frame" x="270" y="431" width="228" height="48"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yl0-xl-WiU">
+                                <rect key="frame" x="270" y="570" width="228" height="94"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.0" green="0.72654204840000003" blue="0.7047945363" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="228" id="Cdg-te-Pi0"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="Login">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="3qf-73-siX"/>
+                                </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fh4-cy-ep3">
-                                <rect key="frame" x="103" y="457" width="562" height="60"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="SWt-ry-5AK"/>
-                                    <constraint firstAttribute="width" constant="562" id="cQP-dw-N9h"/>
-                                </constraints>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fh4-cy-ep3">
+                                <rect key="frame" x="103" y="327" width="562" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="next"/>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="4sB-Qu-xFT" firstAttribute="centerY" secondItem="Kao-Y5-KpI" secondAttribute="centerY" constant="-30" id="2rL-jt-7Ag"/>
-                            <constraint firstItem="ZNb-qA-TdJ" firstAttribute="top" secondItem="Yl0-xl-WiU" secondAttribute="bottom" constant="545" id="Dq0-bt-rhL"/>
-                            <constraint firstItem="4sB-Qu-xFT" firstAttribute="centerX" secondItem="Yl0-xl-WiU" secondAttribute="centerX" id="Dt3-51-I1p"/>
-                            <constraint firstItem="fh4-cy-ep3" firstAttribute="centerX" secondItem="Kao-Y5-KpI" secondAttribute="centerX" id="Orl-9Q-mIK"/>
-                            <constraint firstItem="4sB-Qu-xFT" firstAttribute="leading" secondItem="fh4-cy-ep3" secondAttribute="leading" id="a0U-Ha-XBv"/>
-                            <constraint firstItem="fh4-cy-ep3" firstAttribute="top" secondItem="uzb-rq-Aoh" secondAttribute="bottom" constant="437" id="deb-ux-aCc"/>
-                            <constraint firstItem="4sB-Qu-xFT" firstAttribute="trailing" secondItem="fh4-cy-ep3" secondAttribute="trailing" id="uLh-Zh-NKe"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Login" id="ecB-fT-uaX">
                         <barButtonItem key="backBarButtonItem" title="Back" id="wOt-Gh-KKe"/>
@@ -214,9 +222,9 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nto-yc-McI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4899.609375" y="338.65300146412881"/>
+            <point key="canvasLocation" x="4899.21875" y="338.0859375"/>
         </scene>
-        <!--Help Page View Controller-->
+        <!--Help Page-->
         <scene sceneID="j4u-9P-HLP">
             <objects>
                 <viewController id="1e1-7K-gLK" customClass="HelpPageViewController" customModule="NanoGirls" sceneMemberID="viewController">
@@ -224,25 +232,50 @@
                         <viewControllerLayoutGuide type="top" id="rcT-m1-tfq"/>
                         <viewControllerLayoutGuide type="bottom" id="Lxh-8f-9KH"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="m7y-Ey-LTg">
+                    <view key="view" contentMode="center" id="m7y-Ey-LTg">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Mfk-8m-oYN">
-                                <rect key="frame" x="0.0" y="64" width="768" height="44"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A6m-PV-1hr">
+                                <rect key="frame" x="48" y="65" width="671" height="914"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <mutableString key="text">The purpose The Nano-Adventures of Silver &amp; Gold is to teach students between ages 7 and 12 about nanoscience. This app is fun and allows children to learn about nanoscience while engaging in a game which allows them to become involved in real world environmental problems such as oil spills, earthquakes, bacterial and viral infections.
+
+The games starts off with a background story of Nano-Gold and Nano-Silver. After the origin story the student will move on to the first level. In each level there is a short lesson at the beginning taught by either Nano-Gold or Nano-Silver. In the lesson the student will learn about a problem that one of the superheroes is having. After the lesson the student will play a mini game to collect or gain enough nanoparticles to help out the superheroes. Once the student has earned enough nanoparticles they will move on to the review question. If the student answers the review question correctly they will move on to the next level. If they answer incorrectly they will go back to the beginning of that level and restart. 
+
+Each teacher will have a login account. Under the teachers login account there will be student accounts with usernames. The student will use the teachers login account information to gain access to their account. Each students account will save their place in the game for next time. The teacher will be able to see how much of the game the student has completed. 
+
+How to create a new login account.
+
+How to create a new student ID.
+
+How to start a new game.</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Zvc-Pv-4uR">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
-                                    <navigationItem title="Help Screen" id="Dfu-co-Cnn"/>
+                                    <navigationItem title="Help Page" id="aWg-sD-toy">
+                                        <barButtonItem key="leftBarButtonItem" title="Back" id="Joz-9m-yN7"/>
+                                        <connections>
+                                            <outlet property="backBarButtonItem" destination="Joz-9m-yN7" id="3j1-gB-cCq"/>
+                                        </connections>
+                                    </navigationItem>
                                 </items>
                             </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="JjR-KE-GPA"/>
+                    <navigationItem key="navigationItem" title="Help Page" id="JjR-KE-GPA">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="Pcp-WL-ElZ"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xT5-FQ-lHr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4900" y="1116"/>
+            <point key="canvasLocation" x="4900" y="1115.625"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="KxF-pT-fWh">
