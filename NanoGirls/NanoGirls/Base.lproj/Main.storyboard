@@ -130,9 +130,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="TempBackgroundNew.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="jkf-GA-4qs">
-                                <rect key="frame" x="-341" y="-11" width="1024" height="681"/>
-                                <autoresizingMask key="autoresizingMask"/>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" image="TempBackgroundNew.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="jkf-GA-4qs">
+                                <rect key="frame" x="-341" y="-11" width="1046" height="681"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Points" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2wJ-La-Aj3">
                                 <rect key="frame" x="7" y="64" width="48" height="39"/>
