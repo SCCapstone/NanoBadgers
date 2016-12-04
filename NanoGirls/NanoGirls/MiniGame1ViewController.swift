@@ -18,7 +18,22 @@ class MiniGame1ViewController: UIViewController {
     var xSpeed : CGFloat!
     var ySpeed : CGFloat!
     
+
+
+    
     var clock  : Timer!
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        for touch in touches {
+            paddle.center = touch.location(in: self.view)
+        }
+    }
+    override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
+        for touch in touches {
+//            paddle.center = touch.location(in: self.view)
+            paddle.center.x = touch.location(in: self.view).x
+        }
+    }
     
     func CPU(){
         ball.center = CGPoint(x:ball.center.x+xSpeed, y:ball.center.y + ySpeed)
@@ -41,6 +56,10 @@ class MiniGame1ViewController: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
+        let screenSize = UIScreen.main.bounds
+        let WIDTH = screenSize.width
+        let HEIGHT = screenSize.height
+
         clock = Timer.scheduledTimer(timeInterval: 0.05, target: self, selector: #selector(self.CPU), userInfo: nil, repeats: true)
         xSpeed = 10
         ySpeed = 10
