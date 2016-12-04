@@ -130,6 +130,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="TempBackgroundNew.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="jkf-GA-4qs">
+                                <rect key="frame" x="-341" y="-11" width="1024" height="681"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Points" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2wJ-La-Aj3">
                                 <rect key="frame" x="7" y="64" width="48" height="39"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -146,10 +150,10 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZI3-69-zS5">
                                 <rect key="frame" x="241" y="72" width="118" height="118"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="TempBackButton"/>
                             </button>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="url.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="xDM-d8-dMM">
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="oie_transparent.png" translatesAutoresizingMaskIntoConstraints="NO" id="xDM-d8-dMM">
                                 <rect key="frame" x="157" y="368" width="60" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -551,8 +555,9 @@
     <resources>
         <image name="IMG_8667-1" width="886" height="242"/>
         <image name="Play-50" width="50" height="50"/>
+        <image name="TempBackgroundNew.jpg" width="1024" height="681"/>
+        <image name="oie_transparent.png" width="60" height="60"/>
         <image name="paddle.png" width="100" height="30"/>
-        <image name="url.jpg" width="60" height="60"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="Duf-La-ww0"/>
