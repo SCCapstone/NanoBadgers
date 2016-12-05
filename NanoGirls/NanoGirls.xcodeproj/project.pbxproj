@@ -306,16 +306,22 @@
 				TargetAttributes = {
 					CE2E15841DB5726600C3AA8F = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = M28H52F7BW;
 						LastSwiftMigration = 0800;
+						ProvisioningStyle = Automatic;
 					};
 					CE2E159B1DB5726700C3AA8F = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = M28H52F7BW;
 						LastSwiftMigration = 0800;
+						ProvisioningStyle = Automatic;
 						TestTargetID = CE2E15841DB5726600C3AA8F;
 					};
 					CE2E15A61DB5726700C3AA8F = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = M28H52F7BW;
 						LastSwiftMigration = 0800;
+						ProvisioningStyle = Automatic;
 						TestTargetID = CE2E15841DB5726600C3AA8F;
 					};
 				};
@@ -602,6 +608,7 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
@@ -650,6 +657,7 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -677,6 +685,8 @@
 			baseConfigurationReference = FB9E9FA4E3A931FDF4D84313 /* Pods-NanoGirls.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = M28H52F7BW;
 				INFOPLIST_FILE = NanoGirls/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = USC.NanoGirls;
@@ -690,6 +700,8 @@
 			baseConfigurationReference = C03543DCD4C4BF6E5AD361B0 /* Pods-NanoGirls.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = M28H52F7BW;
 				INFOPLIST_FILE = NanoGirls/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = USC.NanoGirls;
@@ -703,6 +715,8 @@
 			baseConfigurationReference = 4F75C7E6B4FCCB386F607957 /* Pods-NanoGirlsTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = M28H52F7BW;
 				INFOPLIST_FILE = NanoGirlsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = USC.NanoGirlsTests;
@@ -717,6 +731,8 @@
 			baseConfigurationReference = 10ED48EC7D1B147DF17C3F42 /* Pods-NanoGirlsTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = M28H52F7BW;
 				INFOPLIST_FILE = NanoGirlsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = USC.NanoGirlsTests;
@@ -730,6 +746,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5FA3351D94E4BE04E7E4987A /* Pods-NanoGirlsUITests.debug.xcconfig */;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = M28H52F7BW;
 				INFOPLIST_FILE = NanoGirlsUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = USC.NanoGirlsUITests;
@@ -743,6 +761,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B88E43DAA43710B7FD0CD618 /* Pods-NanoGirlsUITests.release.xcconfig */;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = M28H52F7BW;
 				INFOPLIST_FILE = NanoGirlsUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = USC.NanoGirlsUITests;
