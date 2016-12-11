@@ -14,12 +14,14 @@ class MiniGame1ViewController: UIViewController {
     
     @IBOutlet var paddle : UIImageView!
     @IBOutlet var ball : UIImageView!
+    @IBOutlet var ScoreIndicator : UILabel?
+
     
     var xSpeed : CGFloat!
     var ySpeed : CGFloat!
     var HEIGHT : CGFloat!
     var WIDTH : CGFloat!
-    
+    var Score : Int = 0
 
 
     
@@ -27,19 +29,21 @@ class MiniGame1ViewController: UIViewController {
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         for touch in touches {
-            paddle.center = touch.location(in: self.view)
             paddle.center.x = touch.location(in: self.view).x
-            paddle.center.y = touch.location(in: self.view).y
         }
     }
     override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
         for touch in touches {
-//            paddle.center = touch.location(in: self.view)
             paddle.center.x = touch.location(in: self.view).x
-            paddle.center.y = touch.location(in: self.view).y
         }
     }
+    func updateScoreIndicatior(){
+        ScoreIndicator?.text = "\(Score)"
+    }
     
+    func addScore(){
+        Score = Score + 1
+    }
     func CPU(){
         paddle.center.y = HEIGHT - 50
         ball.center = CGPoint(x:ball.center.x+xSpeed, y:ball.center.y + ySpeed)
@@ -69,8 +73,8 @@ class MiniGame1ViewController: UIViewController {
         WIDTH = screenSize.width
         HEIGHT = screenSize.height
 
+        updateScoreIndicatior()
         clock = Timer.scheduledTimer(timeInterval: 0.05, target: self, selector: #selector(self.CPU), userInfo: nil, repeats: true)
-        
         xSpeed = 10
         ySpeed = 10
         // Do any additional setup after loading the view, typically from a nib.
