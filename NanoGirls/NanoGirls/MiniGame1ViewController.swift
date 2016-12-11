@@ -65,7 +65,9 @@ class MiniGame1ViewController: UIViewController {
         }
         if ball.frame.intersects(paddle.frame)        {
             ySpeed = -ySpeed
+            Score = Score + 1
         }
+        updateScoreIndicatior()
     }
     override func viewDidLoad() {
         super.viewDidLoad()
