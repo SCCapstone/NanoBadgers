@@ -66,8 +66,6 @@ class MiniGame1ViewController: UIViewController {
         if (ball.frame).intersects(paddle.frame)        {
             ySpeed = -ySpeed
             Score = Score + 1
-            ball.center.x = WIDTH / 2
-            ball.center.y = HEIGHT / 2
         }
         updateScoreIndicatior()
     }
