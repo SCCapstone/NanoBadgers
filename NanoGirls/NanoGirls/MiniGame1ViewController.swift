@@ -15,7 +15,6 @@ class MiniGame1ViewController: UIViewController {
     @IBOutlet var paddle : UIImageView!
     @IBOutlet var ball : UIImageView!
     @IBOutlet var ScoreIndicator : UILabel?
-
     
     var xSpeed : CGFloat!
     var ySpeed : CGFloat!
@@ -30,6 +29,7 @@ class MiniGame1ViewController: UIViewController {
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         for touch in touches {
             paddle.center.x = touch.location(in: self.view).x
+            
         }
     }
     override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -55,31 +55,36 @@ class MiniGame1ViewController: UIViewController {
         {
             xSpeed = -xSpeed
         }
-        if(ball.center.y < 150)
+        if(ball.center.y < 200)
         {
             ySpeed = -ySpeed
         }
-        if(ball.center.y > HEIGHT)
+        if(ball.center.y > HEIGHT+100)
         {
             ySpeed = -ySpeed
         }
-        if ball.frame.intersects(paddle.frame)        {
+        if (ball.frame).intersects(paddle.frame)        {
             ySpeed = -ySpeed
             Score = Score + 1
+            ball.center.x = WIDTH / 2
+            ball.center.y = HEIGHT / 2
         }
         updateScoreIndicatior()
     }
-    override func viewDidLoad() {
+    
+    
+    
+        override func viewDidLoad() {
         super.viewDidLoad()
         let screenSize = UIScreen.main.bounds
         WIDTH = screenSize.width
         HEIGHT = screenSize.height
 
+        
         updateScoreIndicatior()
         clock = Timer.scheduledTimer(timeInterval: 0.05, target: self, selector: #selector(self.CPU), userInfo: nil, repeats: true)
         xSpeed = 10
         ySpeed = 10
-        // Do any additional setup after loading the view, typically from a nib.
     }
     
     override func didReceiveMemoryWarning() {
