@@ -3,6 +3,7 @@
 //  NanoGirlsTests
 //
 //  Created by Elizabeth Pruett on 10/17/16.
+//  Last Edited by Spencer Nelson on 2/1/2017.
 //  Copyright © 2016 NanoBadgers. All rights reserved.
 //
 
@@ -10,6 +11,11 @@ import XCTest
 @testable import NanoGirls
 
 class NanoGirlsTests: XCTestCase {
+    
+    func testViewDidLoad(){
+        let v = HomePageViewController()
+        XCTAssertNotNil(v.view, "View Did Not Load")
+    }
     
     override func setUp() {
         super.setUp()
