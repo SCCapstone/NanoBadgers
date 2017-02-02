@@ -66,6 +66,14 @@
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rrb-4q-Vth">
+                                        <rect key="frame" x="133" y="307" width="46" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button"/>
+                                        <connections>
+                                            <segue destination="94m-Ox-ucl" kind="push" id="L8m-gD-X4S"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="Wst-6E-3uI" secondAttribute="trailing" constant="8" id="3Cp-IB-Dcf"/>
@@ -196,7 +204,7 @@
                                 <rect key="frame" x="-336" y="-7" width="1695" height="1380"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="paddle.png" translatesAutoresizingMaskIntoConstraints="NO" id="eG0-oz-uTk">
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="paddle.png" translatesAutoresizingMaskIntoConstraints="NO" id="eG0-oz-uTk">
                                 <rect key="frame" x="787" y="1063" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
                             </imageView>
@@ -216,15 +224,27 @@
                                 <rect key="frame" x="482" y="653" width="60" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BfH-nJ-j9e">
+                                <rect key="frame" x="787" y="1063" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="StopMoving2:" destination="94m-Ox-ucl" eventType="touchUpOutside" id="iCg-KU-4fJ"/>
+                                    <action selector="StopMoving:" destination="94m-Ox-ucl" eventType="touchUpInside" id="sZs-Eq-oVm"/>
+                                    <action selector="addY:" destination="94m-Ox-ucl" eventType="touchDown" id="haJ-CX-nLq"/>
+                                    <action selector="addYStop:" destination="94m-Ox-ucl" eventType="touchCancel" id="XRj-cX-WLV"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="d4d-33-J59"/>
                     <connections>
                         <outlet property="DOWN" destination="hRV-AM-Baq" id="PuB-bI-7sr"/>
                         <outlet property="LEFT" destination="bQU-la-sjL" id="hbZ-vJ-Oi1"/>
                         <outlet property="RIGHT" destination="qxX-nZ-DKV" id="b2N-gE-L8t"/>
                         <outlet property="UP" destination="eG0-oz-uTk" id="Yz2-eC-PFy"/>
-                        <outlet property="player" destination="pFc-Pa-QRN" id="dBd-Tf-cv3"/>
+                        <outlet property="player" destination="pFc-Pa-QRN" id="KSf-jt-9QD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ACN-yx-Kie" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -469,7 +489,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="eFf-DV-hjx" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="zF3-Se-08z">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="zF3-Se-08z">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -606,7 +626,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Yvq-Vr-T7D" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="3e6-Xn-6zW">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="3e6-Xn-6zW">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
