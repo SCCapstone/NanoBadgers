@@ -32,22 +32,48 @@ class MiniGame2ViewController: UIViewController{
     
     var timer : Timer!
     
+    
+    
+    
+    @IBAction func subtractYStop(_ sender: Any) {
+        timer.invalidate()
+    }
+    @IBAction func subtractY(_ sender: Any) {
+        timer = Timer.scheduledTimer(timeInterval: 0.05, target: self, selector: #selector(MiniGame2ViewController.subtractYHelperDown), userInfo: nil, repeats: true)
+    }
+    @IBAction func stopMovingUp(_ sender: Any) {
+        timer.invalidate()
+    }
+    @IBAction func stopMovingUp2(_ sender: Any) {
+        timer.invalidate()
+    }
+    func subtractYHelperDown()
+    {
+        player.center = CGPoint(x:player.center.x, y:player.center.y + 7)
+    }
+    
+    
     //LEFT BUTTON
     
     @IBAction func subtractXStop(_ sender: Any) {
+        timer.invalidate()
     }
     @IBAction func subtractX(_ sender: Any) {
+        timer = Timer.scheduledTimer(timeInterval: 0.05, target: self, selector: #selector(MiniGame2ViewController.subtractXHelperDown), userInfo: nil, repeats: true)
     }
     
     @IBAction func stopMovingLeft(_ sender: Any) {
+        timer.invalidate()
     }
     @IBAction func stopMovingLeft2(_ sender: Any) {
+        timer.invalidate()
     }
     func subtractXHelperDown()
     {
         player.center = CGPoint(x:player.center.x - 7, y:player.center.y)
         
     }
+    
     //right button
     @IBAction func addXStop(_ sender: Any) {
         timer.invalidate()
