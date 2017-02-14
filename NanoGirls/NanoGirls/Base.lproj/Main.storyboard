@@ -276,7 +276,6 @@
                                 </state>
                                 <connections>
                                     <action selector="loginButtonAction" destination="TY2-50-Qfn" eventType="touchUpInside" id="agk-8q-l5t"/>
-                                    <segue destination="BMh-At-ufM" kind="show" id="gGX-nD-kZz"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -537,7 +536,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j79-Nj-TMr">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j79-Nj-TMr">
                                 <rect key="frame" x="16" y="243" width="343" height="47"/>
                                 <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="45"/>
                                 <state key="normal" title="Fe">
