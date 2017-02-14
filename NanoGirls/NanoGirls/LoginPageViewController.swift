@@ -7,10 +7,12 @@
 //
 
 import UIKit
+import Firebase
 
 class LoginPageViewController: UIViewController {
     
-    @IBOutlet weak var username: UITextField!
+
+    @IBOutlet weak var email: UITextField!
     @IBOutlet weak var password: UITextField!
     @IBOutlet weak var loginButton: UIButton!
     
@@ -40,6 +42,23 @@ class LoginPageViewController: UIViewController {
         view.layer.insertSublayer(backgroundLayer, at: 0)
     }
     
+    @IBAction func loginButtonAction() {
+        if let email = email.text {
+            
+            if let password = password.text {
+           
+                FIRAuth.auth()?.signIn(withEmail: email, password: password) { (user, error) in
+                    if let user = user {
+                        let vc = self.storyboard?.instantiateViewController(withIdentifier: "mainNavigationController") as? UINavigationController
+                        self.present(vc!, animated: true)
+                    }
+                    if let error = error {
+                        print(error.localizedDescription)
+                    }
+                }
+            }
+        }
+    }
     
     /*
      // MARK: - Navigation
