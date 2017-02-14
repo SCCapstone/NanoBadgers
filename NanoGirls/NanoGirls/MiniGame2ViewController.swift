@@ -31,10 +31,10 @@ class MiniGame2ViewController: UIViewController{
     var clock : Timer!
     
     var timer : Timer!
+    var SpawnTimer : Timer!
     
     
-    
-    
+    //DOWN BUTTON
     @IBAction func subtractYStop(_ sender: Any) {
         timer.invalidate()
     }
@@ -122,6 +122,12 @@ class MiniGame2ViewController: UIViewController{
             player.center = CGPoint(x:player.center.x + xSpeed, y:player.center.y + ySpeed)
             
         }
+    
+    func spawnEnemy(){
+        
+    }
+    
+    
         override func viewDidLoad()
         {
             super.viewDidLoad()
@@ -132,6 +138,9 @@ class MiniGame2ViewController: UIViewController{
             xSpeed = 0
             ySpeed = 0
             SPEED = 10
+            
+            SpawnTimer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector (self.spawnEnemy), userInfo: nil, repeats: true)
+            
         }
     
 }
