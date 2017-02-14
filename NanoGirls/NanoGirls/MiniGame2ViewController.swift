@@ -24,6 +24,7 @@ class MiniGame2ViewController: UIViewController{
     var xSpeed : CGFloat!
     var ySpeed : CGFloat!
     
+    var SPEED : CGFloat!
     var HEIGHT : CGFloat!
     var WIDTH : CGFloat!
     
@@ -31,19 +32,54 @@ class MiniGame2ViewController: UIViewController{
     
     var timer : Timer!
     
+    //LEFT BUTTON
+    
+    @IBAction func subtractXStop(_ sender: Any) {
+    }
+    @IBAction func subtractX(_ sender: Any) {
+    }
+    
+    @IBAction func stopMovingLeft(_ sender: Any) {
+    }
+    @IBAction func stopMovingLeft2(_ sender: Any) {
+    }
+    func subtractXHelperDown()
+    {
+        player.center = CGPoint(x:player.center.x - 7, y:player.center.y)
+        
+    }
+    //right button
+    @IBAction func addXStop(_ sender: Any) {
+        timer.invalidate()
+    }
+    func addXHelperDown()
+    {
+        player.center = CGPoint(x:player.center.x + 7, y:player.center.y)
+        
+    }
+    @IBAction func addX(_ sender: Any) {
+        timer = Timer.scheduledTimer(timeInterval: 0.05, target: self, selector: #selector(MiniGame2ViewController.addXHelperDown), userInfo: nil, repeats: true)
+    }
+    @IBAction func stopMovingRight(_ sender: Any) {
+        timer.invalidate()
+    }
+    @IBAction func stopMovingRight2(_ sender: Any) {
+        timer.invalidate()
+    }
+    //UP BUTTON
     @IBAction func addY(_ sender: Any) {
 
-        timer = Timer.scheduledTimer(timeInterval: 0.05, target: self, selector: #selector(MiniGame2ViewController.addYHelper), userInfo: nil, repeats: true)
+        timer = Timer.scheduledTimer(timeInterval: 0.05, target: self, selector: #selector(MiniGame2ViewController.addYHelperUp), userInfo: nil, repeats: true)
     }
-    func addYHelper()
+    func addYHelperUp()
     {
-        player.center = CGPoint(x:player.center.x, y:player.center.y + 1)
+        player.center = CGPoint(x:player.center.x, y:player.center.y - 7)
 
     }
-    @IBAction func StopMoving2(_ sender: Any) {
-    timer.invalidate()
+    @IBAction func StopMovingDown2(_ sender: Any) {
+        timer.invalidate()
     }
-    @IBAction func StopMoving(_sender: UIButton) {
+    @IBAction func StopMoving(_ sender: Any) {
         timer.invalidate()
     }
     
@@ -69,6 +105,7 @@ class MiniGame2ViewController: UIViewController{
             clock = Timer.scheduledTimer(timeInterval: 0.05, target: self, selector: #selector(self.CPU), userInfo: nil, repeats: true)
             xSpeed = 0
             ySpeed = 0
+            SPEED = 10
         }
     
 }

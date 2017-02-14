@@ -227,12 +227,31 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BfH-nJ-j9e">
                                 <rect key="frame" x="787" y="1063" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
                                 <connections>
-                                    <action selector="StopMoving2:" destination="94m-Ox-ucl" eventType="touchUpOutside" id="iCg-KU-4fJ"/>
-                                    <action selector="StopMoving:" destination="94m-Ox-ucl" eventType="touchUpInside" id="sZs-Eq-oVm"/>
+                                    <action selector="StopMoving:" destination="94m-Ox-ucl" eventType="touchUpInside" id="t0k-eL-liH"/>
+                                    <action selector="StopMovingDown2:" destination="94m-Ox-ucl" eventType="touchUpOutside" id="Fdd-J4-HKp"/>
                                     <action selector="addY:" destination="94m-Ox-ucl" eventType="touchDown" id="haJ-CX-nLq"/>
                                     <action selector="addYStop:" destination="94m-Ox-ucl" eventType="touchCancel" id="XRj-cX-WLV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YSF-Eg-b8h">
+                                <rect key="frame" x="845" y="1118" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="addX:" destination="94m-Ox-ucl" eventType="touchDown" id="plr-ZE-lef"/>
+                                    <action selector="addXStop:" destination="94m-Ox-ucl" eventType="touchCancel" id="Jk8-mw-Adl"/>
+                                    <action selector="stopMovingRight2:" destination="94m-Ox-ucl" eventType="touchUpOutside" id="NfZ-xJ-JgH"/>
+                                    <action selector="stopMovingRight:" destination="94m-Ox-ucl" eventType="touchUpInside" id="Q51-cS-oai"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pel-1A-1bY">
+                                <rect key="frame" x="731" y="1118" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="stopMovingLeft2:" destination="94m-Ox-ucl" eventType="touchUpOutside" id="moa-PO-R99"/>
+                                    <action selector="stopMovingLeft:" destination="94m-Ox-ucl" eventType="touchUpInside" id="GL7-J9-taw"/>
+                                    <action selector="subtractX:" destination="94m-Ox-ucl" eventType="touchDown" id="Kog-dG-V7N"/>
+                                    <action selector="subtractXStop:" destination="94m-Ox-ucl" eventType="touchCancel" id="wMq-Tq-dv6"/>
                                 </connections>
                             </button>
                         </subviews>
