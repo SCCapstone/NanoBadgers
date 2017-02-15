@@ -275,9 +275,6 @@
                                 <state key="normal" title="Login">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <connections>
-                                    <action selector="loginButtonAction" destination="TY2-50-Qfn" eventType="touchUpInside" id="agk-8q-l5t"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -663,6 +660,6 @@
         <image name="paddle.png" width="100" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Z84-K6-wO9"/>
+        <segue reference="Duf-La-ww0"/>
     </inferredMetricsTieBreakers>
 </document>
