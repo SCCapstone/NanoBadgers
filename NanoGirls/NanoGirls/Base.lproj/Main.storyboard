@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="eFf-DV-hjx">
     <device id="ipad9_7" orientation="portrait">
+
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -129,6 +131,7 @@
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                     </button>
+
                                     <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="749" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wrd-Cn-lQ9">
                                         <rect key="frame" x="8" y="501" width="752" height="65"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -138,6 +141,7 @@
                                         </state>
                                         <connections>
                                             <segue destination="OxG-MG-Ms8" kind="show" id="pMQ-h0-6lr"/>
+
                                         </connections>
                                     </button>
                                 </subviews>
@@ -221,25 +225,132 @@
                                 </connections>
                             </button>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="oie_transparent.png" translatesAutoresizingMaskIntoConstraints="NO" id="xDM-d8-dMM">
+
                                 <rect key="frame" x="353" y="585" width="60" height="60"/>
+
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="paddle.png" translatesAutoresizingMaskIntoConstraints="NO" id="kV3-UC-ubG">
                                 <rect key="frame" x="330" y="951" width="150" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Score Indicator" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KBE-Vz-8hS">
+                                <rect key="frame" x="86" y="73" width="139" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gmc-ih-qh4">
+                                <rect key="frame" x="396" y="365" width="233" height="160"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="Qwa-pO-PRX"/>
                     <connections>
+                        <outlet property="ScoreIndicator" destination="KBE-Vz-8hS" id="xcB-fl-O6b"/>
                         <outlet property="ball" destination="xDM-d8-dMM" id="xMs-0w-Sdj"/>
                         <outlet property="paddle" destination="kV3-UC-ubG" id="G2Z-dG-egB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LXu-Yu-DFs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5737" y="187"/>
+            <point key="canvasLocation" x="5736.9140625" y="186.67642752562224"/>
+        </scene>
+        <!--Mini Game2 View Controller-->
+        <scene sceneID="yoh-4t-HpB">
+            <objects>
+                <viewController id="94m-Ox-ucl" customClass="MiniGame2ViewController" customModule="NanoGirls" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Qa7-bD-cPr"/>
+                        <viewControllerLayoutGuide type="bottom" id="ltA-mT-Af0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ulc-3z-uYL">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" image="TempBackgroundNew.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="x6N-rG-2Y5">
+                                <rect key="frame" x="-336" y="-7" width="1695" height="1380"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="paddle.png" translatesAutoresizingMaskIntoConstraints="NO" id="eG0-oz-uTk">
+                                <rect key="frame" x="787" y="1063" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="paddle.png" translatesAutoresizingMaskIntoConstraints="NO" id="hRV-AM-Baq">
+                                <rect key="frame" x="787" y="1173" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="paddle.png" translatesAutoresizingMaskIntoConstraints="NO" id="bQU-la-sjL">
+                                <rect key="frame" x="731" y="1118" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="paddle.png" translatesAutoresizingMaskIntoConstraints="NO" id="qxX-nZ-DKV">
+                                <rect key="frame" x="845" y="1118" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="oie_transparent.png" translatesAutoresizingMaskIntoConstraints="NO" id="pFc-Pa-QRN">
+                                <rect key="frame" x="482" y="653" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BfH-nJ-j9e">
+                                <rect key="frame" x="787" y="1063" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="StopMoving:" destination="94m-Ox-ucl" eventType="touchUpInside" id="t0k-eL-liH"/>
+                                    <action selector="StopMovingDown2:" destination="94m-Ox-ucl" eventType="touchUpOutside" id="Fdd-J4-HKp"/>
+                                    <action selector="addY:" destination="94m-Ox-ucl" eventType="touchDown" id="haJ-CX-nLq"/>
+                                    <action selector="addYStop:" destination="94m-Ox-ucl" eventType="touchCancel" id="XRj-cX-WLV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YSF-Eg-b8h">
+                                <rect key="frame" x="845" y="1118" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="addX:" destination="94m-Ox-ucl" eventType="touchDown" id="plr-ZE-lef"/>
+                                    <action selector="addXStop:" destination="94m-Ox-ucl" eventType="touchCancel" id="Jk8-mw-Adl"/>
+                                    <action selector="stopMovingRight2:" destination="94m-Ox-ucl" eventType="touchUpOutside" id="NfZ-xJ-JgH"/>
+                                    <action selector="stopMovingRight:" destination="94m-Ox-ucl" eventType="touchUpInside" id="Q51-cS-oai"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pel-1A-1bY">
+                                <rect key="frame" x="731" y="1118" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="stopMovingLeft2:" destination="94m-Ox-ucl" eventType="touchUpOutside" id="moa-PO-R99"/>
+                                    <action selector="stopMovingLeft:" destination="94m-Ox-ucl" eventType="touchUpInside" id="GL7-J9-taw"/>
+                                    <action selector="subtractX:" destination="94m-Ox-ucl" eventType="touchDown" id="Kog-dG-V7N"/>
+                                    <action selector="subtractXStop:" destination="94m-Ox-ucl" eventType="touchCancel" id="wMq-Tq-dv6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nie-wG-Sn2">
+                                <rect key="frame" x="787" y="1173" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="stopMovingUp2:" destination="94m-Ox-ucl" eventType="touchUpOutside" id="j1d-uK-lTS"/>
+                                    <action selector="stopMovingUp:" destination="94m-Ox-ucl" eventType="touchUpInside" id="3qJ-UM-BaX"/>
+                                    <action selector="subtractY:" destination="94m-Ox-ucl" eventType="touchDown" id="gNa-TB-vaU"/>
+                                    <action selector="subtractYStop:" destination="94m-Ox-ucl" eventType="touchCancel" id="T98-eW-3X8"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="d4d-33-J59"/>
+                    <connections>
+                        <outlet property="DOWN" destination="hRV-AM-Baq" id="PuB-bI-7sr"/>
+                        <outlet property="LEFT" destination="bQU-la-sjL" id="hbZ-vJ-Oi1"/>
+                        <outlet property="RIGHT" destination="qxX-nZ-DKV" id="b2N-gE-L8t"/>
+                        <outlet property="UP" destination="eG0-oz-uTk" id="Yz2-eC-PFy"/>
+                        <outlet property="player" destination="pFc-Pa-QRN" id="KSf-jt-9QD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ACN-yx-Kie" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6523.828125" y="315.81259150805266"/>
         </scene>
         <!--Login-->
         <scene sceneID="UIr-s7-OG3">
@@ -306,7 +417,9 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nto-yc-McI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+
             <point key="canvasLocation" x="5510.15625" y="-627.5390625"/>
+
         </scene>
         <!--Help Screen-->
         <scene sceneID="j4u-9P-HLP">
@@ -483,7 +596,7 @@
             <objects>
                 <navigationController storyboardIdentifier="homePageNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="eFf-DV-hjx" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="zF3-Se-08z">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="zF3-Se-08z">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -620,7 +733,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Yvq-Vr-T7D" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="3e6-Xn-6zW">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="3e6-Xn-6zW">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
