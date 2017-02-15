@@ -27,12 +27,13 @@ class MiniGame2ViewController: UIViewController{
     var SPEED : CGFloat!
     var HEIGHT : CGFloat!
     var WIDTH : CGFloat!
+    var enemyCount : CGFloat!
     
     var clock : Timer!
     
     var timer : Timer!
     var SpawnTimer : Timer!
-    
+    var views = [UIView]()
     
     //DOWN BUTTON
     @IBAction func subtractYStop(_ sender: Any) {
@@ -113,18 +114,59 @@ class MiniGame2ViewController: UIViewController{
         timer.invalidate()
     
     }
-    
-        func addToY()
-        {
+    func addToY()
+    {
             ySpeed = 10
     }
-        func CPU(){
-            player.center = CGPoint(x:player.center.x + xSpeed, y:player.center.y + ySpeed)
-            
-        }
     
-    func spawnEnemy(){
+    
+    func CPU(){
+        player.center = CGPoint(x:player.center.x + xSpeed, y:player.center.y + ySpeed)
+        for i in 0..<views.count
+        {
+            if(player.frame.intersects(views[i].frame))
+            {
+                views[i].removeFromSuperview()
+            }
+        }
+    }
+    
+    func randomColor() -> UIColor{
         
+        let red = CGFloat(drand48())
+        let green = CGFloat(drand48())
+        let blue = CGFloat(drand48())
+        return UIColor(red:red, green: green, blue:blue, alpha: 1.0)
+        
+    }
+    func spawnEnemy(){
+    
+        
+        var bufferside : CGFloat
+        var inputx : CGFloat
+        var inputy : UInt32
+        var buffertop : UInt32
+        var xCord : Int
+        var yCord : Int
+        
+        inputx = WIDTH*5/8
+        bufferside = WIDTH / 8
+        inputy = UInt32(HEIGHT) * 3 / 4
+        buffertop = UInt32(HEIGHT) / 8
+        xCord = Int(arc4random_uniform(UInt32(inputx))+(UInt32(bufferside)))
+        yCord = Int(arc4random_uniform(UInt32(inputy))+(UInt32(buffertop)))
+        
+        if(enemyCount <= 10)
+        {
+        let enemy: UIView = UIView(frame: CGRect(x: 0, y:0, width:50, height:50))
+        enemy.backgroundColor = randomColor()
+        enemy.center = CGPoint(x: xCord, y: yCord)
+            
+        self.view.addSubview(enemy)
+        views.insert(enemy, at: Int(enemyCount))
+        enemyCount = enemyCount + 1
+        
+        }
     }
     
     
@@ -138,7 +180,7 @@ class MiniGame2ViewController: UIViewController{
             xSpeed = 0
             ySpeed = 0
             SPEED = 10
-            
+            enemyCount = 0
             SpawnTimer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector (self.spawnEnemy), userInfo: nil, repeats: true)
             
         }
