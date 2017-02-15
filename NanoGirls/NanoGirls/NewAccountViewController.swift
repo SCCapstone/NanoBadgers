@@ -30,7 +30,8 @@ class NewAccountViewController: UIViewController {
             if let password = password.text {
                 FIRAuth.auth()?.createUser(withEmail: email, password: password) { (user, error) in
                     if let user = user {
-                        let vc = self.storyboard?.instantiateViewController(withIdentifier: "mainNavigationController") as? UINavigationController
+                        user.sendEmailVerification()
+                        let vc = self.storyboard?.instantiateViewController(withIdentifier: "homePageNavigationController") as? UINavigationController
                         self.present(vc!, animated: true)
                     }
                     if let error = error {
