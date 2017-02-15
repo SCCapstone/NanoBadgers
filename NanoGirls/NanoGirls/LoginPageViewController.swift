@@ -7,10 +7,12 @@
 //
 
 import UIKit
+import Firebase
 
 class LoginPageViewController: UIViewController {
     
-    @IBOutlet weak var username: UITextField!
+
+    @IBOutlet weak var email: UITextField!
     @IBOutlet weak var password: UITextField!
     @IBOutlet weak var loginButton: UIButton!
     
@@ -40,6 +42,41 @@ class LoginPageViewController: UIViewController {
         view.layer.insertSublayer(backgroundLayer, at: 0)
     }
     
+    @IBAction func loginButtonAction() {
+        if let email = email.text {
+            
+            if let password = password.text {
+           
+                FIRAuth.auth()?.signIn(withEmail: email, password: password) { (user, error) in
+//                    if let user = user {
+                    if let user = FIRAuth.auth()?.currentUser {
+                        if !user.isEmailVerified {
+                            let alertVC = UIAlertController(title: "Error", message: "Sorry. Your email adress has not yet been verified. Would you like us to send another verification email to \(self.email.text).", preferredStyle: .alert)
+                            let alertActionOkay = UIAlertAction(title: "Okay", style: .default) { (_) in
+                                user.sendEmailVerification(completion: nil)
+                            }
+                            let alertActionCancel = UIAlertAction(title: "Cancel", style: .default, handler: nil)
+                            alertVC.addAction(alertActionOkay)
+                            alertVC.addAction(alertActionCancel)
+                            self.present(alertVC, animated: true, completion: nil)
+                        }
+                        else {
+                            let vc = self.storyboard?.instantiateViewController(withIdentifier: "mainNavigationController") as? UINavigationController
+                            self.present(vc!, animated: true)
+                            print("Email verified. Signing in...")
+                        }
+                    }
+                }
+/*                        let vc = self.storyboard?.instantiateViewController(withIdentifier: "mainNavigationController") as? UINavigationController
+                        self.present(vc!, animated: true)
+                    }
+                    if let error = error {
+                        print(error.localizedDescription)
+                    }
+                }
+  */          }
+        }
+    }
     
     /*
      // MARK: - Navigation
