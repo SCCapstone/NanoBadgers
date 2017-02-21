@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="eFf-DV-hjx">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2659" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="eFf-DV-hjx">
     <device id="ipad9_7" orientation="portrait">
-
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment version="4096" identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -212,9 +210,7 @@
                                 </connections>
                             </button>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="oie_transparent.png" translatesAutoresizingMaskIntoConstraints="NO" id="xDM-d8-dMM">
-
                                 <rect key="frame" x="353" y="585" width="60" height="60"/>
-
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="paddle.png" translatesAutoresizingMaskIntoConstraints="NO" id="kV3-UC-ubG">
@@ -245,7 +241,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LXu-Yu-DFs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5736.9140625" y="186.67642752562224"/>
+            <point key="canvasLocation" x="5736.71875" y="186.328125"/>
         </scene>
         <!--Mini Game2 View Controller-->
         <scene sceneID="yoh-4t-HpB">
@@ -256,36 +252,36 @@
                         <viewControllerLayoutGuide type="bottom" id="ltA-mT-Af0"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="ulc-3z-uYL">
-                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" image="TempBackgroundNew.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="x6N-rG-2Y5">
-                                <rect key="frame" x="-336" y="-7" width="1695" height="1380"/>
+                                <rect key="frame" x="-336" y="-7" width="1439" height="1038"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="paddle.png" translatesAutoresizingMaskIntoConstraints="NO" id="eG0-oz-uTk">
-                                <rect key="frame" x="787" y="1063" width="50" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <rect key="frame" x="531" y="721" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="paddle.png" translatesAutoresizingMaskIntoConstraints="NO" id="hRV-AM-Baq">
-                                <rect key="frame" x="787" y="1173" width="50" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <rect key="frame" x="531" y="831" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="paddle.png" translatesAutoresizingMaskIntoConstraints="NO" id="bQU-la-sjL">
-                                <rect key="frame" x="731" y="1118" width="50" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <rect key="frame" x="474" y="776" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="paddle.png" translatesAutoresizingMaskIntoConstraints="NO" id="qxX-nZ-DKV">
-                                <rect key="frame" x="845" y="1118" width="50" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <rect key="frame" x="588" y="776" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
                             </imageView>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="oie_transparent.png" translatesAutoresizingMaskIntoConstraints="NO" id="pFc-Pa-QRN">
-                                <rect key="frame" x="482" y="653" width="60" height="60"/>
+                                <rect key="frame" x="354" y="482" width="60" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BfH-nJ-j9e">
-                                <rect key="frame" x="787" y="1063" width="50" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <rect key="frame" x="531" y="721" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
                                 <connections>
                                     <action selector="StopMoving:" destination="94m-Ox-ucl" eventType="touchUpInside" id="t0k-eL-liH"/>
                                     <action selector="StopMovingDown2:" destination="94m-Ox-ucl" eventType="touchUpOutside" id="Fdd-J4-HKp"/>
@@ -294,8 +290,8 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YSF-Eg-b8h">
-                                <rect key="frame" x="845" y="1118" width="50" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <rect key="frame" x="589" y="776" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
                                 <connections>
                                     <action selector="addX:" destination="94m-Ox-ucl" eventType="touchDown" id="plr-ZE-lef"/>
                                     <action selector="addXStop:" destination="94m-Ox-ucl" eventType="touchCancel" id="Jk8-mw-Adl"/>
@@ -304,8 +300,8 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pel-1A-1bY">
-                                <rect key="frame" x="731" y="1118" width="50" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <rect key="frame" x="475" y="776" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
                                 <connections>
                                     <action selector="stopMovingLeft2:" destination="94m-Ox-ucl" eventType="touchUpOutside" id="moa-PO-R99"/>
                                     <action selector="stopMovingLeft:" destination="94m-Ox-ucl" eventType="touchUpInside" id="GL7-J9-taw"/>
@@ -314,8 +310,8 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nie-wG-Sn2">
-                                <rect key="frame" x="787" y="1173" width="50" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <rect key="frame" x="531" y="831" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
                                 <connections>
                                     <action selector="stopMovingUp2:" destination="94m-Ox-ucl" eventType="touchUpOutside" id="j1d-uK-lTS"/>
                                     <action selector="stopMovingUp:" destination="94m-Ox-ucl" eventType="touchUpInside" id="3qJ-UM-BaX"/>
@@ -352,13 +348,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4sB-Qu-xFT">
-                                <rect key="frame" x="16" y="282" width="732" height="30"/>
+                                <rect key="frame" x="16" y="326" width="732" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fh4-cy-ep3">
-                                <rect key="frame" x="20" y="235" width="728" height="30"/>
+                                <rect key="frame" x="20" y="279" width="728" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="next"/>
@@ -407,9 +403,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nto-yc-McI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-
             <point key="canvasLocation" x="5510.15625" y="-627.5390625"/>
-
         </scene>
         <!--Help Screen-->
         <scene sceneID="j4u-9P-HLP">
@@ -696,7 +690,7 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Uwn-6d-Olb" kind="push" id="Skf-sU-Prz"/>
+                                    <segue destination="94m-Ox-ucl" kind="show" id="GlD-bi-nAM"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -763,6 +757,6 @@
         <image name="paddle.png" width="100" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Z84-K6-wO9"/>
+        <segue reference="Duf-La-ww0"/>
     </inferredMetricsTieBreakers>
 </document>
