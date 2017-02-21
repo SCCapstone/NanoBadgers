@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="eFf-DV-hjx">
     <device id="ipad9_7" orientation="portrait">
-
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -48,7 +46,6 @@
                                 </state>
                                 <connections>
                                     <action selector="createAccountAction" destination="OxG-MG-Ms8" eventType="touchUpInside" id="wg5-ll-Gfz"/>
-                                    <action selector="loginButtonAction" destination="TY2-50-Qfn" eventType="touchUpInside" id="QUU-Np-c24"/>
                                     <segue destination="eFf-DV-hjx" kind="show" id="MCy-XM-LbN"/>
                                 </connections>
                             </button>
@@ -131,7 +128,6 @@
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                     </button>
-
                                     <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="749" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wrd-Cn-lQ9">
                                         <rect key="frame" x="8" y="501" width="752" height="65"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -141,7 +137,6 @@
                                         </state>
                                         <connections>
                                             <segue destination="OxG-MG-Ms8" kind="show" id="pMQ-h0-6lr"/>
-
                                         </connections>
                                     </button>
                                 </subviews>
@@ -225,9 +220,7 @@
                                 </connections>
                             </button>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="oie_transparent.png" translatesAutoresizingMaskIntoConstraints="NO" id="xDM-d8-dMM">
-
                                 <rect key="frame" x="353" y="585" width="60" height="60"/>
-
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="paddle.png" translatesAutoresizingMaskIntoConstraints="NO" id="kV3-UC-ubG">
@@ -269,31 +262,31 @@
                         <viewControllerLayoutGuide type="bottom" id="ltA-mT-Af0"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="ulc-3z-uYL">
-                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" image="TempBackgroundNew.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="x6N-rG-2Y5">
-                                <rect key="frame" x="-336" y="-7" width="1695" height="1380"/>
+                                <rect key="frame" x="-336" y="-7" width="1439" height="1038"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="paddle.png" translatesAutoresizingMaskIntoConstraints="NO" id="eG0-oz-uTk">
-                                <rect key="frame" x="787" y="1063" width="50" height="50"/>
+                                <rect key="frame" x="580" y="721" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="paddle.png" translatesAutoresizingMaskIntoConstraints="NO" id="hRV-AM-Baq">
-                                <rect key="frame" x="787" y="1173" width="50" height="50"/>
+                                <rect key="frame" x="580" y="831" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="paddle.png" translatesAutoresizingMaskIntoConstraints="NO" id="bQU-la-sjL">
-                                <rect key="frame" x="731" y="1118" width="50" height="50"/>
+                                <rect key="frame" x="538" y="776" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="paddle.png" translatesAutoresizingMaskIntoConstraints="NO" id="qxX-nZ-DKV">
-                                <rect key="frame" x="845" y="1118" width="50" height="50"/>
+                                <rect key="frame" x="622" y="776" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
                             </imageView>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="oie_transparent.png" translatesAutoresizingMaskIntoConstraints="NO" id="pFc-Pa-QRN">
-                                <rect key="frame" x="482" y="653" width="60" height="60"/>
+                                <rect key="frame" x="354" y="482" width="60" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BfH-nJ-j9e">
@@ -387,7 +380,7 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="loginButtonAction" destination="TY2-50-Qfn" eventType="touchUpInside" id="agk-8q-l5t"/>
+                                    <action selector="loginButtonAction" destination="TY2-50-Qfn" eventType="touchUpInside" id="TNk-dM-a7U"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -420,9 +413,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nto-yc-McI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-
             <point key="canvasLocation" x="5510.15625" y="-627.5390625"/>
-
         </scene>
         <!--Help Screen-->
         <scene sceneID="j4u-9P-HLP">
@@ -599,7 +590,7 @@
             <objects>
                 <navigationController storyboardIdentifier="homePageNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="eFf-DV-hjx" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="zF3-Se-08z">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="zF3-Se-08z">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -709,7 +700,7 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Uwn-6d-Olb" kind="push" id="Skf-sU-Prz"/>
+                                    <segue destination="94m-Ox-ucl" kind="show" id="rSj-Y2-hUa"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -736,7 +727,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Yvq-Vr-T7D" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="3e6-Xn-6zW">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="3e6-Xn-6zW">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -752,7 +743,7 @@
         <!--Navigation Controller-->
         <scene sceneID="bEG-QN-l6D">
             <objects>
-                <navigationController storyboardIdentifier="mainNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="BMh-At-ufM" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="lessonNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="BMh-At-ufM" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="7SC-FZ-jsV">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -776,6 +767,6 @@
         <image name="paddle.png" width="100" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Z84-K6-wO9"/>
+        <segue reference="Duf-La-ww0"/>
     </inferredMetricsTieBreakers>
 </document>
