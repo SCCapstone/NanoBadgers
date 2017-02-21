@@ -26,7 +26,7 @@ class MiniGame2ViewController: UIViewController{
     var Score : Int = 0
     
     
-    var TotalTime : CGFloat
+    var TotalTime : CGFloat = 60.0
     var xSpeed : CGFloat!
     var ySpeed : CGFloat!
     
