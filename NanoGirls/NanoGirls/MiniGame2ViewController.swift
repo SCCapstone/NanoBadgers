@@ -9,6 +9,7 @@
 import Foundation
 import UIKit
 import SpriteKit
+import AVFoundation
 
 class MiniGame2ViewController: UIViewController{
     
@@ -24,9 +25,9 @@ class MiniGame2ViewController: UIViewController{
     
     
     var Score : Int = 0
+    var audioPlayer : AVAudioPlayer!
     
-    
-    var TotalTime : CGFloat = 60.0
+    var TotalTime : Int = 60
     var xSpeed : CGFloat!
     var ySpeed : CGFloat!
     
@@ -47,7 +48,24 @@ class MiniGame2ViewController: UIViewController{
     
     
 
-    
+    func playSound(){
+        
+        let audioFilePath = Bundle.main.path(forResource: "SoundAttempt1", ofType: "mp3")
+        
+        if(audioFilePath != nil)
+        {
+            let audioFileUrl = NSURL.fileURL(withPath: audioFilePath!)
+            audioPlayer = try! AVAudioPlayer(contentsOf: audioFileUrl)
+            audioPlayer.play()
+            
+        }
+        else
+        {
+            print("ahhhhhhh")
+        }
+        
+        
+    }
     
     
     //DOWN BUTTON
@@ -144,11 +162,14 @@ class MiniGame2ViewController: UIViewController{
     
     func CPU(){
         //player.center = CGPoint(x:player.center.x + xSpeed, y:player.center.y + ySpeed)
+
         for i in 0..<views.count
         {
             if(player.frame.intersects(views[i].frame))
             {
                 views[i].removeFromSuperview()
+                views[i].center = CGPoint(x:-90,y:-90)
+                playSound()
                 if(SPEED > 4){
                     SPEED = SPEED - 2
                 }
@@ -160,7 +181,12 @@ class MiniGame2ViewController: UIViewController{
             if(player.frame.intersects(views2[i].frame))
             {
                 views2[i].removeFromSuperview()
+                views2[i].center = CGPoint(x:-90,y:-90)
+                playSound()
+                if(SPEED < 10)
+                {
                     SPEED = SPEED + 2
+                }
                 Score = Score + 1
             }
             
@@ -174,11 +200,16 @@ class MiniGame2ViewController: UIViewController{
     func updateScoreIndicatior(){
         ScoreIndicator?.text = "\(Score)"
     }
-    func addScore(){
-        Score = Score + 1
-    }
+    
     func decreaseTotalTime(){
+        if(TotalTime != 0)
+        {
         TotalTime = TotalTime - 1
+        updateTime()
+        }
+        else{
+            GameTimer?.invalidate()
+        }
     }
     
     
@@ -232,7 +263,7 @@ class MiniGame2ViewController: UIViewController{
         var xCord : Int
         var yCord : Int
         
-        TotalTime = 60
+        
         inputx = WIDTH*5/8
         bufferside = WIDTH / 8
         inputy = UInt32(HEIGHT) * 3 / 4
@@ -269,6 +300,7 @@ class MiniGame2ViewController: UIViewController{
             SpawnTimer = Timer.scheduledTimer(timeInterval: 3.5, target: self, selector: #selector (self.spawnEnemy), userInfo: nil, repeats: true)
             SpawnTimer2 = Timer.scheduledTimer(timeInterval: 2, target: self, selector: #selector (self.spawnGood), userInfo: nil, repeats: true)
             GameTimer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(self.decreaseTotalTime), userInfo: nil, repeats: true)
+            
             
         }
     

@@ -367,7 +367,7 @@
                         <outlet property="LEFT" destination="bQU-la-sjL" id="hbZ-vJ-Oi1"/>
                         <outlet property="RIGHT" destination="qxX-nZ-DKV" id="b2N-gE-L8t"/>
                         <outlet property="ScoreIndicator" destination="4Kb-KO-Fsg" id="KvF-Nr-Jkg"/>
-                        <outlet property="TimeIndicator" destination="E6V-sg-r6i" id="gpX-MT-6GH"/>
+                        <outlet property="TimeIndicator" destination="E6V-sg-r6i" id="NVq-l9-3NX"/>
                         <outlet property="UP" destination="eG0-oz-uTk" id="Yz2-eC-PFy"/>
                         <outlet property="player" destination="pFc-Pa-QRN" id="KSf-jt-9QD"/>
                     </connections>
