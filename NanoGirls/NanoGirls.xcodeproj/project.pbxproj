@@ -35,6 +35,7 @@
 		CE8264681DDCC6A100F932CB /* LessonPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8264671DDCC6A100F932CB /* LessonPageViewController.swift */; };
 		CE967D271DC245C200E00D4C /* thecat.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CE967D261DC245C200E00D4C /* thecat.jpg */; };
 		D21B16681E4138B100014562 /* MiniGame2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21B16671E4138B100014562 /* MiniGame2ViewController.swift */; };
+		D2F793AA1E629BB30082505F /* SoundAttempt1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D2F793A91E629BB30082505F /* SoundAttempt1.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,6 +94,7 @@
 		CE8264671DDCC6A100F932CB /* LessonPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LessonPageViewController.swift; sourceTree = "<group>"; };
 		CE967D261DC245C200E00D4C /* thecat.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = thecat.jpg; sourceTree = "<group>"; };
 		D21B16671E4138B100014562 /* MiniGame2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MiniGame2ViewController.swift; sourceTree = "<group>"; };
+		D2F793A91E629BB30082505F /* SoundAttempt1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = SoundAttempt1.mp3; path = ../../../../../Downloads/SoundAttempt1.mp3; sourceTree = "<group>"; };
 		F2EE4EE76E2F84DA32E5B991 /* Pods_NanoGirlsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NanoGirlsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB9E9FA4E3A931FDF4D84313 /* Pods-NanoGirls.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NanoGirls.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NanoGirls/Pods-NanoGirls.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -216,6 +218,7 @@
 		CE967D251DC245AF00E00D4C /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				D2F793A91E629BB30082505F /* SoundAttempt1.mp3 */,
 				62C6514D1DDC208800B63E8C /* paddle.png */,
 				62C6514F1DDC208C00B63E8C /* url.jpg */,
 				6288CD891DF3E89600CF7064 /* oie_transparent.png */,
@@ -357,6 +360,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2F793AA1E629BB30082505F /* SoundAttempt1.mp3 in Resources */,
 				CE2E15961DB5726700C3AA8F /* LaunchScreen.storyboard in Resources */,
 				62C651501DDC208C00B63E8C /* url.jpg in Resources */,
 				6288CD881DF3E69500CF7064 /* TempBackgroundNew.jpg in Resources */,
