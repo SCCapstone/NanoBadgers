@@ -36,6 +36,7 @@
 		CE967D271DC245C200E00D4C /* thecat.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CE967D261DC245C200E00D4C /* thecat.jpg */; };
 		D21B16681E4138B100014562 /* MiniGame2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21B16671E4138B100014562 /* MiniGame2ViewController.swift */; };
 		D2F793AA1E629BB30082505F /* SoundAttempt1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D2F793A91E629BB30082505F /* SoundAttempt1.mp3 */; };
+		EEB8260A1E6602C6004A1DDA /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB826091E6602C6004A1DDA /* TutorialViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,6 +96,7 @@
 		CE967D261DC245C200E00D4C /* thecat.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = thecat.jpg; sourceTree = "<group>"; };
 		D21B16671E4138B100014562 /* MiniGame2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MiniGame2ViewController.swift; sourceTree = "<group>"; };
 		D2F793A91E629BB30082505F /* SoundAttempt1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = SoundAttempt1.mp3; path = ../../../../../Downloads/SoundAttempt1.mp3; sourceTree = "<group>"; };
+		EEB826091E6602C6004A1DDA /* TutorialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialViewController.swift; sourceTree = "<group>"; };
 		F2EE4EE76E2F84DA32E5B991 /* Pods_NanoGirlsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NanoGirlsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB9E9FA4E3A931FDF4D84313 /* Pods-NanoGirls.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NanoGirls.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NanoGirls/Pods-NanoGirls.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -204,6 +206,7 @@
 			isa = PBXGroup;
 			children = (
 				D21B16671E4138B100014562 /* MiniGame2ViewController.swift */,
+				EEB826091E6602C6004A1DDA /* TutorialViewController.swift */,
 				CE8264671DDCC6A100F932CB /* LessonPageViewController.swift */,
 				CE3D50221DBE8C1400E3AB40 /* QuestionPageViewController.swift */,
 				CE2E15BA1DB5734700C3AA8F /* HomePageViewController.swift */,
@@ -540,6 +543,7 @@
 				CE2E15BD1DB5776C00C3AA8F /* Colors.swift in Sources */,
 				CE8264681DDCC6A100F932CB /* LessonPageViewController.swift in Sources */,
 				CE2E158B1DB5726600C3AA8F /* ViewController.swift in Sources */,
+				EEB8260A1E6602C6004A1DDA /* TutorialViewController.swift in Sources */,
 				57A9018D1E538CAB00EDAE9A /* NewAccountViewController.swift in Sources */,
 				CE2E15891DB5726600C3AA8F /* AppDelegate.swift in Sources */,
 				C38ADC0C1DB71963005661E2 /* LoginPageViewController.swift in Sources */,
