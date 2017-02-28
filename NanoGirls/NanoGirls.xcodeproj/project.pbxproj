@@ -31,11 +31,12 @@
 		CE2E15BB1DB5734700C3AA8F /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2E15BA1DB5734700C3AA8F /* HomePageViewController.swift */; };
 		CE2E15BD1DB5776C00C3AA8F /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2E15BC1DB5776C00C3AA8F /* Colors.swift */; };
 		CE3D50231DBE8C1400E3AB40 /* QuestionPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3D50221DBE8C1400E3AB40 /* QuestionPageViewController.swift */; };
+		CE44D2031E65F95400CFB3D0 /* OriginStoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE44D2021E65F95400CFB3D0 /* OriginStoryViewController.swift */; };
+		CE4DD16B1E65054A001786E7 /* SoundAttempt1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CE4DD16A1E65054A001786E7 /* SoundAttempt1.mp3 */; };
 		CE8264661DDCC14D00F932CB /* IMG_8667-1.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = CE8264651DDCC14D00F932CB /* IMG_8667-1.jpeg */; };
 		CE8264681DDCC6A100F932CB /* LessonPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8264671DDCC6A100F932CB /* LessonPageViewController.swift */; };
 		CE967D271DC245C200E00D4C /* thecat.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CE967D261DC245C200E00D4C /* thecat.jpg */; };
 		D21B16681E4138B100014562 /* MiniGame2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21B16671E4138B100014562 /* MiniGame2ViewController.swift */; };
-		D2F793AA1E629BB30082505F /* SoundAttempt1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D2F793A91E629BB30082505F /* SoundAttempt1.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,11 +91,12 @@
 		CE2E15BA1DB5734700C3AA8F /* HomePageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
 		CE2E15BC1DB5776C00C3AA8F /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		CE3D50221DBE8C1400E3AB40 /* QuestionPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionPageViewController.swift; sourceTree = "<group>"; };
+		CE44D2021E65F95400CFB3D0 /* OriginStoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OriginStoryViewController.swift; sourceTree = "<group>"; };
+		CE4DD16A1E65054A001786E7 /* SoundAttempt1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = SoundAttempt1.mp3; sourceTree = "<group>"; };
 		CE8264651DDCC14D00F932CB /* IMG_8667-1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "IMG_8667-1.jpeg"; sourceTree = "<group>"; };
 		CE8264671DDCC6A100F932CB /* LessonPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LessonPageViewController.swift; sourceTree = "<group>"; };
 		CE967D261DC245C200E00D4C /* thecat.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = thecat.jpg; sourceTree = "<group>"; };
 		D21B16671E4138B100014562 /* MiniGame2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MiniGame2ViewController.swift; sourceTree = "<group>"; };
-		D2F793A91E629BB30082505F /* SoundAttempt1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = SoundAttempt1.mp3; path = ../../../../../Downloads/SoundAttempt1.mp3; sourceTree = "<group>"; };
 		F2EE4EE76E2F84DA32E5B991 /* Pods_NanoGirlsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NanoGirlsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB9E9FA4E3A931FDF4D84313 /* Pods-NanoGirls.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NanoGirls.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NanoGirls/Pods-NanoGirls.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -169,6 +171,7 @@
 				CE2E15881DB5726600C3AA8F /* AppDelegate.swift */,
 				CE2E158A1DB5726600C3AA8F /* ViewController.swift */,
 				CE2E158C1DB5726600C3AA8F /* Main.storyboard */,
+				CE44D2021E65F95400CFB3D0 /* OriginStoryViewController.swift */,
 				CE2E15BC1DB5776C00C3AA8F /* Colors.swift */,
 				CE2E15B91DB5730F00C3AA8F /* ViewControllers */,
 				CE2E15921DB5726700C3AA8F /* Assets.xcassets */,
@@ -218,7 +221,7 @@
 		CE967D251DC245AF00E00D4C /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				D2F793A91E629BB30082505F /* SoundAttempt1.mp3 */,
+				CE4DD16A1E65054A001786E7 /* SoundAttempt1.mp3 */,
 				62C6514D1DDC208800B63E8C /* paddle.png */,
 				62C6514F1DDC208C00B63E8C /* url.jpg */,
 				6288CD891DF3E89600CF7064 /* oie_transparent.png */,
@@ -360,7 +363,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D2F793AA1E629BB30082505F /* SoundAttempt1.mp3 in Resources */,
 				CE2E15961DB5726700C3AA8F /* LaunchScreen.storyboard in Resources */,
 				62C651501DDC208C00B63E8C /* url.jpg in Resources */,
 				6288CD881DF3E69500CF7064 /* TempBackgroundNew.jpg in Resources */,
@@ -368,6 +370,7 @@
 				6288CD8A1DF3E89600CF7064 /* oie_transparent.png in Resources */,
 				CE2E15931DB5726700C3AA8F /* Assets.xcassets in Resources */,
 				CE967D271DC245C200E00D4C /* thecat.jpg in Resources */,
+				CE4DD16B1E65054A001786E7 /* SoundAttempt1.mp3 in Resources */,
 				CE2E158E1DB5726600C3AA8F /* Main.storyboard in Resources */,
 				CE8264661DDCC14D00F932CB /* IMG_8667-1.jpeg in Resources */,
 				62C6514E1DDC208800B63E8C /* paddle.png in Resources */,
@@ -536,6 +539,7 @@
 			files = (
 				D21B16681E4138B100014562 /* MiniGame2ViewController.swift in Sources */,
 				C38ADC0A1DB6FD5B005661E2 /* HelpPageViewController.swift in Sources */,
+				CE44D2031E65F95400CFB3D0 /* OriginStoryViewController.swift in Sources */,
 				CE2E15BB1DB5734700C3AA8F /* HomePageViewController.swift in Sources */,
 				CE2E15BD1DB5776C00C3AA8F /* Colors.swift in Sources */,
 				CE8264681DDCC6A100F932CB /* LessonPageViewController.swift in Sources */,

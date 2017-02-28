@@ -13,6 +13,7 @@ import UIKit
 
 class LessonPageViewController: UIViewController {
 
+    @IBOutlet weak var myView: UIView!
     @IBOutlet weak var lessonText: UILabel!
     //creates instance of Colors class
     let colors = Colors()
@@ -36,7 +37,7 @@ class LessonPageViewController: UIViewController {
     func refresh()
     {
         //sets the background gradient
-        view.backgroundColor = UIColor.clear
+        myView.backgroundColor = UIColor.clear
         let backgroundLayer = colors.gl
         backgroundLayer.frame = view.frame
         view.layer.insertSublayer(backgroundLayer, at: 0)

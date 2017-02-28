@@ -14,7 +14,6 @@ class LoginPageViewController: UIViewController {
 
     @IBOutlet weak var email: UITextField!
     @IBOutlet weak var password: UITextField!
-    @IBOutlet weak var loginButton: UIButton!
     
     //creates instance of Colors class
     let colors = Colors()
@@ -79,15 +78,5 @@ class LoginPageViewController: UIViewController {
   */          }
         }
     }
-    
-    /*
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destinationViewController.
-     // Pass the selected object to the new view controller.
-     }
-     */
-    
+
 }
