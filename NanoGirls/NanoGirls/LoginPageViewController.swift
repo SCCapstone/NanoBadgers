@@ -43,8 +43,6 @@ class LoginPageViewController: UIViewController {
     }
     
     @IBAction func loginButtonAction() {
-        
-        print("4444")
         if let email = email.text {
             
             if let password = password.text {
@@ -63,7 +61,7 @@ class LoginPageViewController: UIViewController {
                             self.present(alertVC, animated: true, completion: nil)
                         }
                         else {
-                            let vc = self.storyboard?.instantiateViewController(withIdentifier: "lessonNavigationController") as? UINavigationController
+                            let vc = self.storyboard?.instantiateViewController(withIdentifier: "mainNavigationController") as? UINavigationController
                             self.present(vc!, animated: true)
                             print("Email verified. Signing in...")
                         }
