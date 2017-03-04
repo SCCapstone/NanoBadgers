@@ -5,6 +5,7 @@
 //  Created by Elizabeth Pruett on 10/17/16.
 //  Copyright © 2016 NanoBadgers. All rights reserved.
 //
+//  Edited by John Chandler on 15 Nov 2016.
 
 import Foundation
 import UIKit
@@ -12,7 +13,7 @@ import UIKit
 class Colors {
     
     
-    //Creates the blue - purple gradient from the design.
+    //Creates the blue - purple gradient from the design. 
     //let colorTop = UIColor(red: 191.0/255.0, green: 199.0/255.0, blue: 199.0/255.0, alpha: 1.0).cgColor
     //let colorBottom = UIColor(red: 191.0/255.0, green: 199.0/255.0, blue: 199.0/255.0, alpha: 1.0).cgColor
     

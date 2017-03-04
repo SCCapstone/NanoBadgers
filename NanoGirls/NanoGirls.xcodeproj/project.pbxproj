@@ -33,9 +33,11 @@
 		CE3D50231DBE8C1400E3AB40 /* QuestionPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3D50221DBE8C1400E3AB40 /* QuestionPageViewController.swift */; };
 		CE8264661DDCC14D00F932CB /* IMG_8667-1.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = CE8264651DDCC14D00F932CB /* IMG_8667-1.jpeg */; };
 		CE8264681DDCC6A100F932CB /* LessonPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8264671DDCC6A100F932CB /* LessonPageViewController.swift */; };
+		CE8FEA9C1E666DEC00B1C970 /* SoundAttempt1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CE8FEA9B1E666DEC00B1C970 /* SoundAttempt1.mp3 */; };
+		CE8FEA9E1E666EAD00B1C970 /* OriginStoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8FEA9D1E666EAD00B1C970 /* OriginStoryViewController.swift */; };
 		CE967D271DC245C200E00D4C /* thecat.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CE967D261DC245C200E00D4C /* thecat.jpg */; };
 		D21B16681E4138B100014562 /* MiniGame2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21B16671E4138B100014562 /* MiniGame2ViewController.swift */; };
-		D2F793AA1E629BB30082505F /* SoundAttempt1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D2F793A91E629BB30082505F /* SoundAttempt1.mp3 */; };
+		EEB8260A1E6602C6004A1DDA /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB826091E6602C6004A1DDA /* TutorialViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,9 +94,11 @@
 		CE3D50221DBE8C1400E3AB40 /* QuestionPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionPageViewController.swift; sourceTree = "<group>"; };
 		CE8264651DDCC14D00F932CB /* IMG_8667-1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "IMG_8667-1.jpeg"; sourceTree = "<group>"; };
 		CE8264671DDCC6A100F932CB /* LessonPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LessonPageViewController.swift; sourceTree = "<group>"; };
+		CE8FEA9B1E666DEC00B1C970 /* SoundAttempt1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = SoundAttempt1.mp3; sourceTree = "<group>"; };
+		CE8FEA9D1E666EAD00B1C970 /* OriginStoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OriginStoryViewController.swift; sourceTree = "<group>"; };
 		CE967D261DC245C200E00D4C /* thecat.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = thecat.jpg; sourceTree = "<group>"; };
 		D21B16671E4138B100014562 /* MiniGame2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MiniGame2ViewController.swift; sourceTree = "<group>"; };
-		D2F793A91E629BB30082505F /* SoundAttempt1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = SoundAttempt1.mp3; path = ../../../../../Downloads/SoundAttempt1.mp3; sourceTree = "<group>"; };
+		EEB826091E6602C6004A1DDA /* TutorialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialViewController.swift; sourceTree = "<group>"; };
 		F2EE4EE76E2F84DA32E5B991 /* Pods_NanoGirlsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NanoGirlsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB9E9FA4E3A931FDF4D84313 /* Pods-NanoGirls.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NanoGirls.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NanoGirls/Pods-NanoGirls.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -203,7 +207,9 @@
 		CE2E15B91DB5730F00C3AA8F /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				CE8FEA9D1E666EAD00B1C970 /* OriginStoryViewController.swift */,
 				D21B16671E4138B100014562 /* MiniGame2ViewController.swift */,
+				EEB826091E6602C6004A1DDA /* TutorialViewController.swift */,
 				CE8264671DDCC6A100F932CB /* LessonPageViewController.swift */,
 				CE3D50221DBE8C1400E3AB40 /* QuestionPageViewController.swift */,
 				CE2E15BA1DB5734700C3AA8F /* HomePageViewController.swift */,
@@ -218,7 +224,7 @@
 		CE967D251DC245AF00E00D4C /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				D2F793A91E629BB30082505F /* SoundAttempt1.mp3 */,
+				CE8FEA9B1E666DEC00B1C970 /* SoundAttempt1.mp3 */,
 				62C6514D1DDC208800B63E8C /* paddle.png */,
 				62C6514F1DDC208C00B63E8C /* url.jpg */,
 				6288CD891DF3E89600CF7064 /* oie_transparent.png */,
@@ -359,7 +365,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D2F793AA1E629BB30082505F /* SoundAttempt1.mp3 in Resources */,
 				CE2E15961DB5726700C3AA8F /* LaunchScreen.storyboard in Resources */,
 				62C651501DDC208C00B63E8C /* url.jpg in Resources */,
 				6288CD881DF3E69500CF7064 /* TempBackgroundNew.jpg in Resources */,
@@ -368,6 +373,7 @@
 				CE2E15931DB5726700C3AA8F /* Assets.xcassets in Resources */,
 				CE967D271DC245C200E00D4C /* thecat.jpg in Resources */,
 				CE2E158E1DB5726600C3AA8F /* Main.storyboard in Resources */,
+				CE8FEA9C1E666DEC00B1C970 /* SoundAttempt1.mp3 in Resources */,
 				CE8264661DDCC14D00F932CB /* IMG_8667-1.jpeg in Resources */,
 				62C6514E1DDC208800B63E8C /* paddle.png in Resources */,
 				C3CF0DC41DDB718300F8D4DA /* GoogleService-Info.plist in Resources */,
@@ -537,8 +543,10 @@
 				C38ADC0A1DB6FD5B005661E2 /* HelpPageViewController.swift in Sources */,
 				CE2E15BB1DB5734700C3AA8F /* HomePageViewController.swift in Sources */,
 				CE2E15BD1DB5776C00C3AA8F /* Colors.swift in Sources */,
+				CE8FEA9E1E666EAD00B1C970 /* OriginStoryViewController.swift in Sources */,
 				CE8264681DDCC6A100F932CB /* LessonPageViewController.swift in Sources */,
 				CE2E158B1DB5726600C3AA8F /* ViewController.swift in Sources */,
+				EEB8260A1E6602C6004A1DDA /* TutorialViewController.swift in Sources */,
 				57A9018D1E538CAB00EDAE9A /* NewAccountViewController.swift in Sources */,
 				CE2E15891DB5726600C3AA8F /* AppDelegate.swift in Sources */,
 				C38ADC0C1DB71963005661E2 /* LoginPageViewController.swift in Sources */,
