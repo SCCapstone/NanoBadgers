@@ -27,7 +27,7 @@ class MiniGame2ViewController: UIViewController{
     var Score : Int = 0
     var audioPlayer : AVAudioPlayer!
     
-    var TotalTime : Int = 60
+    var TotalTime : Int = 10
     var xSpeed : CGFloat!
     var ySpeed : CGFloat!
     
@@ -69,7 +69,7 @@ class MiniGame2ViewController: UIViewController{
     
     
     //DOWN BUTTON
-    @IBAction func subtractYStop(_ sender: Any) {
+    @IBAction func subtractYStop(_ sender: AnyObject) {
         timer.invalidate()
     }
     @IBAction func subtractY(_ sender: Any) {
@@ -209,6 +209,10 @@ class MiniGame2ViewController: UIViewController{
         }
         else{
             GameTimer?.invalidate()
+            let alertController = UIAlertController(title: "Level 1", message:
+                "OUT OF TIME!!!", preferredStyle: UIAlertControllerStyle.alert)
+            alertController.addAction(UIAlertAction(title: "Continue", style: UIAlertActionStyle.default,handler: { action in self.performSegue(withIdentifier: "TestSegue", sender: self) }))
+            self.present(alertController, animated: true, completion: nil)
         }
     }
     

@@ -37,6 +37,8 @@
 		CE8FEA9E1E666EAD00B1C970 /* OriginStoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8FEA9D1E666EAD00B1C970 /* OriginStoryViewController.swift */; };
 		CE967D271DC245C200E00D4C /* thecat.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CE967D261DC245C200E00D4C /* thecat.jpg */; };
 		D21B16681E4138B100014562 /* MiniGame2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21B16671E4138B100014562 /* MiniGame2ViewController.swift */; };
+		D2599B6B1E76F74E00D9E077 /* MiniGame2ViewControllerLevel2.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2599B6A1E76F74E00D9E077 /* MiniGame2ViewControllerLevel2.swift */; };
+		D2599B6F1E771AAC00D9E077 /* LessonPage2MiniGame1.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2599B6E1E771AAC00D9E077 /* LessonPage2MiniGame1.swift */; };
 		EEB8260A1E6602C6004A1DDA /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB826091E6602C6004A1DDA /* TutorialViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -98,6 +100,8 @@
 		CE8FEA9D1E666EAD00B1C970 /* OriginStoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OriginStoryViewController.swift; sourceTree = "<group>"; };
 		CE967D261DC245C200E00D4C /* thecat.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = thecat.jpg; sourceTree = "<group>"; };
 		D21B16671E4138B100014562 /* MiniGame2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MiniGame2ViewController.swift; sourceTree = "<group>"; };
+		D2599B6A1E76F74E00D9E077 /* MiniGame2ViewControllerLevel2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MiniGame2ViewControllerLevel2.swift; sourceTree = "<group>"; };
+		D2599B6E1E771AAC00D9E077 /* LessonPage2MiniGame1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LessonPage2MiniGame1.swift; sourceTree = "<group>"; };
 		EEB826091E6602C6004A1DDA /* TutorialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialViewController.swift; sourceTree = "<group>"; };
 		F2EE4EE76E2F84DA32E5B991 /* Pods_NanoGirlsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NanoGirlsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB9E9FA4E3A931FDF4D84313 /* Pods-NanoGirls.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NanoGirls.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NanoGirls/Pods-NanoGirls.debug.xcconfig"; sourceTree = "<group>"; };
@@ -217,6 +221,8 @@
 				C38ADC091DB6FD5B005661E2 /* HelpPageViewController.swift */,
 				6282FC2F1DC114E000CC018D /* MiniGame1ViewController.swift */,
 				57A9018C1E538CAB00EDAE9A /* NewAccountViewController.swift */,
+				D2599B6A1E76F74E00D9E077 /* MiniGame2ViewControllerLevel2.swift */,
+				D2599B6E1E771AAC00D9E077 /* LessonPage2MiniGame1.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -539,6 +545,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2599B6F1E771AAC00D9E077 /* LessonPage2MiniGame1.swift in Sources */,
 				D21B16681E4138B100014562 /* MiniGame2ViewController.swift in Sources */,
 				C38ADC0A1DB6FD5B005661E2 /* HelpPageViewController.swift in Sources */,
 				CE2E15BB1DB5734700C3AA8F /* HomePageViewController.swift in Sources */,
@@ -550,6 +557,7 @@
 				57A9018D1E538CAB00EDAE9A /* NewAccountViewController.swift in Sources */,
 				CE2E15891DB5726600C3AA8F /* AppDelegate.swift in Sources */,
 				C38ADC0C1DB71963005661E2 /* LoginPageViewController.swift in Sources */,
+				D2599B6B1E76F74E00D9E077 /* MiniGame2ViewControllerLevel2.swift in Sources */,
 				CE3D50231DBE8C1400E3AB40 /* QuestionPageViewController.swift in Sources */,
 				CE2E15911DB5726700C3AA8F /* NanoGirls.xcdatamodeld in Sources */,
 				6282FC301DC114E000CC018D /* MiniGame1ViewController.swift in Sources */,
