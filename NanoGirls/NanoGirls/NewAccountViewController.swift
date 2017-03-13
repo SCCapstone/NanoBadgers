@@ -31,7 +31,7 @@ class NewAccountViewController: UIViewController {
                 FIRAuth.auth()?.createUser(withEmail: email, password: password) { (user, error) in
                     if let user = user {
                         user.sendEmailVerification()
-                        let alertController = UIAlertController(title: "Email Varification", message:
+                        let alertController = UIAlertController(title: "Email Verification", message:
                         "Please Verify your email address.", preferredStyle: UIAlertControllerStyle.alert)
                         alertController.addAction(UIAlertAction(title: "Continue", style: UIAlertActionStyle.default, handler: { action in self.goToHomePage() } ))
                         self.present(alertController, animated: true, completion: nil)
