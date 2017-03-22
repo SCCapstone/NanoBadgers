@@ -357,13 +357,117 @@
                         <outlet property="ScoreIndicator" destination="4Kb-KO-Fsg" id="KvF-Nr-Jkg"/>
                         <outlet property="TimeIndicator" destination="E6V-sg-r6i" id="NVq-l9-3NX"/>
                         <outlet property="player" destination="pFc-Pa-QRN" id="KSf-jt-9QD"/>
-                        <segue destination="Uwn-6d-Olb" kind="show" identifier="TestSegue" id="JPm-Ee-UIZ"/>
-                        <segue destination="L3P-0A-UiS" kind="show" identifier="AfterGame1" id="xKm-OK-AkP"/>
+                        <segue destination="ZWd-t3-MYo" kind="show" identifier="Round2" id="Waq-Ud-fsM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ACN-yx-Kie" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="6252" y="184"/>
+        </scene>
+        <!--Mini Game2 Part2 View Controller-->
+        <scene sceneID="vRT-cv-eZ4">
+            <objects>
+                <viewController id="ZWd-t3-MYo" customClass="MiniGame2Part2ViewController" customModule="NanoGirls" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="HOt-1y-dcm"/>
+                        <viewControllerLayoutGuide type="bottom" id="qXa-U1-4Or"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="VF2-8r-Zgm">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="open ocean 2" translatesAutoresizingMaskIntoConstraints="NO" id="THP-Xg-fOd">
+                                <rect key="frame" x="0.0" y="3" width="768" height="1024"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Score Indicator" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HTY-Bc-Yoc">
+                                <rect key="frame" x="20" y="101" width="139" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Time Left:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JuX-Sx-mHx">
+                                <rect key="frame" x="167" y="63" width="77" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Points" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4rL-cJ-VCb">
+                                <rect key="frame" x="167" y="92" width="48" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sn3-X3-OVv">
+                                <rect key="frame" x="531" y="800" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.90136615949999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="addY:" destination="ZWd-t3-MYo" eventType="touchDown" id="ryM-RT-kAv"/>
+                                    <action selector="addYStop:" destination="ZWd-t3-MYo" eventType="touchCancel" id="Mfl-pJ-WY2"/>
+                                    <action selector="addYStop:" destination="ZWd-t3-MYo" eventType="touchUpInside" id="wvM-rw-13I"/>
+                                    <action selector="addYStop:" destination="ZWd-t3-MYo" eventType="touchUpOutside" id="xJ2-aW-gXY"/>
+                                </connections>
+                            </button>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="dinoflag3" translatesAutoresizingMaskIntoConstraints="NO" id="dLV-ls-kfw">
+                                <rect key="frame" x="354" y="482" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Score Indicator" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Ca-I8-6ts">
+                                <rect key="frame" x="20" y="72" width="139" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hFQ-1c-vZo">
+                                <rect key="frame" x="589" y="855" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.90136615949999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="addX:" destination="ZWd-t3-MYo" eventType="touchDown" id="enL-yr-hEN"/>
+                                    <action selector="addXStop:" destination="ZWd-t3-MYo" eventType="touchUpOutside" id="M5Z-3L-nzb"/>
+                                    <action selector="addXStop:" destination="ZWd-t3-MYo" eventType="touchCancel" id="ZrH-uj-HRf"/>
+                                    <action selector="addXStop:" destination="ZWd-t3-MYo" eventType="touchUpInside" id="pao-wJ-EeO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7DE-qC-Tvv">
+                                <rect key="frame" x="475" y="855" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.90136615949999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="subtractX:" destination="ZWd-t3-MYo" eventType="touchDown" id="hQX-Pd-YmA"/>
+                                    <action selector="subtractXStop:" destination="ZWd-t3-MYo" eventType="touchUpOutside" id="6Gu-jC-5It"/>
+                                    <action selector="subtractXStop:" destination="ZWd-t3-MYo" eventType="touchCancel" id="NgM-GF-HuJ"/>
+                                    <action selector="subtractXStop:" destination="ZWd-t3-MYo" eventType="touchUpInside" id="doY-AO-jLT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gbb-dA-hM0">
+                                <rect key="frame" x="531" y="910" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.90136615949999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="subtractY:" destination="ZWd-t3-MYo" eventType="touchDown" id="djK-zR-cev"/>
+                                    <action selector="subtractYStop:" destination="ZWd-t3-MYo" eventType="touchUpOutside" id="Q5J-zy-D2z"/>
+                                    <action selector="subtractYStop:" destination="ZWd-t3-MYo" eventType="touchUpInside" id="TqS-tp-4h4"/>
+                                    <action selector="subtractYStop:" destination="ZWd-t3-MYo" eventType="touchCancel" id="aAh-IL-yxz"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="ScoreIndicator" destination="4rL-cJ-VCb" id="GQa-RB-W8K"/>
+                        <outlet property="TimeIndicator" destination="JuX-Sx-mHx" id="jZY-PJ-pZ6"/>
+                        <outlet property="player" destination="dLV-ls-kfw" id="e2J-a3-OmS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="t6F-5R-Z5W" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7237" y="-512"/>
         </scene>
         <!--Login-->
         <scene sceneID="UIr-s7-OG3">
@@ -564,7 +668,7 @@
             <objects>
                 <navigationController storyboardIdentifier="homePageNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="eFf-DV-hjx" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="zF3-Se-08z">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="zF3-Se-08z">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -674,7 +778,7 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="94m-Ox-ucl" kind="show" id="rSj-Y2-hUa"/>
+                                    <segue destination="94m-Ox-ucl" kind="show" id="Zhf-kU-mb3"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -719,7 +823,7 @@
             <objects>
                 <navigationController storyboardIdentifier="mainNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="BMh-At-ufM" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="7SC-FZ-jsV">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="7SC-FZ-jsV">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -731,164 +835,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MRH-2h-KpJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4381.0546875" y="1423.1332357247436"/>
-        </scene>
-        <!--Mini Game2 View Controller Level2-->
-        <scene sceneID="XVG-Lm-Tf4">
-            <objects>
-                <viewController id="940-WS-pX3" customClass="MiniGame2ViewControllerLevel2" customModule="NanoGirls" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="UG5-GF-8bs"/>
-                        <viewControllerLayoutGuide type="bottom" id="GQY-oW-lrN"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="T26-je-p3F">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="open ocean 2" translatesAutoresizingMaskIntoConstraints="NO" id="6ek-os-gN9">
-                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
-                            </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="dinoflag3" translatesAutoresizingMaskIntoConstraints="NO" id="Tog-mA-gIT">
-                                <rect key="frame" x="354" y="482" width="60" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qu6-jq-kne">
-                                <rect key="frame" x="531" y="721" width="50" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
-                                <color key="backgroundColor" red="1" green="0.90136615949999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <connections>
-                                    <action selector="addY:" destination="940-WS-pX3" eventType="touchDown" id="rz6-OU-Kbb"/>
-                                    <action selector="addYStop:" destination="940-WS-pX3" eventType="touchCancel" id="3ZE-D2-xrJ"/>
-                                    <action selector="addYStop:" destination="940-WS-pX3" eventType="touchUpInside" id="aHO-DU-NW2"/>
-                                    <action selector="addYStop:" destination="940-WS-pX3" eventType="touchUpOutside" id="opG-qI-9xJ"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="urJ-Mh-y5O">
-                                <rect key="frame" x="589" y="776" width="50" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
-                                <color key="backgroundColor" red="1" green="0.90136615949999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <connections>
-                                    <action selector="addX:" destination="940-WS-pX3" eventType="touchDown" id="xFF-nc-FJY"/>
-                                    <action selector="addXStop:" destination="940-WS-pX3" eventType="touchUpOutside" id="AlN-S6-SB0"/>
-                                    <action selector="addXStop:" destination="940-WS-pX3" eventType="touchCancel" id="Sgk-Iq-FMR"/>
-                                    <action selector="addXStop:" destination="940-WS-pX3" eventType="touchUpInside" id="y1M-sH-4C6"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Ir-e8-CeD">
-                                <rect key="frame" x="475" y="776" width="50" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
-                                <color key="backgroundColor" red="1" green="0.90136615949999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <connections>
-                                    <action selector="subtractX:" destination="940-WS-pX3" eventType="touchDown" id="QTV-eR-r50"/>
-                                    <action selector="subtractXStop:" destination="940-WS-pX3" eventType="touchUpInside" id="Srp-Jy-jhk"/>
-                                    <action selector="subtractXStop:" destination="940-WS-pX3" eventType="touchUpOutside" id="eLg-Rt-dQd"/>
-                                    <action selector="subtractXStop:" destination="940-WS-pX3" eventType="touchCancel" id="r9C-DP-rD1"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NmR-ts-xMj">
-                                <rect key="frame" x="531" y="831" width="50" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
-                                <color key="backgroundColor" red="1" green="0.90136615949999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <connections>
-                                    <action selector="subtractY:" destination="940-WS-pX3" eventType="touchDown" id="3Vj-GP-Jv8"/>
-                                    <action selector="subtractYStop:" destination="940-WS-pX3" eventType="touchUpInside" id="ULr-3Y-dD4"/>
-                                    <action selector="subtractYStop:" destination="940-WS-pX3" eventType="touchUpOutside" id="Wob-1d-qMl"/>
-                                    <action selector="subtractYStop:" destination="940-WS-pX3" eventType="touchCancel" id="hEU-0T-jKC"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Score Indicator" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QIM-Po-GZ8">
-                                <rect key="frame" x="93" y="87" width="139" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Score Indicator" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qe7-4k-8i8">
-                                <rect key="frame" x="105" y="116" width="139" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Points" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tmy-Im-mJ6">
-                                <rect key="frame" x="20" y="78" width="48" height="39"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Time Left:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gov-wu-nD5">
-                                <rect key="frame" x="20" y="107" width="77" height="39"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="6ek-os-gN9" firstAttribute="width" secondItem="T26-je-p3F" secondAttribute="width" id="JYF-RV-cbh"/>
-                            <constraint firstAttribute="trailing" secondItem="6ek-os-gN9" secondAttribute="trailing" id="Oyd-0T-SiB"/>
-                            <constraint firstItem="6ek-os-gN9" firstAttribute="top" secondItem="T26-je-p3F" secondAttribute="top" id="lAg-hd-hwP"/>
-                            <constraint firstItem="6ek-os-gN9" firstAttribute="leading" secondItem="T26-je-p3F" secondAttribute="leading" id="rMw-jY-Vfa"/>
-                            <constraint firstItem="6ek-os-gN9" firstAttribute="height" secondItem="T26-je-p3F" secondAttribute="height" id="szS-mE-a88"/>
-                            <constraint firstItem="GQY-oW-lrN" firstAttribute="top" secondItem="6ek-os-gN9" secondAttribute="bottom" id="vg9-fq-L8G"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" id="Bji-5y-NsW"/>
-                    <connections>
-                        <outlet property="ScoreIndicator" destination="QIM-Po-GZ8" id="Gv7-7H-tum"/>
-                        <outlet property="TimeIndicator" destination="qe7-4k-8i8" id="1Nt-Mh-HfV"/>
-                        <outlet property="player" destination="Tog-mA-gIT" id="isP-vM-vJd"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="PxP-bi-yvW" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="7360" y="338"/>
-        </scene>
-        <!--Lesson Page View Controller2-->
-        <scene sceneID="ZYb-7L-PAf">
-            <objects>
-                <viewController storyboardIdentifier="lessonPageViewController" id="L3P-0A-UiS" customClass="LessonPageViewController2" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="JII-aD-R6q"/>
-                        <viewControllerLayoutGuide type="bottom" id="V4c-Ab-QA8"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="LSS-6b-eiK">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dyX-Pc-kyG">
-                                <rect key="frame" x="16" y="37" width="343" height="130"/>
-                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="35"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kF4-sT-I9p">
-                                <rect key="frame" x="187" y="617" width="188" height="50"/>
-                                <color key="backgroundColor" red="0.98823529409999999" green="0.92549019610000005" blue="0.38431372549999998" alpha="1" colorSpace="calibratedRGB"/>
-                                <color key="tintColor" red="1" green="0.99390363339999999" blue="0.99216931149999998" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Begin game" image="Play-50">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstAttribute="trailing" secondItem="kF4-sT-I9p" secondAttribute="trailing" id="7K2-vX-69V"/>
-                            <constraint firstItem="dyX-Pc-kyG" firstAttribute="top" secondItem="JII-aD-R6q" secondAttribute="bottom" constant="8" id="Hfz-1j-07P"/>
-                            <constraint firstItem="dyX-Pc-kyG" firstAttribute="trailing" secondItem="LSS-6b-eiK" secondAttribute="trailingMargin" constant="8" id="YKe-71-wuX"/>
-                            <constraint firstItem="dyX-Pc-kyG" firstAttribute="leading" secondItem="LSS-6b-eiK" secondAttribute="leadingMargin" constant="8" id="b53-BW-cf1"/>
-                            <constraint firstItem="V4c-Ab-QA8" firstAttribute="top" secondItem="kF4-sT-I9p" secondAttribute="bottom" id="hRT-mG-aT3"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" id="sFc-If-chO"/>
-                    <connections>
-                        <outlet property="lessonText" destination="dyX-Pc-kyG" id="mj1-Ws-KoE"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="8a6-Uu-2mi" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="6971" y="-378"/>
         </scene>
     </scenes>
     <resources>
