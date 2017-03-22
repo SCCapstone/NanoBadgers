@@ -19,8 +19,8 @@ class LessonPage2ViewController: UIViewController {
 
         refresh()
         
-        lessonText2.text = "Great job collecting those nutrients! However, when materials such as hand soaps and lotions run off into the ocean, silver (Ag) nanoparticles are introduced to the coastal zone. Silver is dangerous to a lot of organisms there, including dinoflagellates! Keep collecting those nutrients while dodging the soaps!"
-        
+     /*   lessonText2.text = "Great job collecting those nutrients! However, when materials such as hand soaps and lotions run off into the ocean, silver (Ag) nanoparticles are introduced to the coastal zone. Silver is dangerous to a lot of organisms there, including dinoflagellates! Keep collecting those nutrients while dodging the soaps!"
+       */ 
         /*"Hey Spencer! When hand soaps and lotions get into the drain and run off into the ocean, silver (Ag) nanoparticles are introduced to the coastal zone. Silver is dangerous to a lot of organisms there, including dinoflagellates! Dinoflagellates are phytoplankton that have the ability to propel themselves in any direction - and they need nutrients like nitrogen (N), phosphorous (P), and iron (Fe) to stay healthy! \nHelp the dinoflagellates consume nutrients by moving them around the screen. Remember to avoid silver, or the dinoflagellates will become sluggish and slow!"*/
         
         
