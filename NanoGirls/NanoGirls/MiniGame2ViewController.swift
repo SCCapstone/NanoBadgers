@@ -27,7 +27,7 @@ class MiniGame2ViewController: UIViewController{
     var Score : Int = 0
     var audioPlayer : AVAudioPlayer!
     
-    var TotalTime : Int = 60
+    var TotalTime : Int = 10
     var xSpeed : CGFloat!
     var ySpeed : CGFloat!
     
@@ -69,7 +69,7 @@ class MiniGame2ViewController: UIViewController{
     
     
     //DOWN BUTTON
-    @IBAction func subtractYStop(_ sender: Any) {
+    @IBAction func subtractYStop(_ sender: AnyObject) {
         timer.invalidate()
     }
     @IBAction func subtractY(_ sender: Any) {
@@ -209,6 +209,10 @@ class MiniGame2ViewController: UIViewController{
         }
         else{
             GameTimer?.invalidate()
+            let alertController = UIAlertController(title: "Level 1", message:
+                "OUT OF TIME!!!", preferredStyle: UIAlertControllerStyle.alert)
+            alertController.addAction(UIAlertAction(title: "Continue", style: UIAlertActionStyle.default,handler: { action in self.performSegue(withIdentifier: "Round2", sender: nil) }))
+            self.present(alertController, animated: true, completion: nil)
         }
     }
     
@@ -297,8 +301,8 @@ class MiniGame2ViewController: UIViewController{
             SPEED = WIDTH/100
             enemyCount = 0
             goodCount = 0
-            SpawnTimer = Timer.scheduledTimer(timeInterval: 3.5, target: self, selector: #selector (self.spawnEnemy), userInfo: nil, repeats: true)
-            SpawnTimer2 = Timer.scheduledTimer(timeInterval: 2, target: self, selector: #selector (self.spawnGood), userInfo: nil, repeats: true)
+            //SpawnTimer = Timer.scheduledTimer(timeInterval: 3.5, target: self, selector: #selector (self.spawnEnemy), userInfo: nil, repeats: true)
+            SpawnTimer2 = Timer.scheduledTimer(timeInterval: 1.25, target: self, selector: #selector (self.spawnGood), userInfo: nil, repeats: true)
             GameTimer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(self.decreaseTotalTime), userInfo: nil, repeats: true)
             
             
