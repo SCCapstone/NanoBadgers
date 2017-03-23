@@ -364,10 +364,10 @@
             </objects>
             <point key="canvasLocation" x="6252" y="184"/>
         </scene>
-        <!--Mini Game2 Part2 View Controller-->
+        <!--Mini Game2 View Controller Level2-->
         <scene sceneID="vRT-cv-eZ4">
             <objects>
-                <viewController id="ZWd-t3-MYo" customClass="MiniGame2Part2ViewController" customModule="NanoGirls" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="ZWd-t3-MYo" customClass="MiniGame2ViewControllerLevel2" customModule="NanoGirls" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="HOt-1y-dcm"/>
                         <viewControllerLayoutGuide type="bottom" id="qXa-U1-4Or"/>
@@ -717,7 +717,7 @@
             <objects>
                 <navigationController storyboardIdentifier="homePageNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="eFf-DV-hjx" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="zF3-Se-08z">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="zF3-Se-08z">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -854,7 +854,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Yvq-Vr-T7D" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="3e6-Xn-6zW">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="3e6-Xn-6zW">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -872,7 +872,7 @@
             <objects>
                 <navigationController storyboardIdentifier="mainNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="BMh-At-ufM" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="7SC-FZ-jsV">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="7SC-FZ-jsV">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
