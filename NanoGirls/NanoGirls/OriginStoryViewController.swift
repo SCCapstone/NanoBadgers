@@ -9,17 +9,60 @@
 import UIKit
 
 class OriginStoryViewController: UIViewController {
+    
+    var timesClicked:Int!
+    
     @IBOutlet weak var myView: UIView!
 
+    @IBOutlet weak var ngImageView: UIImageView!
     @IBOutlet weak var originLabel: UILabel!
     let colors = Colors()
     
+    @IBAction func nextButton(_ sender: Any) {
+        timesClicked = timesClicked + 1
+        if (timesClicked == 1)
+        {
+            originLabel.text = "You’re right! Well, we started off as two normal scientists studying nano-particles. One day, chemicals from a large industrial company spilled into a nearby body of water."
+            ngImageView.image = UIImage(named: "PROF2")
+        }
+        if (timesClicked == 2)
+        {
+            originLabel.text = "This was a good opportunity to test our prototype nano-particles, Gold and Silver, to clean toxins from water. But when Gold tried to add the particles…"
+            ngImageView.image = UIImage(named: "PROF1")
+        }
+        if (timesClicked == 3)
+        {
+            originLabel.text = "I fell in! Trying to help me out, Silver fell in as well. We’re not sure what happened next…but hours later we managed to get ourselves out of the water and go home."
+            ngImageView.image = UIImage(named: "PROF2")
+        }
+        if (timesClicked == 4)
+        {
+            originLabel.text = "Back at the lab, I heard a noise, and somehow in my fright- disappeared! Only I didn’t actually disappear; I shrunk down to nano-size. Moments later, I returned to normal, but found my skin had a metallic sheen and my vision was much better."
+            ngImageView.image = UIImage(named: "PROF1")
+        }
+        if (timesClicked == 5)
+        {
+            originLabel.text = "We ran some tests, and discovered I had these changes too. We realized we had new powers from the nano-particles, and that was how we survived the toxic water!"
+            ngImageView.image = UIImage(named: "PROF2")
+        }
+        if (timesClicked == 6)
+        {
+            originLabel.text = "Now, we are scientists and superheroes Nano Silver and Nano Gold by night! Will you help us as we try to use our new powers for good? "
+            ngImageView.image = UIImage(named: "PROF1")
+        }
+        if (timesClicked == 7)
+        {
+            performSegue(withIdentifier: "beginGame", sender: self)
+        }
+    }
     override func viewDidLoad()
     {
         super.viewDidLoad()
         refresh()
         
-        originLabel.text = "There were once two scientists who studied nano-particles. One day, chemicals from a large industrial company spilled into a nearby body of water. The two research scientists decided to test a prototype nano-particle they had been working on to help clean the toxins in the water. After sampling the water, the scientists added the nano-particles, Au and Ag, hoping to test the reaction – but, one of the scientists leaned in too far and fell! Trying to help her friend, the other scientist slips and falls in as well. Hours later the girls emerged, tired and confused, and went home. \n \nBack at the lab, one of the scientists, still jittery from the incident, is frightened by a noise in the hallway – and suddenly shrinks down to nano-size! Moments later, she returns to normal, shocked and amazed at what just happened. She explains to her friend that she felt normal, but her skin had a metallic sheen and her vision was intensified. After running some tests, the scientists realized they had new powers, and that was how they survived in the toxic water! \n\nThey realize their powers came from the nano-particles they developed; now, they were no longer just scientists, but superheroes Nano Gold and Nano Silver! \n\nWill you help the Nano Girls as they work to use their powers for good? "
+        timesClicked = 0
+        
+        originLabel.text = "Hey Gold, we should tell the gamer about how we became the Nano Girls! "
 
         
     }
