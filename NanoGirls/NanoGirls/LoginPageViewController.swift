@@ -61,7 +61,7 @@ class LoginPageViewController: UIViewController {
                             self.present(alertVC, animated: true, completion: nil)
                         }
                         else {
-                            let vc = self.storyboard?.instantiateViewController(withIdentifier: "mainNavigationController") as? UINavigationController
+                            let vc = self.storyboard?.instantiateViewController(withIdentifier: "levelNavigationController") as? UINavigationController
                             self.present(vc!, animated: true)
                             print("Email verified. Signing in...")
                         }
