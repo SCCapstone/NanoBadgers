@@ -1,11 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="eFf-DV-hjx">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="eFf-DV-hjx">
     <device id="ipad9_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment version="4096" identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -545,16 +545,14 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Cu-KM-Mvz">
-                                <rect key="frame" x="20" y="72" width="728" height="387"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Cu-KM-Mvz">
+                                <rect key="frame" x="20" y="72" width="728" height="144"/>
                                 <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="26"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2fI-5G-aEk">
-                                <rect key="frame" x="290" y="606" width="188" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2fI-5G-aEk">
+                                <rect key="frame" x="580" y="974" width="188" height="50"/>
                                 <color key="backgroundColor" red="0.98823529409999999" green="0.92549019610000005" blue="0.38431372549999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="tintColor" red="1" green="0.99390363339999999" blue="0.99216931149999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Begin game" image="Play-50">
@@ -564,8 +562,22 @@
                                     <segue destination="ZWd-t3-MYo" kind="show" id="ssv-s3-twh"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" misplaced="YES" image="PROF2" translatesAutoresizingMaskIntoConstraints="NO" id="VgU-Y5-KfG">
+                                <rect key="frame" x="0.0" y="537" width="477" height="487"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="3Cu-KM-Mvz" firstAttribute="leading" secondItem="qrH-rh-hW0" secondAttribute="leadingMargin" constant="8" id="1vE-PN-ceO"/>
+                            <constraint firstItem="VgU-Y5-KfG" firstAttribute="leading" secondItem="qrH-rh-hW0" secondAttribute="leading" id="LxY-As-ptv"/>
+                            <constraint firstItem="VgU-Y5-KfG" firstAttribute="top" secondItem="3Cu-KM-Mvz" secondAttribute="bottom" constant="321" id="Tce-Dg-XLa"/>
+                            <constraint firstItem="Lbc-L4-VKe" firstAttribute="top" secondItem="VgU-Y5-KfG" secondAttribute="bottom" id="UQO-dT-rHn"/>
+                            <constraint firstItem="3Cu-KM-Mvz" firstAttribute="top" secondItem="7ah-3p-c85" secondAttribute="bottom" constant="8" id="da8-bd-Im3"/>
+                            <constraint firstItem="2fI-5G-aEk" firstAttribute="leading" secondItem="VgU-Y5-KfG" secondAttribute="trailing" constant="103" id="fAD-Nu-wpq"/>
+                            <constraint firstItem="3Cu-KM-Mvz" firstAttribute="trailing" secondItem="qrH-rh-hW0" secondAttribute="trailingMargin" constant="8" id="i3G-JC-cwx"/>
+                            <constraint firstAttribute="trailing" secondItem="2fI-5G-aEk" secondAttribute="trailing" id="mCk-Hs-fme"/>
+                            <constraint firstItem="Lbc-L4-VKe" firstAttribute="top" secondItem="2fI-5G-aEk" secondAttribute="bottom" id="oK6-4E-uJG"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Urw-EH-mUA"/>
                     <connections>
@@ -574,7 +586,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tRK-f6-b7e" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="10594" y="1126"/>
+            <point key="canvasLocation" x="10593.75" y="1125.5859375"/>
         </scene>
         <!--Help Screen-->
         <scene sceneID="j4u-9P-HLP">
@@ -863,14 +875,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x6x-WQ-FmD">
-                                <rect key="frame" x="16" y="37" width="343" height="130"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x6x-WQ-FmD">
+                                <rect key="frame" x="28" y="72" width="728" height="56"/>
                                 <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="35"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AYH-aw-9Af">
-                                <rect key="frame" x="187" y="617" width="188" height="50"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AYH-aw-9Af">
+                                <rect key="frame" x="622" y="974" width="146" height="50"/>
                                 <color key="backgroundColor" red="0.98823529409999999" green="0.92549019610000005" blue="0.38431372549999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="tintColor" red="1" green="0.99390363337492393" blue="0.99216931152958343" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Begin game" image="Play-50">
@@ -880,14 +892,21 @@
                                     <segue destination="94m-Ox-ucl" kind="show" id="Zhf-kU-mb3"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" image="PROF1" translatesAutoresizingMaskIntoConstraints="NO" id="hLy-uD-ARb">
+                                <rect key="frame" x="0.0" y="537" width="477" height="487"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="x6x-WQ-FmD" firstAttribute="trailing" secondItem="c91-Sg-p2j" secondAttribute="trailingMargin" constant="8" id="9VB-S7-5j9"/>
                             <constraint firstAttribute="trailing" secondItem="AYH-aw-9Af" secondAttribute="trailing" id="HWo-3i-eWa"/>
+                            <constraint firstItem="AYH-aw-9Af" firstAttribute="leading" secondItem="hLy-uD-ARb" secondAttribute="trailing" constant="145" id="IYl-54-BGk"/>
                             <constraint firstItem="7Fg-m9-V8m" firstAttribute="top" secondItem="AYH-aw-9Af" secondAttribute="bottom" id="IhK-0i-FlF"/>
                             <constraint firstItem="x6x-WQ-FmD" firstAttribute="leading" secondItem="c91-Sg-p2j" secondAttribute="leadingMargin" constant="8" id="Lkh-Ia-uEa"/>
+                            <constraint firstItem="hLy-uD-ARb" firstAttribute="top" secondItem="x6x-WQ-FmD" secondAttribute="bottom" constant="409" id="Mux-HL-Zaj"/>
+                            <constraint firstItem="7Fg-m9-V8m" firstAttribute="top" secondItem="hLy-uD-ARb" secondAttribute="bottom" id="OhE-Q0-wOa"/>
                             <constraint firstItem="x6x-WQ-FmD" firstAttribute="top" secondItem="wdL-AR-b98" secondAttribute="bottom" constant="8" id="Tdf-fO-lLN"/>
+                            <constraint firstItem="hLy-uD-ARb" firstAttribute="leading" secondItem="c91-Sg-p2j" secondAttribute="leading" id="bL9-ih-ohw"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Y1x-Rd-NBr"/>
@@ -897,7 +916,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jma-G0-FAE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7634" y="1126"/>
+            <point key="canvasLocation" x="7633.59375" y="1125.5859375"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="I49-92-hOs">
@@ -974,6 +993,7 @@
         <!--Navigation Controller-->
         <scene sceneID="SO3-fM-pe9">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="C2p-Mb-VJ0" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController storyboardIdentifier="helpPageNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="mlD-ht-b2I" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="ara-i6-6CY"/>
@@ -986,7 +1006,6 @@
                         <segue destination="1e1-7K-gLK" kind="relationship" relationship="rootViewController" id="dPf-IA-eO0"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="C2p-Mb-VJ0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2722" y="1050"/>
         </scene>
@@ -1030,6 +1049,7 @@
     <resources>
         <image name="IMG_8667-1" width="886" height="242"/>
         <image name="PROF1" width="646" height="646"/>
+        <image name="PROF2" width="646" height="646"/>
         <image name="Play-50" width="50" height="50"/>
         <image name="TempBackgroundNew.jpg" width="1024" height="681"/>
         <image name="dinoflag3" width="526" height="369"/>

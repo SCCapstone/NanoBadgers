@@ -16,10 +16,7 @@ class MiniGame2ViewController: UIViewController{
     
     
     @IBOutlet var player : UIImageView!
-    @IBOutlet var UP : UIImageView!
-    @IBOutlet var DOWN : UIImageView!
-    @IBOutlet var LEFT : UIImageView!
-    @IBOutlet var RIGHT : UIImageView!
+
     @IBOutlet var ScoreIndicator : UILabel?
     @IBOutlet var TimeIndicator : UILabel?
     

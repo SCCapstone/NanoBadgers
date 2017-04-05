@@ -1,11 +1,11 @@
-//
-//  HomePageViewController.swift
-//  NanoGirls
-//  Top: NanoGirls logo - Login button, help button.
-//
-//  Created by Elizabeth Pruett on 10/17/16.
-//  Copyright © 2016 NanoBadgers. All rights reserved.
-//
+/**
+ *  HomePageViewController.swift
+ *  NanoGirls
+ *  Basic homepage with logo, login and create account options, and a help button. 
+ *
+ *  Created by Elizabeth Pruett on 10/17/16.
+ * Copyright © 2016 NanoBadgers. All rights reserved.
+**/
 
 import UIKit
 
