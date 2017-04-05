@@ -6,7 +6,6 @@
 //  Copyright © 2017 NanoBadgers. All rights reserved.
 //
 
-
 import UIKit
 import Foundation
 import AVFoundation
@@ -267,4 +266,3 @@ class MiniGame2ViewControllerLevel3: UIViewController {
     }
     
 }
-
