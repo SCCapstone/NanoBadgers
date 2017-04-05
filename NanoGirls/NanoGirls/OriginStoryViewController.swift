@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class OriginStoryViewController: UIViewController {
     
@@ -17,6 +18,7 @@ class OriginStoryViewController: UIViewController {
     @IBOutlet weak var ngImageView: UIImageView!
     @IBOutlet weak var originLabel: UILabel!
     let colors = Colors()
+    let level = 0.0
     
     @IBAction func nextButton(_ sender: Any) {
         timesClicked = timesClicked + 1
@@ -81,6 +83,15 @@ class OriginStoryViewController: UIViewController {
         let backgroundLayer = colors.gl
         backgroundLayer.frame = view.frame
         view.layer.insertSublayer(backgroundLayer, at: 0)
+        
+        // Set current level to 0.0
+        let dbRef = FIRDatabase.database().reference()
+        
+        if let auth = FIRAuth.auth() {
+            if let user = auth.currentUser {
+                dbRef.child("users").child(user.uid).updateChildValues(["currentLevel":level])
+            }
+        }
     }
 
 

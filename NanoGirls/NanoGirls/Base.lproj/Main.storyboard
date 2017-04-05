@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="eFf-DV-hjx">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="eFf-DV-hjx">
     <device id="ipad9_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment version="4096" identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -692,35 +692,53 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="749" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jTC-vY-Gci">
-                                <rect key="frame" x="8" y="178" width="752" height="65"/>
+                                <rect key="frame" x="8" y="188" width="752" height="65"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="33"/>
                                 <state key="normal" title="Origin Story">
                                     <color key="titleColor" red="0.98823529409999999" green="0.92549019610000005" blue="0.38431372549999998" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="gtP-DE-CcX" kind="show" id="r4u-xt-1ru"/>
+                                    <action selector="originStory:" destination="5Xo-e7-STP" eventType="touchUpInside" id="0ga-S8-zeo"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="749" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ADW-yi-Qvt">
                                 <rect key="frame" x="8" y="265" width="752" height="65"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="33"/>
-                                <state key="normal" title="Level 1">
+                                <state key="normal" title="Level 1.1">
                                     <color key="titleColor" red="0.98823529409999999" green="0.92549019610000005" blue="0.38431372549999998" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="BMh-At-ufM" kind="show" id="Xaw-v9-Esu"/>
+                                    <action selector="level11:" destination="5Xo-e7-STP" eventType="touchUpInside" id="Eyz-rr-3RL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="749" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xmh-95-2tf">
+                                <rect key="frame" x="8" y="343" width="752" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="33"/>
+                                <state key="normal" title="Level 1.2">
+                                    <color key="titleColor" red="0.98823529409999999" green="0.92549019610000005" blue="0.38431372549999998" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="level12:" destination="5Xo-e7-STP" eventType="touchUpInside" id="HdO-3M-MSI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="749" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ooe-1o-t3z">
+                                <rect key="frame" x="8" y="423" width="752" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="33"/>
+                                <state key="normal" title="Level 1.3">
+                                    <color key="titleColor" red="0.98823529409999999" green="0.92549019610000005" blue="0.38431372549999998" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="level13:" destination="5Xo-e7-STP" eventType="touchUpInside" id="hMH-cg-TCb"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="mfV-4M-LKH"/>
-                    <connections>
-                        <outlet property="level1Button" destination="ADW-yi-Qvt" id="C9w-aK-0kq"/>
-                        <outlet property="originStoryButton" destination="jTC-vY-Gci" id="IBI-7a-ZlI"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nGi-4h-euA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1020,7 +1038,6 @@
         <image name="paddle.png" width="100" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Xaw-v9-Esu"/>
         <segue reference="Z84-K6-wO9"/>
     </inferredMetricsTieBreakers>
 </document>

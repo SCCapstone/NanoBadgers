@@ -10,12 +10,16 @@
 //
 
 import UIKit
+import Firebase
 
 class LessonPageViewController: UIViewController {
 
     @IBOutlet weak var lessonText: UILabel!
     //creates instance of Colors class
     let colors = Colors()
+    let level = 1.1
+    
+
     
     override func viewDidLoad()
     {
@@ -44,6 +48,15 @@ class LessonPageViewController: UIViewController {
         let backgroundLayer = colors.gl
         backgroundLayer.frame = view.frame
         view.layer.insertSublayer(backgroundLayer, at: 0)
+        
+        // Set current level to 1.1
+        let dbRef = FIRDatabase.database().reference()
+        
+        if let auth = FIRAuth.auth() {
+            if let user = auth.currentUser {
+                dbRef.child("users").child(user.uid).updateChildValues(["currentLevel":level])
+            }
+        }
     }
 
     /*

@@ -6,8 +6,9 @@ target 'NanoGirls' do
   use_frameworks!
 
   # Pods for NanoGirls
-  pod 'Firebase'
+  pod 'Firebase/Core'
   pod 'Firebase/Auth'
+  pod 'Firebase/Database'
 
   target 'NanoGirlsTests' do
     inherit! :search_paths

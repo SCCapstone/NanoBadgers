@@ -7,20 +7,38 @@
 //
 
 import UIKit
+import Firebase
 
 class LevelViewController: UIViewController {
 
-    @IBOutlet weak var originStoryButton: UIButton!
-    @IBOutlet weak var level1Button: UIButton!
-
+    @IBAction func originStory(_ sender: Any) {
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "storyBoardNavigavtionController") as? UINavigationController
+        self.present(vc!, animated: true)
+    }
+    
+    @IBAction func level11(_ sender: Any) {
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "level1Part1NavigationController") as? UINavigationController
+        self.present(vc!, animated: true)
+    }
+    
+    @IBAction func level12(_ sender: Any) {
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "level1.2NavigationController") as? UINavigationController
+        self.present(vc!, animated: true)
+    }
+    
+    @IBAction func level13(_ sender: Any) {
+    }
+    
+    var currentLevel: Double = 0.0
 
     // Create instance of Colors class
     let colors = Colors()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        fetchCurrentLevel()
         refresh()
-
+        
         // Do any additional setup after loading the view.
     }
 
@@ -38,6 +56,24 @@ class LevelViewController: UIViewController {
         view.layer.insertSublayer(backgroundLayer, at: 0)
     }
     
+    // Get the current level of the user
+    func fetchCurrentLevel() {
+        let dbRef = FIRDatabase.database().reference()
+        
+        if let auth = FIRAuth.auth() {
+            if let user = auth.currentUser {
+                dbRef.child("users").child(user.uid).child("currentLevel").observeSingleEvent(of: .value, with: {
+                    (snapshot) in
+                    if let level = snapshot.value as? Double {
+                        self.currentLevel = level
+                    }
+                })
+            }
+        }
+    }
+    
+
+
     
     /*
     // MARK: - Navigation
