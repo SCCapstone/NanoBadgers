@@ -182,9 +182,9 @@ class MiniGame2ViewControllerLevel2: UIViewController {
                     }
                     else{
                         GameTimer?.invalidate()
-                        let alertController = UIAlertController(title: "Level 1", message:
+                        let alertController = UIAlertController(title: "Level 2", message:
                             "OUT OF TIME!!!", preferredStyle: UIAlertControllerStyle.alert)
-                        alertController.addAction(UIAlertAction(title: "Continue", style: UIAlertActionStyle.default,handler: nil))
+                        alertController.addAction(UIAlertAction(title: "Continue", style: UIAlertActionStyle.default,handler: { action in self.performSegue(withIdentifier: "SecondPush", sender: nil) }))
                         self.present(alertController, animated: true, completion: nil)
                     }
                 }
