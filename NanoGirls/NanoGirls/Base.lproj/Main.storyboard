@@ -1151,7 +1151,7 @@
                 <navigationController storyboardIdentifier="helpPageNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="mlD-ht-b2I" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="ara-i6-6CY"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="o2N-wV-9aH">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="o2N-wV-9aH">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
