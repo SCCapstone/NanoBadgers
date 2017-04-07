@@ -24,7 +24,7 @@ class MiniGame2ViewController: UIViewController{
     var Score : Int = 0
     var audioPlayer : AVAudioPlayer!
     
-    var TotalTime : Int = 10
+    var TotalTime : Int = 60
     var xSpeed : CGFloat!
     var ySpeed : CGFloat!
     
@@ -171,6 +171,14 @@ class MiniGame2ViewController: UIViewController{
                     SPEED = SPEED - 2
                 }
             }
+            if(i > 4)
+            {
+                
+                views2[i-5].removeFromSuperview()
+                views2[i-5].center = CGPoint(x:-90,y:-90)
+                
+                
+            }
             
         }
         for i in 0..<views2.count
@@ -185,6 +193,14 @@ class MiniGame2ViewController: UIViewController{
                     SPEED = SPEED + 2
                 }
                 Score = Score + 1
+            }
+            if(i > 4)
+            {
+                
+                views2[i-5].removeFromSuperview()
+                views2[i-5].center = CGPoint(x:-90,y:-90)
+                
+                
             }
             
         }
