@@ -477,7 +477,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dYb-2c-dlt">
-                                <rect key="frame" x="20" y="0.0" width="728" height="144"/>
+                                <rect key="frame" x="20" y="70" width="728" height="144"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="26"/>
                                 <nil key="textColor"/>
