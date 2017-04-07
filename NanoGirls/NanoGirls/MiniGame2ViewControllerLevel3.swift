@@ -24,7 +24,7 @@ class MiniGame2ViewControllerLevel3: UIViewController {
     var Score : Int = 0
     var audioPlayer : AVAudioPlayer!
     
-    var TotalTime : Int = 10
+    var TotalTime : Int = 60
     var xSpeed : CGFloat!
     var ySpeed : CGFloat!
     
