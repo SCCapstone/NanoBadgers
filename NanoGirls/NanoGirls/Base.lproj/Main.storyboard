@@ -199,9 +199,6 @@
                                 <rect key="frame" x="634" y="72" width="118" height="118"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Finish Game"/>
-                                <connections>
-                                    <segue destination="yxc-nZ-b0O" kind="show" id="0q0-Mh-0g1"/>
-                                </connections>
                             </button>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="oie_transparent.png" translatesAutoresizingMaskIntoConstraints="NO" id="xDM-d8-dMM">
                                 <rect key="frame" x="353" y="585" width="60" height="60"/>
@@ -606,6 +603,7 @@
                         <outlet property="ScoreIndicator" destination="jIR-o0-alN" id="QLf-jK-QG7"/>
                         <outlet property="TimeIndicator" destination="iWa-Eu-Zg7" id="O3G-FT-179"/>
                         <outlet property="player" destination="fyF-zc-nPy" id="1pv-Gd-sZY"/>
+                        <segue destination="y3Y-Au-6Ii" kind="show" identifier="question" id="Eo0-kE-qf4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3d4-lH-COD" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -951,7 +949,7 @@
         <!--Question Page View Controller-->
         <scene sceneID="SRu-c9-PX6">
             <objects>
-                <viewController id="yxc-nZ-b0O" customClass="QuestionPageViewController" customModule="NanoGirls" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="questionPage" id="yxc-nZ-b0O" customClass="QuestionPageViewController" customModule="NanoGirls" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="NBB-ax-pAK"/>
                         <viewControllerLayoutGuide type="bottom" id="Q9w-71-8Hz"/>
@@ -1017,7 +1015,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QD5-NL-TsJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="12772" y="2346"/>
+            <point key="canvasLocation" x="15691.40625" y="1125.5859375"/>
         </scene>
         <!--Lesson Page View Controller-->
         <scene sceneID="IjZ-10-lrw">
@@ -1218,6 +1216,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8mV-hh-lsw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="12407.8125" y="1125.5859375"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="AqA-o8-RmP">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="y3Y-Au-6Ii" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="zhj-Wo-LSZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="yxc-nZ-b0O" kind="relationship" relationship="rootViewController" id="Jom-yf-uBb"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5Hd-qb-GSN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="14925.78125" y="1125.5859375"/>
         </scene>
     </scenes>
     <resources>
