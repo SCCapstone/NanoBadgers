@@ -13,17 +13,11 @@ import AVFoundation
 
 class FlightGameViewController: UIViewController{
     
-    
-    
-
     @IBOutlet var player: UIImageView!
     
     @IBOutlet var ScoreIndicator: UILabel!
    
     @IBOutlet var TimeIndicator: UILabel!
-   // @IBOutlet var ScoreIndicator : UILabel?
-    //@IBOutlet var TimeIndicator : UILabel?
-    
     
     var Score : Int = 0
     var audioPlayer : AVAudioPlayer!
@@ -47,8 +41,11 @@ class FlightGameViewController: UIViewController{
     var views = [UIView]()
     var views2 = [UIView]()
     
-    
-    
+    /**************
+    *
+     playSound function: Plays a sound when called.
+    *
+    *****/
     
     func playSound(){
         
@@ -197,7 +194,14 @@ class FlightGameViewController: UIViewController{
         timer.invalidate()
     }
     
-    //down movement for stuff
+    /***************
+    *
+     moveStuffDown function: moves each element in views (bad guys) and views2 (good guys)
+        down the screen. (+ y direction).
+     
+        if object descends past a certain point, remove object.
+    *
+    ******/
     func moveStuffDown()
     {
         for i in 0..<views.count
@@ -210,9 +214,7 @@ class FlightGameViewController: UIViewController{
             {
                 views[i].center = CGPoint(x:views[i].center.x, y:views[i].center.y + SPEED)
             }
-            
         }
-
         for i in 0..<views2.count
         {
             if(views2[i].center.y > UIScreen.main.bounds.height + 10)
@@ -223,14 +225,18 @@ class FlightGameViewController: UIViewController{
             {
                 views2[i].center = CGPoint(x:views2[i].center.x, y:views2[i].center.y + SPEED)
             }
-            
         }
-        
     }
     
-    func CPU(){
-        //player.center = CGPoint(x:player.center.x + xSpeed, y:player.center.y + ySpeed)
-        
+    /****************
+    *
+     CPU function: if the player controlled unit intersects another object (good or bad guy), then
+     remove object from screen, play a sound, add to or subtract from the score, then increase or decrease
+     speed accordingly.
+    *
+    *****/
+    func CPU()
+    {
         for i in 0..<views.count
         {
             if(player.frame.intersects(views[i].frame))
@@ -240,7 +246,7 @@ class FlightGameViewController: UIViewController{
                 enemyCount = enemyCount - 1
                 playSound()
                 if(SPEED > 4){
-                    SPEED = SPEED - 2
+                    SPEED = SPEED - 1
                 }
             }
             
@@ -249,31 +255,47 @@ class FlightGameViewController: UIViewController{
         {
             if(player.frame.intersects(views2[i].frame))
             {
-                
                 views2[i].removeFromSuperview()
                 views2[i].center = CGPoint(x:-90,y:-90)
                 goodCount = goodCount - 1
                 playSound()
                 if(SPEED < 10)
                 {
-                    SPEED = SPEED + 2
+                    SPEED = SPEED + 1
                 }
                 Score = Score + 1
             }
-            
         }
-
         updateScoreIndicatior()
-        
     }
-    func updateTime(){
+    
+    /***********
+    *
+     function updateTime: updates the time text on screen.
+    *
+    ******/
+    func updateTime()
+    {
         TimeIndicator?.text = "\(TotalTime)"
     }
-    func updateScoreIndicatior(){
+    /************
+    *
+     function updateScoreindicator: updates the score text on screen
+    *
+    *****/
+    func updateScoreIndicatior()
+    {
         ScoreIndicator?.text = "\(Score)"
     }
     
-    func decreaseTotalTime(){
+    /************
+    *
+     function decreaseTotalTime: Decreases the total time (how long left in the game) until it reaches
+     0. Then send a message, and end the round.
+    *
+    ******/
+    func decreaseTotalTime()
+    {
         if(TotalTime != 0)
         {
             TotalTime = TotalTime - 1
@@ -288,9 +310,13 @@ class FlightGameViewController: UIViewController{
         }
     }
     
-    
-    
-    func randomColor() -> UIColor{
+    /***********
+    *
+     function randomColor: I'm not sure what this does ?
+    *
+    ****/
+    func randomColor() -> UIColor
+    {
         
         let red = CGFloat(54)
         let green = CGFloat(54)
@@ -299,23 +325,24 @@ class FlightGameViewController: UIViewController{
         
     }
     
-    
-    func spawnEnemy(){
+    /***********
+    *
+     function spawnEnemy: Spawns enemy at a random x coordinate above the screen.
+     the enemy is a red square. Then adds enemy to the subView and the insert array
+    *
+    ****/
+    func spawnEnemy()
+    {
         
         
-        var bufferside : CGFloat
+   //     var bufferside : CGFloat
         var inputx : CGFloat
-        //var inputy : UInt32
-        //var buffertop : UInt32
         var xCord : Int
-        //var yCord : Int
         
-        inputx = WIDTH*5/8
-        bufferside = WIDTH/8
-        //inputy = UInt32(HEIGHT) * 3 / 4
-        //buffertop = UInt32(HEIGHT) / 8
-        xCord = Int(arc4random_uniform(UInt32(inputx))+(UInt32(bufferside)))
-       // yCord = Int(arc4random_uniform(UInt32(inputy))+(UInt32(buffertop)))
+        inputx = WIDTH - 50
+  //      bufferside = WIDTH/8
+        
+        xCord = Int(arc4random_uniform(UInt32(inputx + 25))) //+(UInt32(bufferside)))
         
         if(enemyCount < 10)
         {
@@ -329,23 +356,22 @@ class FlightGameViewController: UIViewController{
             
         }
     }
-    func spawnGood(){
-        
-        
-        var bufferside : CGFloat
+    
+    /*********
+    *
+     function spawnGood: Spawns a good guy at a random x coordinate above the screen.
+     the good guy is a blue square. Adds the enemy to the subview and the insert array
+    *
+    ***/
+    func spawnGood()
+    {
+       // var bufferside : CGFloat
         var inputx : CGFloat
-       // var inputy : UInt32
-       // var buffertop : UInt32
         var xCord : Int
-       // var yCord : Int
         
-        
-        inputx = WIDTH*5/8
-        bufferside = WIDTH / 8
-       // inputy = UInt32(HEIGHT) * 3 / 4
-       // buffertop = UInt32(HEIGHT) / 8
-        xCord = Int(arc4random_uniform(UInt32(inputx))+(UInt32(bufferside)))
-       // yCord = Int(arc4random_uniform(UInt32(inputy))+(UInt32(buffertop)))
+        inputx = WIDTH - 50
+       // bufferside = WIDTH / 8
+        xCord = Int(arc4random_uniform(UInt32(inputx + 25))) //+(UInt32(bufferside)))
         
         if(goodCount < 10)
         {
@@ -353,25 +379,17 @@ class FlightGameViewController: UIViewController{
             good.backgroundColor = UIColor.blue
             good.center = CGPoint(x: xCord, y: -10)
             
-         /*  if(goodCount >= 1)
-           {
-            if(good.center.x < views[goodCount-1].center.x+30 ||
-                good.center.x > views[goodCount-1].center.x-30)
-            {
-                good.center = CGPoint(x: xCord + 30, y: -10)
-            }
-            }*/
-            
             self.view.addSubview(good)
             views2.insert(good, at: Int(goodCount))
             goodCount = goodCount + 1
-            
         }
-        
-        
     }
     
-    
+    /*************
+    *
+     viewDidLoad function : Does stuff
+    *
+    ***/
     override func viewDidLoad()
     {
         super.viewDidLoad()
@@ -387,7 +405,7 @@ class FlightGameViewController: UIViewController{
         
         movementTimer = Timer.scheduledTimer(timeInterval: 0.05, target: self, selector: #selector (self.moveStuffDown), userInfo: nil, repeats: true)
         SpawnTimer = Timer.scheduledTimer(timeInterval: 3.5, target: self, selector: #selector (self.spawnEnemy), userInfo: nil, repeats: true)
-        SpawnTimer2 = Timer.scheduledTimer(timeInterval: 1.25, target: self, selector: #selector (self.spawnGood), userInfo: nil, repeats: true)
+        SpawnTimer2 = Timer.scheduledTimer(timeInterval: 1.5, target: self, selector: #selector (self.spawnGood), userInfo: nil, repeats: true)
         GameTimer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(self.decreaseTotalTime), userInfo: nil, repeats: true)
         
         // :)
