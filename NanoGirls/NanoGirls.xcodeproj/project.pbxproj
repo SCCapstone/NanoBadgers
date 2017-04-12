@@ -39,10 +39,10 @@
 		CE967D271DC245C200E00D4C /* thecat.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CE967D261DC245C200E00D4C /* thecat.jpg */; };
 		D21B16681E4138B100014562 /* MiniGame2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21B16671E4138B100014562 /* MiniGame2ViewController.swift */; };
 		D2599B6F1E771AAC00D9E077 /* LessonPage2MiniGame1.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2599B6E1E771AAC00D9E077 /* LessonPage2MiniGame1.swift */; };
-		D28376591E94BA3B00CE4748 /* MiniGame2ViewControllerLevel3.swift in Sources */ = {isa = PBXBuildFile; fileRef = D28376581E94BA3B00CE4748 /* MiniGame2ViewControllerLevel3.swift */; };
 		D28FF6511E8439C70091B3CE /* MiniGame2ViewControllerLevel2.swift in Sources */ = {isa = PBXBuildFile; fileRef = D28FF6501E8439C70091B3CE /* MiniGame2ViewControllerLevel2.swift */; };
 		D2F2D5D01E8204A600F6EF64 /* LessonPage2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F2D5CF1E8204A600F6EF64 /* LessonPage2ViewController.swift */; };
 		D2F504281E94966B0085F79A /* LessonPage3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F504271E94966B0085F79A /* LessonPage3ViewController.swift */; };
+		EEA07D2A1E95912500A8985A /* FlightGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA07D291E95912500A8985A /* FlightGameViewController.swift */; };
 		EEB8260A1E6602C6004A1DDA /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB826091E6602C6004A1DDA /* TutorialViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -106,10 +106,10 @@
 		CE967D261DC245C200E00D4C /* thecat.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = thecat.jpg; sourceTree = "<group>"; };
 		D21B16671E4138B100014562 /* MiniGame2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MiniGame2ViewController.swift; sourceTree = "<group>"; };
 		D2599B6E1E771AAC00D9E077 /* LessonPage2MiniGame1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = LessonPage2MiniGame1.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
-		D28376581E94BA3B00CE4748 /* MiniGame2ViewControllerLevel3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MiniGame2ViewControllerLevel3.swift; path = ../../../../BLEG/MiniGame2ViewControllerLevel3.swift; sourceTree = "<group>"; };
 		D28FF6501E8439C70091B3CE /* MiniGame2ViewControllerLevel2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MiniGame2ViewControllerLevel2.swift; sourceTree = "<group>"; };
 		D2F2D5CF1E8204A600F6EF64 /* LessonPage2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = LessonPage2ViewController.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		D2F504271E94966B0085F79A /* LessonPage3ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LessonPage3ViewController.swift; sourceTree = "<group>"; };
+		EEA07D291E95912500A8985A /* FlightGameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlightGameViewController.swift; sourceTree = "<group>"; };
 		EEB826091E6602C6004A1DDA /* TutorialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialViewController.swift; sourceTree = "<group>"; };
 		F2EE4EE76E2F84DA32E5B991 /* Pods_NanoGirlsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NanoGirlsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB9E9FA4E3A931FDF4D84313 /* Pods-NanoGirls.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NanoGirls.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NanoGirls/Pods-NanoGirls.debug.xcconfig"; sourceTree = "<group>"; };
@@ -219,7 +219,6 @@
 		CE2E15B91DB5730F00C3AA8F /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				D28376581E94BA3B00CE4748 /* MiniGame2ViewControllerLevel3.swift */,
 				CE8FEA9D1E666EAD00B1C970 /* OriginStoryViewController.swift */,
 				D21B16671E4138B100014562 /* MiniGame2ViewController.swift */,
 				EEB826091E6602C6004A1DDA /* TutorialViewController.swift */,
@@ -235,6 +234,7 @@
 				D28FF6501E8439C70091B3CE /* MiniGame2ViewControllerLevel2.swift */,
 				5720582B1E88276200710D88 /* LevelViewController.swift */,
 				D2F504271E94966B0085F79A /* LessonPage3ViewController.swift */,
+				EEA07D291E95912500A8985A /* FlightGameViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -560,6 +560,7 @@
 				D2599B6F1E771AAC00D9E077 /* LessonPage2MiniGame1.swift in Sources */,
 				D21B16681E4138B100014562 /* MiniGame2ViewController.swift in Sources */,
 				D28FF6511E8439C70091B3CE /* MiniGame2ViewControllerLevel2.swift in Sources */,
+				EEA07D2A1E95912500A8985A /* FlightGameViewController.swift in Sources */,
 				5720582C1E88276200710D88 /* LevelViewController.swift in Sources */,
 				D2F504281E94966B0085F79A /* LessonPage3ViewController.swift in Sources */,
 				D2F2D5D01E8204A600F6EF64 /* LessonPage2ViewController.swift in Sources */,
@@ -574,7 +575,6 @@
 				CE2E15891DB5726600C3AA8F /* AppDelegate.swift in Sources */,
 				C38ADC0C1DB71963005661E2 /* LoginPageViewController.swift in Sources */,
 				CE3D50231DBE8C1400E3AB40 /* QuestionPageViewController.swift in Sources */,
-				D28376591E94BA3B00CE4748 /* MiniGame2ViewControllerLevel3.swift in Sources */,
 				CE2E15911DB5726700C3AA8F /* NanoGirls.xcdatamodeld in Sources */,
 				6282FC301DC114E000CC018D /* MiniGame1ViewController.swift in Sources */,
 			);

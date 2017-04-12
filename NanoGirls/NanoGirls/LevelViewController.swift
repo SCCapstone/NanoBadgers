@@ -29,6 +29,12 @@ class LevelViewController: UIViewController {
     @IBAction func level13(_ sender: Any) {
     }
     
+    @IBAction func level2ish(_ sender: Any)
+    {
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "flightGameNavigationController") as? UINavigationController
+        self.present(vc!, animated: true)
+    }
+    
     var currentLevel: Double = 0.0
 
     // Create instance of Colors class
