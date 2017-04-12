@@ -40,7 +40,6 @@ class LessonPageViewController: UIViewController {
         super.didReceiveMemoryWarning()
     }
     
-    
     func refresh()
     {
         //sets the background gradient

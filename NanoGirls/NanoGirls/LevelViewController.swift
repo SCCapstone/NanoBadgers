@@ -17,6 +17,14 @@ class LevelViewController: UIViewController {
     }
     
     @IBAction func level11(_ sender: Any) {
+        // Doesnt work
+        // trying to disable button if not to that level yet
+        if self.currentLevel < 1.1 {
+            let disableMyButton = sender as? UIButton
+            disableMyButton!.isEnabled = false
+        }
+        
+        
         let vc = self.storyboard?.instantiateViewController(withIdentifier: "level1Part1NavigationController") as? UINavigationController
         self.present(vc!, animated: true)
     }
@@ -27,6 +35,8 @@ class LevelViewController: UIViewController {
     }
     
     @IBAction func level13(_ sender: Any) {
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "level1.3NavigationController") as? UINavigationController
+        self.present(vc!, animated: true)
     }
     
     @IBAction func level2ish(_ sender: Any)
