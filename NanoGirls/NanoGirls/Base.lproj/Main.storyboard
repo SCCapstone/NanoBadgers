@@ -102,7 +102,7 @@
                                     <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wst-6E-3uI">
                                         <rect key="frame" x="8" y="428" width="752" height="65"/>
                                         <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="33"/>
-                                        <state key="normal" title="Help">
+                                        <state key="normal" title="About">
                                             <color key="titleColor" red="0.9882352941176471" green="0.92549019607843142" blue="0.3843137254901961" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <connections>
@@ -801,27 +801,41 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Mfk-8m-oYN">
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mfk-8m-oYN">
                                 <rect key="frame" x="0.0" y="0.0" width="0.0" height="44"/>
                                 <items>
                                     <navigationItem title="Help Screen" id="Dfu-co-Cnn"/>
                                 </items>
                             </navigationBar>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VEM-gp-62r">
-                                <rect key="frame" x="16" y="65" width="343" height="21"/>
-                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="22"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p5k-jH-Pbg">
+                                <rect key="frame" x="20" y="28" width="728" height="976"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VEM-gp-62r">
+                                        <rect key="frame" x="8" y="8" width="712" height="960"/>
+                                        <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="22"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="VEM-gp-62r" firstAttribute="top" secondItem="p5k-jH-Pbg" secondAttribute="topMargin" id="6Mj-YT-cqK"/>
+                                    <constraint firstItem="VEM-gp-62r" firstAttribute="centerY" secondItem="p5k-jH-Pbg" secondAttribute="centerY" id="6SQ-Ss-gV9"/>
+                                    <constraint firstItem="VEM-gp-62r" firstAttribute="centerX" secondItem="p5k-jH-Pbg" secondAttribute="centerX" id="7E9-3U-leB"/>
+                                    <constraint firstItem="VEM-gp-62r" firstAttribute="leading" secondItem="p5k-jH-Pbg" secondAttribute="leadingMargin" id="JDF-Hp-DnU"/>
+                                    <constraint firstItem="VEM-gp-62r" firstAttribute="trailing" secondItem="p5k-jH-Pbg" secondAttribute="trailingMargin" id="bq2-y0-hTn"/>
+                                    <constraint firstItem="VEM-gp-62r" firstAttribute="bottom" secondItem="p5k-jH-Pbg" secondAttribute="bottomMargin" id="qqq-gs-Zxy"/>
+                                </constraints>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="VEM-gp-62r" firstAttribute="trailing" secondItem="m7y-Ey-LTg" secondAttribute="trailingMargin" constant="8" id="FQR-xo-W94"/>
-                            <constraint firstItem="VEM-gp-62r" firstAttribute="top" secondItem="Mfk-8m-oYN" secondAttribute="bottom" constant="35" id="XkJ-rV-9Dv"/>
-                            <constraint firstItem="Mfk-8m-oYN" firstAttribute="top" secondItem="m7y-Ey-LTg" secondAttribute="top" id="a3H-Nv-hxz"/>
-                            <constraint firstItem="Mfk-8m-oYN" firstAttribute="centerX" secondItem="VEM-gp-62r" secondAttribute="centerX" id="cyL-aJ-8PB"/>
-                            <constraint firstItem="Mfk-8m-oYN" firstAttribute="leading" secondItem="m7y-Ey-LTg" secondAttribute="leading" id="qCa-bF-Xxi"/>
-                            <constraint firstItem="VEM-gp-62r" firstAttribute="leading" secondItem="m7y-Ey-LTg" secondAttribute="leadingMargin" constant="8" id="vZM-Ti-LNz"/>
+                            <constraint firstItem="Mfk-8m-oYN" firstAttribute="leading" secondItem="m7y-Ey-LTg" secondAttribute="leading" id="9OA-zh-X3h"/>
+                            <constraint firstItem="p5k-jH-Pbg" firstAttribute="top" secondItem="rcT-m1-tfq" secondAttribute="bottom" constant="8" symbolic="YES" id="X3N-kh-2Es"/>
+                            <constraint firstItem="p5k-jH-Pbg" firstAttribute="leading" secondItem="Mfk-8m-oYN" secondAttribute="trailing" constant="20" id="aaA-75-lez"/>
+                            <constraint firstItem="p5k-jH-Pbg" firstAttribute="trailing" secondItem="m7y-Ey-LTg" secondAttribute="trailingMargin" id="bAH-cd-Y0P"/>
+                            <constraint firstItem="p5k-jH-Pbg" firstAttribute="leading" secondItem="m7y-Ey-LTg" secondAttribute="leadingMargin" id="bjj-Vb-Ehw"/>
+                            <constraint firstItem="Mfk-8m-oYN" firstAttribute="top" secondItem="m7y-Ey-LTg" secondAttribute="top" id="mPX-0u-mtk"/>
+                            <constraint firstAttribute="bottom" secondItem="p5k-jH-Pbg" secondAttribute="bottom" constant="20" symbolic="YES" id="r0Z-mh-7jS"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="JjR-KE-GPA"/>
@@ -831,7 +845,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xT5-FQ-lHr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3767" y="1803"/>
+            <point key="canvasLocation" x="3766.40625" y="1802.9296874999998"/>
         </scene>
         <!--Origin Story View Controller-->
         <scene sceneID="FO6-k0-0XH">
