@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--New Account View Controller-->
+        <!--Create Account-->
         <scene sceneID="ORN-Ab-ivu">
             <objects>
                 <viewController id="OxG-MG-Ms8" customClass="NewAccountViewController" customModule="NanoGirls" customModuleProvider="target" sceneMemberID="viewController">
@@ -23,19 +23,19 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xPV-fo-fsS">
-                                <rect key="frame" x="20" y="218" width="728" height="30"/>
+                                <rect key="frame" x="20" y="262" width="728" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="next"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MnA-AZ-0Lv">
-                                <rect key="frame" x="20" y="278" width="728" height="30"/>
+                                <rect key="frame" x="20" y="322" width="728" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="next" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NLM-I1-7un">
-                                <rect key="frame" x="270" y="374" width="228" height="48"/>
+                                <rect key="frame" x="270" y="418" width="228" height="48"/>
                                 <color key="backgroundColor" red="0.98823529409999999" green="0.92549019610000005" blue="0.38431372549999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="228" id="Bdh-b2-Xxb"/>
@@ -61,7 +61,15 @@
                             <constraint firstItem="xPV-fo-fsS" firstAttribute="leading" secondItem="MnA-AZ-0Lv" secondAttribute="leading" id="gb7-rK-BtS"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="fmf-Ui-R8p"/>
+                    <navigationItem key="navigationItem" title="Create Account" id="7w8-b2-7sw">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="tTL-Kt-Mn5"/>
+                        <barButtonItem key="leftBarButtonItem" title="Back" id="8yY-Sd-0Po">
+                            <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <segue destination="gfQ-GH-3h8" kind="show" id="OX9-ZS-AdF"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="email" destination="xPV-fo-fsS" id="KqJ-Ee-ENN"/>
                         <outlet property="password" destination="MnA-AZ-0Lv" id="xtv-gq-g7E"/>
@@ -808,10 +816,10 @@
                                 </items>
                             </navigationBar>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p5k-jH-Pbg">
-                                <rect key="frame" x="20" y="28" width="728" height="976"/>
+                                <rect key="frame" x="20" y="72" width="728" height="932"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VEM-gp-62r">
-                                        <rect key="frame" x="8" y="8" width="712" height="960"/>
+                                        <rect key="frame" x="8" y="8" width="712" height="916"/>
                                         <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="22"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -838,7 +846,15 @@
                             <constraint firstAttribute="bottom" secondItem="p5k-jH-Pbg" secondAttribute="bottom" constant="20" symbolic="YES" id="r0Z-mh-7jS"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="JjR-KE-GPA"/>
+                    <navigationItem key="navigationItem" title="About" id="O0B-eq-iun">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="ePv-ZI-7pO"/>
+                        <barButtonItem key="leftBarButtonItem" title="Back" id="8S9-B0-G5U">
+                            <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <segue destination="gfQ-GH-3h8" kind="show" id="2Pw-yJ-zur"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="helpText" destination="VEM-gp-62r" id="KBl-hO-Qou"/>
                     </connections>
@@ -1347,6 +1363,6 @@
         <image name="paddle.png" width="100" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Duf-La-ww0"/>
+        <segue reference="OX9-ZS-AdF"/>
     </inferredMetricsTieBreakers>
 </document>
