@@ -44,7 +44,7 @@ class LessonPage3ViewController: UIViewController {
         backgroundLayer.frame = view.frame
         view.layer.insertSublayer(backgroundLayer, at: 0)
         
-        // Set current level to 1.2
+        // Set current level to 1.3
         let dbRef = FIRDatabase.database().reference()
         
         if let auth = FIRAuth.auth() {
