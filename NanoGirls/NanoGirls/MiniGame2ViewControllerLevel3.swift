@@ -6,7 +6,6 @@
 //  Copyright © 2017 NanoBadgers. All rights reserved.
 //
 
-
 import UIKit
 import Foundation
 import AVFoundation
@@ -25,7 +24,7 @@ class MiniGame2ViewControllerLevel3: UIViewController {
     var Score : Int = 0
     var audioPlayer : AVAudioPlayer!
     
-    var TotalTime : Int = 10
+    var TotalTime : Int = 60
     var xSpeed : CGFloat!
     var ySpeed : CGFloat!
     
@@ -185,8 +184,9 @@ class MiniGame2ViewControllerLevel3: UIViewController {
             GameTimer?.invalidate()
             let alertController = UIAlertController(title: "Level 1", message:
                 "OUT OF TIME!!!", preferredStyle: UIAlertControllerStyle.alert)
-            alertController.addAction(UIAlertAction(title: "Continue", style: UIAlertActionStyle.default,handler: nil))
-            self.present(alertController, animated: true, completion: nil)        }
+            alertController.addAction(UIAlertAction(title: "Continue", style: UIAlertActionStyle.default,handler: { action in self.performSegue(withIdentifier: "question", sender: nil) }))
+            self.present(alertController, animated: true, completion: nil)
+        }
     }
     
     func SpawnEnemy(){
@@ -267,4 +267,3 @@ class MiniGame2ViewControllerLevel3: UIViewController {
     }
     
 }
-
