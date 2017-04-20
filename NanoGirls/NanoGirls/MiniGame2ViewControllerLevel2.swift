@@ -214,9 +214,8 @@ class MiniGame2ViewControllerLevel2: UIViewController {
                 
                 inputx = WIDTH*5/8
                 bufferside = WIDTH / 8
+                inputy = UInt32(HEIGHT) * 3 / 4
                 buffertop = UInt32(HEIGHT) / 8
-                inputy = UInt32(HEIGHT) * 5 / 8
-                
                 xCord = Int(arc4random_uniform(UInt32(inputx))+(UInt32(bufferside)))
                 yCord = Int(arc4random_uniform(UInt32(inputy))+(UInt32(buffertop)))
                 
@@ -246,7 +245,7 @@ class MiniGame2ViewControllerLevel2: UIViewController {
                 
                 inputx = WIDTH*5/8
                 bufferside = WIDTH / 8
-                inputy = UInt32(HEIGHT) * 5 / 8
+                inputy = UInt32(HEIGHT) * 3 / 4
                 buffertop = UInt32(HEIGHT) / 8
                 xCord = Int(arc4random_uniform(UInt32(inputx))+(UInt32(bufferside)))
                 yCord = Int(arc4random_uniform(UInt32(inputy))+(UInt32(buffertop)))
