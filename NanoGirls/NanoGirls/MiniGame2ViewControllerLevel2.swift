@@ -143,9 +143,7 @@ class MiniGame2ViewControllerLevel2: UIViewController {
                         views[i].removeFromSuperview()
                         views[i].center = CGPoint(x:-90,y:-90)
                         playSound()
-                        if(SPEED > 4){
-                            SPEED = SPEED - 2
-                        }
+                        Score = Score - 1
                     }
                     if(i > 4)
                     {
@@ -164,10 +162,6 @@ class MiniGame2ViewControllerLevel2: UIViewController {
                         views2[i].removeFromSuperview()
                         views2[i].center = CGPoint(x:-90,y:-90)
                         playSound()
-                        if(SPEED < 10)
-                        {
-                            SPEED = SPEED + 2
-                        }
                         Score = Score + 1
                     }
                     if(i > 4)
@@ -214,7 +208,7 @@ class MiniGame2ViewControllerLevel2: UIViewController {
                 
                 inputx = WIDTH*5/8
                 bufferside = WIDTH / 8
-                inputy = UInt32(HEIGHT) * 3 / 4
+                inputy = UInt32(HEIGHT) * 5 / 8
                 buffertop = UInt32(HEIGHT) / 8
                 xCord = Int(arc4random_uniform(UInt32(inputx))+(UInt32(bufferside)))
                 yCord = Int(arc4random_uniform(UInt32(inputy))+(UInt32(buffertop)))
@@ -227,6 +221,7 @@ class MiniGame2ViewControllerLevel2: UIViewController {
                     self.view.addSubview(enemy)
                     views.insert(enemy, at: Int(enemyCount))
                     enemyCount = enemyCount + 1
+                
                  
 
         
@@ -245,7 +240,7 @@ class MiniGame2ViewControllerLevel2: UIViewController {
                 
                 inputx = WIDTH*5/8
                 bufferside = WIDTH / 8
-                inputy = UInt32(HEIGHT) * 3 / 4
+                inputy = UInt32(HEIGHT) * 5 / 8
                 buffertop = UInt32(HEIGHT) / 8
                 xCord = Int(arc4random_uniform(UInt32(inputx))+(UInt32(bufferside)))
                 yCord = Int(arc4random_uniform(UInt32(inputy))+(UInt32(buffertop)))
@@ -271,7 +266,7 @@ class MiniGame2ViewControllerLevel2: UIViewController {
                     goodCount = 0
                     enemyCount = 0
                     clock = Timer.scheduledTimer(timeInterval: 0.05, target: self, selector: #selector(self.CPU), userInfo: nil, repeats: true)
-                    SPEED = WIDTH/100
+                    SPEED = WIDTH/200
                     SpawnTimer = Timer.scheduledTimer(timeInterval: 5, target: self, selector: #selector (self.SpawnEnemy), userInfo: nil, repeats: true)
                     SpawnTimer2 = Timer.scheduledTimer(timeInterval: 2, target: self, selector: #selector (self.SpawnPoint), userInfo: nil, repeats: true)
                     GameTimer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(self.decreaseTotalTime), userInfo: nil, repeats: true)

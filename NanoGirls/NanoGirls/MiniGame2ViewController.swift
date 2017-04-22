@@ -167,9 +167,7 @@ class MiniGame2ViewController: UIViewController{
                 views[i].removeFromSuperview()
                 views[i].center = CGPoint(x:-90,y:-90)
                 playSound()
-                if(SPEED > 4){
-                    SPEED = SPEED - 2
-                }
+                
             }
             if(i > 4)
             {
@@ -188,10 +186,7 @@ class MiniGame2ViewController: UIViewController{
                 views2[i].removeFromSuperview()
                 views2[i].center = CGPoint(x:-90,y:-90)
                 playSound()
-                if(SPEED < 10)
-                {
-                    SPEED = SPEED + 2
-                }
+            
                 Score = Score + 1
             }
             if(i > 4)
@@ -253,7 +248,7 @@ class MiniGame2ViewController: UIViewController{
         
         inputx = WIDTH*5/8
         bufferside = WIDTH / 8
-        inputy = UInt32(HEIGHT) * 3 / 4
+        inputy = UInt32(HEIGHT) * 5 / 8
         buffertop = UInt32(HEIGHT) / 8
         xCord = Int(arc4random_uniform(UInt32(inputx))+(UInt32(bufferside)))
         yCord = Int(arc4random_uniform(UInt32(inputy))+(UInt32(buffertop)))
@@ -283,7 +278,7 @@ class MiniGame2ViewController: UIViewController{
         
         inputx = WIDTH*5/8
         bufferside = WIDTH / 8
-        inputy = UInt32(HEIGHT) * 3 / 4
+        inputy = UInt32(HEIGHT) * 5 / 8
         buffertop = UInt32(HEIGHT) / 8
         xCord = Int(arc4random_uniform(UInt32(inputx))+(UInt32(bufferside)))
         yCord = Int(arc4random_uniform(UInt32(inputy))+(UInt32(buffertop)))
@@ -310,7 +305,7 @@ class MiniGame2ViewController: UIViewController{
             clock = Timer.scheduledTimer(timeInterval: 0.05, target: self, selector: #selector(self.CPU), userInfo: nil, repeats: true)
             xSpeed = 0
             ySpeed = 0
-            SPEED = WIDTH/100
+            SPEED = WIDTH/200
             enemyCount = 0
             goodCount = 0
             //SpawnTimer = Timer.scheduledTimer(timeInterval: 3.5, target: self, selector: #selector (self.spawnEnemy), userInfo: nil, repeats: true)
