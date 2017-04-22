@@ -34,12 +34,12 @@ class LevelViewController: UIViewController {
     }
     
     @IBAction func level13(_ sender: Any) {
-
         let vc = self.storyboard?.instantiateViewController(withIdentifier: "level1.3NavigationController") as? UINavigationController
         self.present(vc!, animated: true)
     }
+    
     @IBAction func level1ReviewQuestion(_ sender: Any) {
-        let vc = self.storyboard?.instantiateViewController(withIdentifier: "questionNavigationController") as? UINavigationController
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "reviewQuestionNavigationController") as? UINavigationController
         self.present(vc!, animated: true)
     }
     
