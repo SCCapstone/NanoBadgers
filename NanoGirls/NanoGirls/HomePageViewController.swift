@@ -8,14 +8,27 @@
 **/
 
 import UIKit
-
+import Firebase
 
 
 class HomePageViewController: UIViewController
 {
-    @IBOutlet weak var LoginButton: UIButton!
+
     @IBOutlet weak var HelpButton: UIButton!
     
+    
+    @IBAction func loginButton(_ sender: Any) {
+        if FIRAuth.auth()?.currentUser != nil {
+            // User is signed in.
+            // Send to level page.
+            let vc = self.storyboard?.instantiateViewController(withIdentifier: "levelNavigationController") as? UINavigationController
+            self.present(vc!, animated: true)
+        } else {
+            // No user is signed in.
+            // Send to login page.
+            let vc = self.storyboard?.instantiateViewController(withIdentifier: "loginNavigationController") as? UINavigationController
+            self.present(vc!, animated: true)        }
+    }
     
     //creates instance of Colors class
     let colors = Colors()

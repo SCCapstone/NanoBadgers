@@ -13,14 +13,42 @@ import Firebase
 class LessonPage3ViewController: UIViewController {
     
     @IBOutlet weak var lessonText3: UILabel!
+    
+    @IBAction func backButton(_ sender: Any) {
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "levelNavigationController") as? UINavigationController
+        self.present(vc!, animated: true)
+    }
+    @IBAction func signOut(_ sender: Any) {
+        print("sign out button tapped")
+        let firebaseAuth = FIRAuth.auth()
+        do {
+            try firebaseAuth!.signOut()
+            FIRAuth.auth()?.addStateDidChangeListener { auth, user in
+                if user != nil {
+                    print("User is signed in.")
+                } else {
+                    print("User is signed out.")
+                    let vc = self.storyboard?.instantiateViewController(withIdentifier: "homePageNavigationController") as? UINavigationController
+                    self.present(vc!, animated: true)
+                }
+            }
+        } catch let signOutError as NSError {
+            print ("Error signing out: \(signOutError)")
+        } catch {
+            print("Unknown error.")
+        }
+    }
+    
+    
     //creates instance of Colors class
     let colors = Colors()
-    let level = 1.3
+    //let level = 1.3
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         refresh()
+        setCurrentLevel()
         
         lessonText3.text = "Wow! You dodged the Silver particles! Good job. \n OH NO! Theres been a giant spill in the so the amount of silver is huge! Help us collect more nutrients!"
         
@@ -44,7 +72,7 @@ class LessonPage3ViewController: UIViewController {
         backgroundLayer.frame = view.frame
         view.layer.insertSublayer(backgroundLayer, at: 0)
         
-        // Set current level to 1.3
+/*        // Set current level to 1.3
         let dbRef = FIRDatabase.database().reference()
         
         if let auth = FIRAuth.auth() {
@@ -52,8 +80,35 @@ class LessonPage3ViewController: UIViewController {
                 dbRef.child("users").child(user.uid).updateChildValues(["currentLevel":level])
             }
         }
+*/
     }
     
+    let lev = 1.3
+    var currentLevel: Double = 0.0
+    
+    func setCurrentLevel() {
+        let dbRef = FIRDatabase.database().reference()
+        
+        if let auth = FIRAuth.auth() {
+            if let user = auth.currentUser {
+                dbRef.child("users").child(user.uid).child("currentLevel").observeSingleEvent(of: .value, with: {
+                    (snapshot) in
+                    if let level = snapshot.value as? Double {
+                        self.currentLevel = level
+                        
+                        if self.currentLevel >= 1.3 {
+                            print("Already been to this level")
+                        }
+                        else {
+                            dbRef.child("users").child(user.uid).updateChildValues(["currentLevel":self.lev])
+                        }
+                        
+                        
+                    }
+                })
+            }
+        }
+    }
     
     
     /*

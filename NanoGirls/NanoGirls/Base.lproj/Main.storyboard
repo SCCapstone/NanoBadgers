@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16B2659" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="eFf-DV-hjx">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="eFf-DV-hjx">
     <device id="ipad9_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment version="4096" identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -23,19 +23,19 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xPV-fo-fsS">
-                                <rect key="frame" x="20" y="218" width="728" height="30"/>
+                                <rect key="frame" x="20" y="262" width="728" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="next"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MnA-AZ-0Lv">
-                                <rect key="frame" x="20" y="278" width="728" height="30"/>
+                                <rect key="frame" x="20" y="322" width="728" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="next" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NLM-I1-7un">
-                                <rect key="frame" x="270" y="374" width="228" height="48"/>
+                                <rect key="frame" x="270" y="418" width="228" height="48"/>
                                 <color key="backgroundColor" red="0.98823529409999999" green="0.92549019610000005" blue="0.38431372549999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="228" id="Bdh-b2-Xxb"/>
@@ -104,7 +104,7 @@
                                             <color key="titleColor" red="1" green="0.93330842756424837" blue="0.38572404750999789" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <connections>
-                                            <segue destination="Yvq-Vr-T7D" kind="show" id="JhK-3m-7ag"/>
+                                            <action selector="loginButton:" destination="gfQ-GH-3h8" eventType="touchUpInside" id="BAv-ei-EKr"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wst-6E-3uI">
@@ -166,7 +166,6 @@
                     <navigationItem key="navigationItem" id="F2f-1m-vr9"/>
                     <connections>
                         <outlet property="HelpButton" destination="Wst-6E-3uI" id="op7-Uw-ejJ"/>
-                        <outlet property="LoginButton" destination="N12-WP-wIn" id="dLE-Gw-201"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xDU-a6-vry" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -462,7 +461,7 @@
             </objects>
             <point key="canvasLocation" x="11593" y="1803"/>
         </scene>
-        <!--Lesson Page3 View Controller-->
+        <!--Lesson 1.3-->
         <scene sceneID="mXj-eA-3yt">
             <objects>
                 <viewController id="PnU-TN-jn9" customClass="LessonPage3ViewController" customModule="NanoGirls" customModuleProvider="target" sceneMemberID="viewController">
@@ -532,7 +531,18 @@
                             <constraint firstAttribute="bottom" secondItem="6a5-t1-qFB" secondAttribute="bottom" constant="520" id="yaT-cg-aZC"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="dqz-4q-U7c"/>
+                    <navigationItem key="navigationItem" title="Lesson 1.3" id="dqz-4q-U7c">
+                        <barButtonItem key="leftBarButtonItem" title="Back" id="j6Q-Wj-ezI">
+                            <connections>
+                                <action selector="backButton:" destination="PnU-TN-jn9" id="pto-8C-QYY"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Sign Out" id="ivd-BD-Uru">
+                            <connections>
+                                <action selector="signOut:" destination="PnU-TN-jn9" id="JqL-Ce-bKp"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="lessonText3" destination="dYb-2c-dlt" id="7rh-kH-vjH"/>
                     </connections>
@@ -660,13 +670,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4sB-Qu-xFT">
-                                <rect key="frame" x="16" y="282" width="732" height="30"/>
+                                <rect key="frame" x="16" y="326" width="732" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fh4-cy-ep3">
-                                <rect key="frame" x="20" y="235" width="728" height="30"/>
+                                <rect key="frame" x="20" y="279" width="728" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="next"/>
@@ -717,7 +727,7 @@
             </objects>
             <point key="canvasLocation" x="3767" y="338"/>
         </scene>
-        <!--Lesson Page2 View Controller-->
+        <!--Lesson 1.2-->
         <scene sceneID="WaK-yG-a0x">
             <objects>
                 <viewController id="7VV-eG-2Mt" customClass="LessonPage2ViewController" customModule="NanoGirls" customModuleProvider="target" sceneMemberID="viewController">
@@ -788,7 +798,18 @@
                             <constraint firstAttribute="bottom" secondItem="lIz-Im-7PA" secondAttribute="bottom" constant="530" id="snx-ZD-k5N"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="Urw-EH-mUA"/>
+                    <navigationItem key="navigationItem" title="Lesson 1.2" id="Urw-EH-mUA">
+                        <barButtonItem key="leftBarButtonItem" title="Back" id="8Zw-t6-vi9">
+                            <connections>
+                                <action selector="backButton:" destination="7VV-eG-2Mt" id="VwU-um-JgX"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Sign Out" id="8ao-Dl-bUA">
+                            <connections>
+                                <action selector="signOut:" destination="7VV-eG-2Mt" id="QOu-JX-lge"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="lessonText2" destination="3Cu-KM-Mvz" id="f61-MT-xwL"/>
                     </connections>
@@ -816,10 +837,10 @@
                                 </items>
                             </navigationBar>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p5k-jH-Pbg">
-                                <rect key="frame" x="20" y="28" width="728" height="976"/>
+                                <rect key="frame" x="20" y="72" width="728" height="932"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VEM-gp-62r">
-                                        <rect key="frame" x="8" y="8" width="712" height="960"/>
+                                        <rect key="frame" x="8" y="8" width="712" height="916"/>
                                         <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="22"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -863,7 +884,7 @@
             </objects>
             <point key="canvasLocation" x="3766.40625" y="1802.9296874999998"/>
         </scene>
-        <!--Origin Story View Controller-->
+        <!--Origin Story-->
         <scene sceneID="FO6-k0-0XH">
             <objects>
                 <viewController id="Wr3-BH-Vng" customClass="OriginStoryViewController" customModule="NanoGirls" customModuleProvider="target" sceneMemberID="viewController">
@@ -923,7 +944,18 @@
                             <constraint firstAttribute="trailingMargin" secondItem="KIa-Mw-tpi" secondAttribute="trailing" constant="-12" id="jvY-p3-H8R"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="G8s-tY-YWK"/>
+                    <navigationItem key="navigationItem" title="Origin Story" id="G8s-tY-YWK">
+                        <barButtonItem key="leftBarButtonItem" title="Back" id="ntz-yh-TlP">
+                            <connections>
+                                <action selector="backButton:" destination="Wr3-BH-Vng" id="hkL-YC-3Yn"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Sign Out" id="aJe-ZF-7Ue">
+                            <connections>
+                                <action selector="signOut:" destination="Wr3-BH-Vng" id="487-NJ-Bns"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="myView" destination="s7f-17-1DU" id="3LI-J3-ne2"/>
                         <outlet property="ngImageView" destination="GAs-V2-2ba" id="OrW-G9-ZTR"/>
@@ -935,7 +967,7 @@
             </objects>
             <point key="canvasLocation" x="7633.59375" y="337.5"/>
         </scene>
-        <!--Level View Controller-->
+        <!--Select Level-->
         <scene sceneID="AGE-DO-Zfj">
             <objects>
                 <viewController id="5Xo-e7-STP" customClass="LevelViewController" customModule="NanoGirls" customModuleProvider="target" sceneMemberID="viewController">
@@ -990,6 +1022,17 @@
                                     <action selector="level13:" destination="5Xo-e7-STP" eventType="touchUpInside" id="hMH-cg-TCb"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="749" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Ey-Hj-4xf">
+                                <rect key="frame" x="224" y="484" width="331" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="33"/>
+                                <state key="normal" title="Level 1 Review Question">
+                                    <color key="titleColor" red="0.98823529409999999" green="0.92549019610000005" blue="0.38431372549999998" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="level1ReviewQuestion:" destination="5Xo-e7-STP" eventType="touchUpInside" id="Hk7-3k-g8Y"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -1006,7 +1049,25 @@
                             <constraint firstItem="xmh-95-2tf" firstAttribute="top" secondItem="ADW-yi-Qvt" secondAttribute="bottom" constant="8" symbolic="YES" id="y81-K3-ARx"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="mfV-4M-LKH"/>
+                    <navigationItem key="navigationItem" title="Select Level" id="mfV-4M-LKH">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="AAf-tW-7zW"/>
+                        <barButtonItem key="leftBarButtonItem" title="Back" id="V7a-Bd-ie8">
+                            <connections>
+                                <segue destination="gfQ-GH-3h8" kind="show" id="SaA-MM-61V"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Sign Out" id="MJO-Sd-AJW">
+                            <connections>
+                                <action selector="signOut:" destination="5Xo-e7-STP" id="kyN-ti-bDZ"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="level11" destination="ADW-yi-Qvt" id="TsM-dF-Dab"/>
+                        <outlet property="level12" destination="xmh-95-2tf" id="twJ-wu-3rr"/>
+                        <outlet property="level13" destination="Ooe-1o-t3z" id="fkA-qd-Y7g"/>
+                        <outlet property="level1ReviewQuestion" destination="1Ey-Hj-4xf" id="AiH-jo-XoY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nGi-4h-euA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1048,7 +1109,7 @@
             </objects>
             <point key="canvasLocation" x="629" y="338"/>
         </scene>
-        <!--Question Page View Controller-->
+        <!--Review Question-->
         <scene sceneID="SRu-c9-PX6">
             <objects>
                 <viewController storyboardIdentifier="questionPage" id="yxc-nZ-b0O" customClass="QuestionPageViewController" customModule="NanoGirls" sceneMemberID="viewController">
@@ -1113,13 +1174,24 @@
                             <constraint firstAttribute="trailingMargin" secondItem="3Yh-s3-SjP" secondAttribute="trailing" id="xle-r8-gi4"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="STX-4P-Elz"/>
+                    <navigationItem key="navigationItem" title="Review Question" id="STX-4P-Elz">
+                        <barButtonItem key="leftBarButtonItem" title="Back" id="Wgd-oc-vfe">
+                            <connections>
+                                <action selector="backButton:" destination="yxc-nZ-b0O" id="2vi-Rm-eEJ"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Sign Out" id="pYU-rE-UxI">
+                            <connections>
+                                <action selector="signOut:" destination="yxc-nZ-b0O" id="iwu-Rz-nuw"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QD5-NL-TsJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="16308" y="1803"/>
         </scene>
-        <!--Lesson Page View Controller-->
+        <!--Lesson 1.1-->
         <scene sceneID="IjZ-10-lrw">
             <objects>
                 <viewController storyboardIdentifier="lessonPageViewController" id="vaM-Dn-kw3" customClass="LessonPageViewController" customModule="NanoGirls" customModuleProvider="target" sceneMemberID="viewController">
@@ -1178,19 +1250,30 @@
                             <constraint firstAttribute="trailing" secondItem="2vP-OG-WJg" secondAttribute="trailing" constant="90" id="uis-f1-Wbj"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="Y1x-Rd-NBr"/>
+                    <navigationItem key="navigationItem" title="Lesson 1.1" id="Y1x-Rd-NBr">
+                        <barButtonItem key="leftBarButtonItem" title="Back" id="YS4-8k-Y5k">
+                            <connections>
+                                <action selector="backButton:" destination="vaM-Dn-kw3" id="pBc-Wg-kRO"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Sign Out" id="8DD-IP-OvM">
+                            <connections>
+                                <action selector="signOut:" destination="vaM-Dn-kw3" id="pIj-KI-myc"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="lessonText" destination="x6x-WQ-FmD" id="Tja-TK-e2U"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jma-G0-FAE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7633.59375" y="1802.9296874999998"/>
+            <point key="canvasLocation" x="7545" y="1803"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="I49-92-hOs">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Yvq-Vr-T7D" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="loginNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="Yvq-Vr-T7D" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="3e6-Xn-6zW">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -1335,7 +1418,7 @@
         <!--Navigation Controller-->
         <scene sceneID="AqA-o8-RmP">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="y3Y-Au-6Ii" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="reviewQuestionNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="y3Y-Au-6Ii" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="zhj-Wo-LSZ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -1363,6 +1446,6 @@
         <image name="paddle.png" width="100" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="OX9-ZS-AdF"/>
+        <segue reference="SaA-MM-61V"/>
     </inferredMetricsTieBreakers>
 </document>

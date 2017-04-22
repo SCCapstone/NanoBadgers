@@ -18,7 +18,33 @@ class OriginStoryViewController: UIViewController {
     @IBOutlet weak var ngImageView: UIImageView!
     @IBOutlet weak var originLabel: UILabel!
     let colors = Colors()
-    let level = 0.0
+    
+    
+    @IBAction func backButton(_ sender: Any) {
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "levelNavigationController") as? UINavigationController
+        self.present(vc!, animated: true)
+    }
+    
+    @IBAction func signOut(_ sender: Any) {
+        print("sign out button tapped")
+        let firebaseAuth = FIRAuth.auth()
+        do {
+            try firebaseAuth!.signOut()
+            FIRAuth.auth()?.addStateDidChangeListener { auth, user in
+                if user != nil {
+                    print("User is signed in.")
+                } else {
+                    print("User is signed out.")
+                    let vc = self.storyboard?.instantiateViewController(withIdentifier: "homePageNavigationController") as? UINavigationController
+                    self.present(vc!, animated: true)
+                }
+            }
+        } catch let signOutError as NSError {
+            print ("Error signing out: \(signOutError)")
+        } catch {
+            print("Unknown error.")
+        }
+    }
     
     @IBAction func nextButton(_ sender: Any) {
         timesClicked = timesClicked + 1
@@ -61,7 +87,7 @@ class OriginStoryViewController: UIViewController {
     {
         super.viewDidLoad()
         refresh()
-        
+        setCurrentLevel()
         timesClicked = 0
         
         originLabel.text = "Hey Gold, we should tell the gamer about how we became the Nano Girls! "
@@ -85,16 +111,42 @@ class OriginStoryViewController: UIViewController {
         view.layer.insertSublayer(backgroundLayer, at: 0)
         
         // Set current level to 0.0
+/*        let dbRef = FIRDatabase.database().reference()
+        
+        if let auth = FIRAuth.auth() {
+            if let user = auth.currentUser {
+                dbRef.child("users").child(user.uid).updateChildValues(["currentLevel":currentLevel])
+            }
+        }
+ */
+    }
+
+    let lev = 0.0
+    var currentLevel: Double = 0.0
+    
+    func setCurrentLevel() {
         let dbRef = FIRDatabase.database().reference()
         
         if let auth = FIRAuth.auth() {
             if let user = auth.currentUser {
-                dbRef.child("users").child(user.uid).updateChildValues(["currentLevel":level])
+                dbRef.child("users").child(user.uid).child("currentLevel").observeSingleEvent(of: .value, with: {
+                    (snapshot) in
+                    if let level = snapshot.value as? Double {
+                        self.currentLevel = level
+                        
+                        if self.currentLevel > 0.0 {
+                            print("Already been to this level")
+                        }
+                        else {
+                            dbRef.child("users").child(user.uid).updateChildValues(["currentLevel":self.lev])
+                        }
+                            
+                        
+                    }
+                })
             }
         }
     }
-
-
 
 
 }
