@@ -18,7 +18,7 @@ class QuestionPageViewController: UIViewController {
     @IBAction func correctAnswer(_ sender: AnyObject) {
         
         let alertController = UIAlertController(title: "Level 1", message:
-            "Correct!", preferredStyle: UIAlertControllerStyle.alert)
+            "Correct! You have completed this level.", preferredStyle: UIAlertControllerStyle.alert)
         alertController.addAction(UIAlertAction(title: "Continue", style: UIAlertActionStyle.default,handler: { action in self.goToHomePage()}))
        
         self.present(alertController, animated: true, completion: nil)
