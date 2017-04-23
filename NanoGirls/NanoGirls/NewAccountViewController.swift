@@ -20,6 +20,7 @@ class NewAccountViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         refresh()
+        setCurrentLevel()
     }
 
     
@@ -58,5 +59,29 @@ class NewAccountViewController: UIViewController {
         self.present(vc!, animated: true)
     }
     
+    let lev = 0.0
+    var currentLevel: Double = 0.0
+    
+    func setCurrentLevel() {
+        let dbRef = FIRDatabase.database().reference()
+        
+        if let auth = FIRAuth.auth() {
+            if let user = auth.currentUser {
+                dbRef.child("users").child(user.uid).child("currentLevel").observeSingleEvent(of: .value, with: {
+                    (snapshot) in
+                    if let level = snapshot.value as? Double {
+                        self.currentLevel = level
+                        
+                        if self.currentLevel > 0.0 {
+                            print("Already been to this level")
+                        }
+                        else {
+                            dbRef.child("users").child(user.uid).updateChildValues(["currentLevel":self.lev])
+                        }
+                    }
+                })
+            }
+        }
+    }
 
 }
