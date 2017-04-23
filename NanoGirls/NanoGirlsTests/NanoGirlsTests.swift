@@ -13,13 +13,14 @@ import XCTest
 class NanoGirlsTests: XCTestCase {
     
     func testViewDidLoad(){
-        let v = HomePageViewController()
-        XCTAssertNotNil(v.view, "View Did Not Load")
+        
+        
     }
     
     override func setUp() {
         super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        
+        
     }
     
     override func tearDown() {
@@ -27,9 +28,56 @@ class NanoGirlsTests: XCTestCase {
         super.tearDown()
     }
     
+    func testHomePage()
+    {
+        let v = HomePageViewController()
+        XCTAssertNotNil(v.view, "View Did Not Load")
+    }
+    
+    func testLoginPage()
+    {
+        let x = LoginPageViewController()
+        
+        //test if page loads
+        XCTAssertNotNil(x.view, "View Did Not Load")
+        
+        //test if refresh function works
+        x.refresh()
+        
+    }
+    
+    func testLevelsPage()
+    {
+        let l = LevelViewController()
+        
+        XCTAssertNotNil(l.view, "View Did Not Load")
+        
+    }
+    
+    func testOriginStoryPage()
+    {
+        let o = OriginStoryViewController()
+        
+        XCTAssertNotNil(o.view, "View Did Not Load")
+        
+    }
+    
+    
+    func testGamePage()
+    {
+        let t = MiniGame2ViewControllerLevel3()
+        
+        XCTAssertNotNil(t.view, "View Did Not Load")
+        
+        
+    }
     func testExample() {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
+        
+        testHomePage()
+        testLoginPage()
+        
     }
     
     func testPerformanceExample() {
