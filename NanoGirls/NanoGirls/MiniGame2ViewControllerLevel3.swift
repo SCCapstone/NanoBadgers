@@ -49,10 +49,11 @@ class MiniGame2ViewControllerLevel3: UIViewController {
         
         if(audioFilePath != nil)
         {
-            let audioFileUrl = NSURL.fileURL(withPath: audioFilePath!)
-            audioPlayer = try! AVAudioPlayer(contentsOf: audioFileUrl)
-            audioPlayer.play()
-            
+            if(TotalTime != 0){
+                let audioFileUrl = NSURL.fileURL(withPath: audioFilePath!)
+                audioPlayer = try! AVAudioPlayer(contentsOf: audioFileUrl)
+                audioPlayer.play()
+            }
         }
         else
         {
@@ -144,6 +145,11 @@ class MiniGame2ViewControllerLevel3: UIViewController {
                 views[i].center = CGPoint(x:-90,y:-90)
                 playSound()
                 Score = Score - 1
+                
+                // Slow player down
+                if SPEED > 1 {
+                    SPEED = SPEED/2
+                }
             }
             if(i > 4)
             {
@@ -164,6 +170,11 @@ class MiniGame2ViewControllerLevel3: UIViewController {
                 playSound()
                 
                 Score = Score + 1
+                
+                // Speed player back up
+                if SPEED != WIDTH/200 {
+                    SPEED = WIDTH/200
+                }
             }
             if(i > 4)
             {
@@ -223,12 +234,12 @@ class MiniGame2ViewControllerLevel3: UIViewController {
             let enemy: UIImageView = UIImageView(frame: CGRect(x: 0, y:0, width:50, height:50))
             //enemy.backgroundColor = UIColor.red
             enemy.center = CGPoint(x: xCord, y: yCord)
-        
-        enemy.image = #imageLiteral(resourceName: "silver")
+        if(TotalTime != 0){
+            enemy.image = #imageLiteral(resourceName: "silver")
             self.view.addSubview(enemy)
             views.insert(enemy, at: Int(enemyCount))
             enemyCount = enemyCount + 1
-            
+        }
         
         
         
@@ -253,16 +264,16 @@ class MiniGame2ViewControllerLevel3: UIViewController {
         yCord = Int(arc4random_uniform(UInt32(inputy))+(UInt32(buffertop)))
         
         
-            let good: UIImageView = UIImageView(frame: CGRect(x: 0, y:0, width:50, height:50))
-            //good.backgroundColor = UIColor.blue
-            good.center = CGPoint(x: xCord, y: yCord)
+        let good: UIImageView = UIImageView(frame: CGRect(x: 0, y:0, width:50, height:50))
+        //good.backgroundColor = UIColor.blue
+        good.center = CGPoint(x: xCord, y: yCord)
         
-    good.image = #imageLiteral(resourceName: "nutrient")
-            
+        if(TotalTime != 0){
+            good.image = #imageLiteral(resourceName: "nutrient")
             self.view.addSubview(good)
             views2.insert(good, at: Int(goodCount))
             goodCount = goodCount + 1
-            
+        }
         
         
     }
