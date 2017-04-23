@@ -11,8 +11,7 @@ import UIKit
 import Firebase
 
 class LessonPage3ViewController: UIViewController {
-    
-    @IBOutlet weak var lessonText3: UILabel!
+
     
     @IBAction func backButton(_ sender: Any) {
         let vc = self.storyboard?.instantiateViewController(withIdentifier: "levelNavigationController") as? UINavigationController
@@ -49,10 +48,6 @@ class LessonPage3ViewController: UIViewController {
         
         refresh()
         setCurrentLevel()
-        
-        lessonText3.text = "Wow! You dodged the Silver particles! Good job. \n OH NO! Theres been a giant spill in the so the amount of silver is huge! Help us collect more nutrients!"
-        
-        /*"Hey Spencer! When hand soaps and lotions get into the drain and run off into the ocean, silver (Ag) nanoparticles are introduced to the coastal zone. Silver is dangerous to a lot of organisms there, including dinoflagellates! Dinoflagellates are phytoplankton that have the ability to propel themselves in any direction - and they need nutrients like nitrogen (N), phosphorous (P), and iron (Fe) to stay healthy! \nHelp the dinoflagellates consume nutrients by moving them around the screen. Remember to avoid silver, or the dinoflagellates will become sluggish and slow!"*/
         
         
         

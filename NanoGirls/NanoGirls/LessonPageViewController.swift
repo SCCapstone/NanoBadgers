@@ -14,15 +14,20 @@ import Firebase
 
 class LessonPageViewController: UIViewController {
 
-    @IBOutlet weak var lessonText: UILabel!
-    //creates instance of Colors class
+
+
+    @IBOutlet weak var nanoGirlImageView: UIImageView!
+    
+    @IBOutlet weak var speechBubbleImageView: UIImageView!
+    
     let colors = Colors()
-    //let level = 1.1
+    var timesClicked:Int!
     
     @IBAction func backButton(_ sender: Any) {
         let vc = self.storyboard?.instantiateViewController(withIdentifier: "levelNavigationController") as? UINavigationController
         self.present(vc!, animated: true)
     }
+    
     @IBAction func signOut(_ sender: Any) {
         print("sign out button tapped")
         let firebaseAuth = FIRAuth.auth()
@@ -43,6 +48,22 @@ class LessonPageViewController: UIViewController {
             print("Unknown error.")
         }
     }
+    
+    @IBAction func nextButton(_ sender: Any) {
+        timesClicked = timesClicked + 1
+        if (timesClicked == 1)
+        {
+            //gold talking
+            speechBubbleImageView.image = #imageLiteral(resourceName: "level2")
+        }
+
+        if (timesClicked == 2)
+        {
+            performSegue(withIdentifier: "beginGame", sender: self)
+        }
+
+    }
+    
 
     
     override func viewDidLoad()
@@ -51,19 +72,10 @@ class LessonPageViewController: UIViewController {
         refresh()
         setCurrentLevel()
         
-        lessonText.text = "Hey Gamer! Dinoflagellates are phytoplankton that have the ability to propel themselves in any direction - and they need nutrients like nitrogen (N), phosphorous (P), and iron (Fe) to stay healthy! \nHelp the dinoflagellates consume nutrients by moving them around the screen. "
-        
-        /*"Hey Spencer! When hand soaps and lotions get into the drain and run off into the ocean, silver (Ag) nanoparticles are introduced to the coastal zone. Silver is dangerous to a lot of organisms there, including dinoflagellates! Dinoflagellates are phytoplankton that have the ability to propel themselves in any direction - and they need nutrients like nitrogen (N), phosphorous (P), and iron (Fe) to stay healthy! \nHelp the dinoflagellates consume nutrients by moving them around the screen. Remember to avoid silver, or the dinoflagellates will become sluggish and slow!"*/
-        
-        
-        
+        timesClicked = 0
+    
     }
     
-    
-    override func didReceiveMemoryWarning()
-    {
-        super.didReceiveMemoryWarning()
-    }
     
     func refresh()
     {
@@ -72,16 +84,6 @@ class LessonPageViewController: UIViewController {
         let backgroundLayer = colors.gl
         backgroundLayer.frame = view.frame
         view.layer.insertSublayer(backgroundLayer, at: 0)
-        
-/*        // Set current level to 1.1
-        let dbRef = FIRDatabase.database().reference()
-        
-        if let auth = FIRAuth.auth() {
-            if let user = auth.currentUser {
-                dbRef.child("users").child(user.uid).updateChildValues(["currentLevel":level])
-            }
-        }
- */
     }
     
     let lev = 1.1
@@ -110,15 +112,5 @@ class LessonPageViewController: UIViewController {
         }
     }
 
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

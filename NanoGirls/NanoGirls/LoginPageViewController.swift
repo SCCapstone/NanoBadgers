@@ -27,12 +27,6 @@ class LoginPageViewController: UIViewController {
     }
     
     
-    override func didReceiveMemoryWarning()
-    {
-        super.didReceiveMemoryWarning()
-    }
-    
-    
     func refresh()
     {
         //sets the background gradient
@@ -67,25 +61,10 @@ class LoginPageViewController: UIViewController {
                         }
                     }
                 }
-/*                        let vc = self.storyboard?.instantiateViewController(withIdentifier: "mainNavigationController") as? UINavigationController
-                        self.present(vc!, animated: true)
-                    }
-                    if let error = error {
-                        print(error.localizedDescription)
-                    }
-                }
-  */          }
+         }
         }
     }
     
-    /*
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destinationViewController.
-     // Pass the selected object to the new view controller.
-     }
-     */
+
     
 }
