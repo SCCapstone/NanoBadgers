@@ -870,33 +870,11 @@ Cg
                                             <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
-                                    <fragment content="Nano-Adventures of Silver &amp; Gold is to teach students between ages 7 and 12 about nano">
-                                        <attributes>
-                                            <font key="NSFont" size="16" name="Avenir-Book"/>
-                                            <font key="NSOriginalFont" size="14" name="Avenir-Book"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="-">
-                                        <attributes>
-                                            <font key="NSFont" size="14" name="Avenir-Book"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="science. This app is fun and allows children to learn about nano">
-                                        <attributes>
-                                            <font key="NSFont" size="16" name="Avenir-Book"/>
-                                            <font key="NSOriginalFont" size="14" name="Avenir-Book"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="-">
-                                        <attributes>
-                                            <font key="NSFont" size="14" name="Avenir-Book"/>
-                                        </attributes>
-                                    </fragment>
                                     <fragment>
-                                        <string key="content">science while engaging in a game which allows them to become involved in real world environmental problems such as oil spills, earthquakes, bacterial and viral infections. </string>
+                                        <string key="content">Nano-Adventures of Silver &amp; Gold is to teach students between ages 7 and 12 about nano-science. This app is fun and allows children to learn about nano-science while engaging in a game which allows them to become involved in real world environmental problems such as oil spills, earthquakes, bacterial and viral infections. </string>
                                         <attributes>
-                                            <font key="NSFont" size="16" name="Avenir-Book"/>
-                                            <font key="NSOriginalFont" size="14" name="Avenir-Book"/>
+                                            <font key="NSFont" size="20" name="Avenir-Book"/>
+                                            <font key="NSOriginalFont" size="18" name="Avenir-Book"/>
                                         </attributes>
                                     </fragment>
                                     <fragment>
@@ -943,24 +921,17 @@ Cg
                                             <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
-                                    <fragment content="The games starts off with a background story of Nano-Gold and Nano-Silver. In each le">
+                                    <fragment>
+                                        <mutableString key="content">The games starts off with a background story of Nano-Gold and Nano-Silver. In each level there is a short lesson at the beginning taught by either Nano-Gold or Nano-Silver, explaining a scenario involving nano-particles in the environment. In the lesson the student will learn about a problem that one of the superheroes is having. After the lesson the student will play a mini game to collect or gain enough nanoparticles to help out the superheroes. Once the student has earned enough nanoparticles they will move on to the review question. If the student answers the review question correctly they will move on to the next level. If they answer incorrectly they will have to try again.</mutableString>
                                         <attributes>
-                                            <font key="NSFont" size="16" name="Avenir-Book"/>
-                                            <font key="NSOriginalFont" size="14" name="Avenir-Book"/>
+                                            <font key="NSFont" size="20" name="Avenir-Book"/>
+                                            <font key="NSOriginalFont" size="20" name="Avenir-Book"/>
                                         </attributes>
                                     </fragment>
-                                    <fragment>
-                                        <string key="content">vel there is a short lesson at the beginning taught by either Nano-Gold or Nano-Silver, explaining a scenario involving nano-particles in the environment. In the lesson the student will learn about a problem that one of th</string>
+                                    <fragment content=" ">
                                         <attributes>
-                                            <font key="NSFont" size="16" name="Avenir-Book"/>
-                                            <font key="NSOriginalFont" size="16" name="Avenir-Book"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content">e superheroes is having. After the lesson the student will play a mini game to collect or gain enough nanoparticles to help out the superheroes. Once the student has earned enough nanoparticles they will move on to the review question. If the student answers the review question correctly they will move on to the next level. If they answer incorrectly they will have to try again. </string>
-                                        <attributes>
-                                            <font key="NSFont" size="16" name="Avenir-Book"/>
-                                            <font key="NSOriginalFont" size="14" name="Avenir-Book"/>
+                                            <font key="NSFont" size="18" name="Avenir-Book"/>
+                                            <font key="NSOriginalFont" size="18" name="Avenir-Book"/>
                                         </attributes>
                                     </fragment>
                                     <fragment>
@@ -1010,8 +981,8 @@ Cg
                                     <fragment>
                                         <string key="content">Go to the home page and click create account. You will receive an email requesting that you verify your email account before you can log in. </string>
                                         <attributes>
-                                            <font key="NSFont" size="16" name="Avenir-Book"/>
-                                            <font key="NSOriginalFont" size="16" name="Avenir-Book"/>
+                                            <font key="NSFont" size="20" name="Avenir-Book"/>
+                                            <font key="NSOriginalFont" size="20" name="Avenir-Book"/>
                                         </attributes>
                                     </fragment>
                                     <fragment>
@@ -1019,8 +990,8 @@ Cg
 Cg
 </string>
                                         <attributes>
-                                            <font key="NSFont" size="11" name="Arial-Black"/>
-                                            <font key="NSOriginalFont" size="14" name="Avenir-Book"/>
+                                            <font key="NSFont" size="18" name="Arial-Black"/>
+                                            <font key="NSOriginalFont" size="18" name="Arial-Black"/>
                                         </attributes>
                                     </fragment>
                                     <fragment>
@@ -1060,8 +1031,8 @@ Cg
                                     </fragment>
                                     <fragment content="To restart the levels you can simply click on a level that has already been completed.">
                                         <attributes>
-                                            <font key="NSFont" size="16" name="Avenir-Book"/>
-                                            <font key="NSOriginalFont" size="14" name="Avenir-Book"/>
+                                            <font key="NSFont" size="20" name="Avenir-Book"/>
+                                            <font key="NSOriginalFont" size="20" name="Avenir-Book"/>
                                         </attributes>
                                     </fragment>
                                 </attributedString>
