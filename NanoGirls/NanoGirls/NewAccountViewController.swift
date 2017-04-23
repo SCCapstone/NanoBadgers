@@ -16,11 +16,12 @@ class NewAccountViewController: UIViewController {
     
     //creates instance of Colors class
     let colors = Colors()
+    let lev = 0.0
+    var currentLevel: Double = 0.0
     
     override func viewDidLoad() {
         super.viewDidLoad()
         refresh()
-        setCurrentLevel()
     }
 
     
@@ -37,6 +38,8 @@ class NewAccountViewController: UIViewController {
         if let email = email.text {
             if let password = password.text {
                 FIRAuth.auth()?.createUser(withEmail: email, password: password) { (user, error) in
+                    let uid: String = (FIRAuth.auth()?.currentUser?.uid)!
+                    FIRDatabase.database().reference().child("users").child(uid).setValue(["currentLevel": self.lev])
                     if let user = user {
                         user.sendEmailVerification()
                         let alertController = UIAlertController(title: "Email Verification", message:
@@ -58,30 +61,4 @@ class NewAccountViewController: UIViewController {
         let vc = self.storyboard?.instantiateViewController(withIdentifier: "homePageNavigationController") as? UINavigationController
         self.present(vc!, animated: true)
     }
-    
-    let lev = 0.0
-    var currentLevel: Double = 0.0
-    
-    func setCurrentLevel() {
-        let dbRef = FIRDatabase.database().reference()
-        
-        if let auth = FIRAuth.auth() {
-            if let user = auth.currentUser {
-                dbRef.child("users").child(user.uid).child("currentLevel").observeSingleEvent(of: .value, with: {
-                    (snapshot) in
-                    if let level = snapshot.value as? Double {
-                        self.currentLevel = level
-                        
-                        if self.currentLevel > 0.0 {
-                            print("Already been to this level")
-                        }
-                        else {
-                            dbRef.child("users").child(user.uid).updateChildValues(["currentLevel":self.lev])
-                        }
-                    }
-                })
-            }
-        }
-    }
-
 }
