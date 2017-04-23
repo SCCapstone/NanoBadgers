@@ -23,7 +23,6 @@ class LoginPageViewController: UIViewController {
     {
         super.viewDidLoad()
         refresh()
-        
     }
     
     
@@ -61,10 +60,8 @@ class LoginPageViewController: UIViewController {
                         }
                     }
                 }
-         }
+            }
         }
     }
-    
-
     
 }

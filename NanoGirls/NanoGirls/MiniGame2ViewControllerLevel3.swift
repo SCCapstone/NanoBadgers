@@ -207,12 +207,27 @@ class MiniGame2ViewControllerLevel3: UIViewController {
             clock.invalidate()
             SpawnTimer.invalidate()
             SpawnTimer2.invalidate()
-            timer.invalidate()
-            let alertController = UIAlertController(title: "Level 3", message:
+            
+            if Score >= 10 {
+                timer.invalidate()
+                let alertController = UIAlertController(title: "Level 3", message:
                 "Time is up!", preferredStyle: UIAlertControllerStyle.alert)
-            alertController.addAction(UIAlertAction(title: "Continue", style: UIAlertActionStyle.default,handler: { action in self.performSegue(withIdentifier: "question", sender: nil) }))
-            self.present(alertController, animated: true, completion: nil)
+                alertController.addAction(UIAlertAction(title: "Continue", style: UIAlertActionStyle.default,handler: { action in self.performSegue(withIdentifier: "question", sender: nil) }))
+                self.present(alertController, animated: true, completion: nil)
+            }
+            else {
+                let alertController = UIAlertController(title: "Level 3", message:
+                    "Time is up! Looks like you did not get at least 10 Nitrogen particles. You will have to retry the game to move on.", preferredStyle: UIAlertControllerStyle.alert)
+                alertController.addAction(UIAlertAction(title: "Retry", style: UIAlertActionStyle.default,handler: { action in self.goToLesson13() }))
+                self.present(alertController, animated: true, completion: nil)
+            }
         }
+    }
+    
+    func goToLesson13() {
+        // Push to home page view controller
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "level1.3NavigationController") as? UINavigationController
+        self.present(vc!, animated: true)
     }
     
     func SpawnEnemy(){
@@ -225,8 +240,12 @@ class MiniGame2ViewControllerLevel3: UIViewController {
         
         inputx = WIDTH*5/8
         bufferside = WIDTH / 8
-        inputy = UInt32(HEIGHT) * 5 / 8
-        buffertop = UInt32(HEIGHT) / 8
+        // inputy should have /2 instead of *5/8 and buffertop should be /4 not /8
+        
+        //inputy = UInt32(HEIGHT) * 5 / 8
+        inputy = UInt32(HEIGHT) / 2
+        //buffertop = UInt32(HEIGHT) / 8
+        buffertop = UInt32(HEIGHT) / 4
         xCord = Int(arc4random_uniform(UInt32(inputx))+(UInt32(bufferside)))
         yCord = Int(arc4random_uniform(UInt32(inputy))+(UInt32(buffertop)))
         
@@ -258,8 +277,10 @@ class MiniGame2ViewControllerLevel3: UIViewController {
         
         inputx = WIDTH*5/8
         bufferside = WIDTH / 8
-        inputy = UInt32(HEIGHT) * 5 / 8
-        buffertop = UInt32(HEIGHT) / 8
+        //inputy = UInt32(HEIGHT) * 5 / 8
+        inputy = UInt32(HEIGHT) / 2
+        //buffertop = UInt32(HEIGHT) / 8
+        buffertop = UInt32(HEIGHT) / 4
         xCord = Int(arc4random_uniform(UInt32(inputx))+(UInt32(bufferside)))
         yCord = Int(arc4random_uniform(UInt32(inputy))+(UInt32(buffertop)))
         
