@@ -111,7 +111,7 @@ class OriginStoryViewController: UIViewController {
     func refresh()
     {
         //sets the background gradient
-        myView.backgroundColor = UIColor.clear
+    
         let backgroundLayer = colors.gl
         backgroundLayer.frame = view.frame
         view.layer.insertSublayer(backgroundLayer, at: 0)
