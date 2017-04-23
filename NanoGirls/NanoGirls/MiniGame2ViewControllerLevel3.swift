@@ -220,10 +220,11 @@ class MiniGame2ViewControllerLevel3: UIViewController {
         yCord = Int(arc4random_uniform(UInt32(inputy))+(UInt32(buffertop)))
         
         
-            let enemy: UIView = UIView(frame: CGRect(x: 0, y:0, width:50, height:50))
-            enemy.backgroundColor = UIColor.red
+            let enemy: UIImageView = UIImageView(frame: CGRect(x: 0, y:0, width:50, height:50))
+            //enemy.backgroundColor = UIColor.red
             enemy.center = CGPoint(x: xCord, y: yCord)
-            
+        
+        enemy.image = #imageLiteral(resourceName: "silver")
             self.view.addSubview(enemy)
             views.insert(enemy, at: Int(enemyCount))
             enemyCount = enemyCount + 1
@@ -252,9 +253,11 @@ class MiniGame2ViewControllerLevel3: UIViewController {
         yCord = Int(arc4random_uniform(UInt32(inputy))+(UInt32(buffertop)))
         
         
-            let good: UIView = UIView(frame: CGRect(x: 0, y:0, width:50, height:50))
-            good.backgroundColor = UIColor.blue
+            let good: UIImageView = UIImageView(frame: CGRect(x: 0, y:0, width:50, height:50))
+            //good.backgroundColor = UIColor.blue
             good.center = CGPoint(x: xCord, y: yCord)
+        
+    good.image = #imageLiteral(resourceName: "nutrient")
             
             self.view.addSubview(good)
             views2.insert(good, at: Int(goodCount))

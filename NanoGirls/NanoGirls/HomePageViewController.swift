@@ -30,7 +30,7 @@ class HomePageViewController: UIViewController
             self.present(vc!, animated: true)        }
     }
     
-    //creates instance of Colors class
+    //creates instance of Colors class for background gradient
     let colors = Colors()
     
     override func viewDidLoad()
@@ -40,12 +40,6 @@ class HomePageViewController: UIViewController
         
     }
 
-    
-    override func didReceiveMemoryWarning()
-    {
-        super.didReceiveMemoryWarning()
-    }
-    
     
     func refresh()
     {

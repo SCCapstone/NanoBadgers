@@ -284,10 +284,12 @@ class MiniGame2ViewController: UIViewController{
         yCord = Int(arc4random_uniform(UInt32(inputy))+(UInt32(buffertop)))
         
         
-            let good: UIView = UIView(frame: CGRect(x: 0, y:0, width:50, height:50))
-            good.backgroundColor = UIColor.blue
+            let good: UIImageView = UIImageView(frame: CGRect(x: 0, y:0, width:50, height:50))
+            //good.backgroundColor = UIColor.blue
             good.center = CGPoint(x: xCord, y: yCord)
-            
+        
+        //Beth look here 
+            good.image = #imageLiteral(resourceName: "nutrient")
             self.view.addSubview(good)
             views2.insert(good, at: Int(goodCount))
             goodCount = goodCount + 1

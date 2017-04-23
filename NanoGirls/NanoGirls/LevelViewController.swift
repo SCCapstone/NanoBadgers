@@ -10,6 +10,9 @@ import UIKit
 import Firebase
 
 class LevelViewController: UIViewController {
+    
+    var currentLevel: Double = 0.0
+    let colors = Colors()
 
     @IBOutlet weak var level11: UIButton!
     @IBOutlet weak var level12: UIButton!
@@ -63,25 +66,15 @@ class LevelViewController: UIViewController {
             print("Unknown error.")
         }
     }
-    
-    
-    var currentLevel: Double = 0.0
 
-    // Create instance of Colors class
-    let colors = Colors()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         fetchCurrentLevel()
         refresh()
-        
-        // Do any additional setup after loading the view.
+
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
     
     func refresh()
     {
@@ -148,15 +141,5 @@ class LevelViewController: UIViewController {
     }
 
 
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
