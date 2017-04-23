@@ -51,10 +51,11 @@ class MiniGame2ViewController: UIViewController{
         
         if(audioFilePath != nil)
         {
-            let audioFileUrl = NSURL.fileURL(withPath: audioFilePath!)
-            audioPlayer = try! AVAudioPlayer(contentsOf: audioFileUrl)
-            audioPlayer.play()
-            
+            if(TotalTime != 0){
+                let audioFileUrl = NSURL.fileURL(withPath: audioFilePath!)
+                audioPlayer = try! AVAudioPlayer(contentsOf: audioFileUrl)
+                audioPlayer.play()
+            }
         }
         else
         {
@@ -255,14 +256,14 @@ class MiniGame2ViewController: UIViewController{
         
         if(enemyCount < 10)
         {
-        let enemy: UIView = UIView(frame: CGRect(x: 0, y:0, width:50, height:50))
-        enemy.backgroundColor = UIColor.red
-        enemy.center = CGPoint(x: xCord, y: yCord)
-            
-        self.view.addSubview(enemy)
-        views.insert(enemy, at: Int(enemyCount))
-        enemyCount = enemyCount + 1
-        
+            let enemy: UIView = UIView(frame: CGRect(x: 0, y:0, width:50, height:50))
+            enemy.backgroundColor = UIColor.red
+            enemy.center = CGPoint(x: xCord, y: yCord)
+            if(TotalTime != 0){
+                self.view.addSubview(enemy)
+                views.insert(enemy, at: Int(enemyCount))
+                enemyCount = enemyCount + 1
+            }
         }
     }
     func spawnGood(){
@@ -284,16 +285,17 @@ class MiniGame2ViewController: UIViewController{
         yCord = Int(arc4random_uniform(UInt32(inputy))+(UInt32(buffertop)))
         
         
-            let good: UIImageView = UIImageView(frame: CGRect(x: 0, y:0, width:50, height:50))
-            //good.backgroundColor = UIColor.blue
-            good.center = CGPoint(x: xCord, y: yCord)
+        let good: UIImageView = UIImageView(frame: CGRect(x: 0, y:0, width:50, height:50))
+        //good.backgroundColor = UIColor.blue
+        good.center = CGPoint(x: xCord, y: yCord)
         
         //Beth look here 
+        if(TotalTime != 0){
             good.image = #imageLiteral(resourceName: "nutrient")
             self.view.addSubview(good)
             views2.insert(good, at: Int(goodCount))
             goodCount = goodCount + 1
-            
+        }
         
     }
     

@@ -45,20 +45,21 @@ class MiniGame2ViewControllerLevel2: UIViewController {
      
          func playSound(){
          
-                 let audioFilePath = Bundle.main.path(forResource: "SoundAttempt1", ofType: "mp3")
+            let audioFilePath = Bundle.main.path(forResource: "SoundAttempt1", ofType: "mp3")
          
-                 if(audioFilePath != nil)
-                 {
-                     let audioFileUrl = NSURL.fileURL(withPath: audioFilePath!)
-                     audioPlayer = try! AVAudioPlayer(contentsOf: audioFileUrl)
-                     audioPlayer.play()
-         
-                 }
-                 else
-                 {
-                         print("ahhhhhhh")
-                     }
-             }
+            if(audioFilePath != nil)
+            {
+                if(TotalTime != 0){
+                    let audioFileUrl = NSURL.fileURL(withPath: audioFilePath!)
+                    audioPlayer = try! AVAudioPlayer(contentsOf: audioFileUrl)
+                    audioPlayer.play()
+                }
+            }
+            else
+            {
+                print("ahhhhhhh")
+            }
+        }
      
      
      
@@ -144,6 +145,11 @@ class MiniGame2ViewControllerLevel2: UIViewController {
                         views[i].center = CGPoint(x:-90,y:-90)
                         playSound()
                         Score = Score - 1
+                        
+                        // Slow player down
+                        if SPEED > 1 {
+                            SPEED = SPEED/2
+                        }
                     }
                     if(i > 4)
                     {
@@ -163,6 +169,11 @@ class MiniGame2ViewControllerLevel2: UIViewController {
                         views2[i].center = CGPoint(x:-90,y:-90)
                         playSound()
                         Score = Score + 1
+                        
+                        // Speed player back up
+                        if SPEED != WIDTH/200 {
+                            SPEED = WIDTH/200
+                        }
                     }
                     if(i > 4)
                     {
@@ -218,12 +229,12 @@ class MiniGame2ViewControllerLevel2: UIViewController {
                   //  enemy.backgroundColor = UIColor.red
                     enemy.center = CGPoint(x: xCord, y: yCord)
                 
-                enemy.image = #imageLiteral(resourceName: "silver")
-                    
+                if(TotalTime != 0){
+                    enemy.image = #imageLiteral(resourceName: "silver")
                     self.view.addSubview(enemy)
                     views.insert(enemy, at: Int(enemyCount))
                     enemyCount = enemyCount + 1
-                
+                }
                  
 
         
@@ -252,11 +263,12 @@ class MiniGame2ViewControllerLevel2: UIViewController {
                    // good.backgroundColor = UIColor.blue
                     good.center = CGPoint(x: xCord, y: yCord)
                 
-                        good.image = #imageLiteral(resourceName: "nutrient")
+                if(TotalTime != 0){
+                    good.image = #imageLiteral(resourceName: "nutrient")
                     self.view.addSubview(good)
                     views2.insert(good, at: Int(goodCount))
                     goodCount = goodCount + 1
-                    
+                }
                 
 
                 }
